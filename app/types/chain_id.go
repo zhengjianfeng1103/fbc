@@ -19,7 +19,7 @@ var (
 )
 
 const mainnetChainId = "fbchain-1230"
-const testnetChainId = "fbchain-55"
+const testnetChainId = "fbchain-3201"
 
 var (
 	chainIdSetOnce    sync.Once

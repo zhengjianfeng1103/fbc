@@ -22,9 +22,9 @@ func init() {
 	govtypes.RegisterProposalType(proposalTypeManageContractDeploymentWhitelist)
 	govtypes.RegisterProposalType(proposalTypeManageContractBlockedList)
 	govtypes.RegisterProposalType(proposalTypeManageContractMethodBlockedList)
-	govtypes.RegisterProposalTypeCodec(ManageContractDeploymentWhitelistProposal{}, "fbchain/evm/ManageContractDeploymentWhitelistProposal")
-	govtypes.RegisterProposalTypeCodec(ManageContractBlockedListProposal{}, "fbchain/evm/ManageContractBlockedListProposal")
-	govtypes.RegisterProposalTypeCodec(ManageContractMethodBlockedListProposal{}, "fbchain/evm/ManageContractMethodBlockedListProposal")
+	govtypes.RegisterProposalTypeCodec(ManageContractDeploymentWhitelistProposal{}, "fbexchain/evm/ManageContractDeploymentWhitelistProposal")
+	govtypes.RegisterProposalTypeCodec(ManageContractBlockedListProposal{}, "fbexchain/evm/ManageContractBlockedListProposal")
+	govtypes.RegisterProposalTypeCodec(ManageContractMethodBlockedListProposal{}, "fbexchain/evm/ManageContractMethodBlockedListProposal")
 }
 
 var (

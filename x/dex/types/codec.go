@@ -4,14 +4,14 @@ import "github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
 
 // RegisterCodec registers concrete types on the Amino codec
 func RegisterCodec(cdc *codec.Codec) {
-	cdc.RegisterConcrete(MsgList{}, "fbchain/dex/MsgList", nil)
-	cdc.RegisterConcrete(MsgDeposit{}, "fbchain/dex/MsgDeposit", nil)
-	cdc.RegisterConcrete(MsgWithdraw{}, "fbchain/dex/MsgWithdraw", nil)
-	cdc.RegisterConcrete(MsgTransferOwnership{}, "fbchain/dex/MsgTransferTradingPairOwnership", nil)
-	cdc.RegisterConcrete(MsgConfirmOwnership{}, "fbchain/dex/MsgConfirmOwnership", nil)
-	cdc.RegisterConcrete(DelistProposal{}, "fbchain/dex/DelistProposal", nil)
-	cdc.RegisterConcrete(MsgCreateOperator{}, "fbchain/dex/CreateOperator", nil)
-	cdc.RegisterConcrete(MsgUpdateOperator{}, "fbchain/dex/UpdateOperator", nil)
+	cdc.RegisterConcrete(MsgList{}, "fbexchain/dex/MsgList", nil)
+	cdc.RegisterConcrete(MsgDeposit{}, "fbexchain/dex/MsgDeposit", nil)
+	cdc.RegisterConcrete(MsgWithdraw{}, "fbexchain/dex/MsgWithdraw", nil)
+	cdc.RegisterConcrete(MsgTransferOwnership{}, "fbexchain/dex/MsgTransferTradingPairOwnership", nil)
+	cdc.RegisterConcrete(MsgConfirmOwnership{}, "fbexchain/dex/MsgConfirmOwnership", nil)
+	cdc.RegisterConcrete(DelistProposal{}, "fbexchain/dex/DelistProposal", nil)
+	cdc.RegisterConcrete(MsgCreateOperator{}, "fbexchain/dex/CreateOperator", nil)
+	cdc.RegisterConcrete(MsgUpdateOperator{}, "fbexchain/dex/UpdateOperator", nil)
 }
 
 // ModuleCdc represents generic sealed codec to be used throughout this module

@@ -13,8 +13,8 @@ const (
 	ChainConfigName   = "ethermint/ChainConfig"
 	TxDataName        = "ethermint/TxData"
 
-	ManageContractDeploymentWhitelistProposalName = "fbchain/evm/ManageContractDeploymentWhitelistProposal"
-	ManageContractBlockedListProposalName         = "fbchain/evm/ManageContractBlockedListProposal"
+	ManageContractDeploymentWhitelistProposalName = "fbexchain/evm/ManageContractDeploymentWhitelistProposal"
+	ManageContractBlockedListProposalName         = "fbexchain/evm/ManageContractBlockedListProposal"
 )
 
 // RegisterCodec registers all the necessary types and interfaces for the
@@ -25,7 +25,7 @@ func RegisterCodec(cdc *codec.Codec) {
 	cdc.RegisterConcrete(ChainConfig{}, ChainConfigName, nil)
 	cdc.RegisterConcrete(ManageContractDeploymentWhitelistProposal{}, ManageContractDeploymentWhitelistProposalName, nil)
 	cdc.RegisterConcrete(ManageContractBlockedListProposal{}, ManageContractBlockedListProposalName, nil)
-	cdc.RegisterConcrete(ManageContractMethodBlockedListProposal{}, "fbchain/evm/ManageContractMethodBlockedListProposal", nil)
+	cdc.RegisterConcrete(ManageContractMethodBlockedListProposal{}, "fbexchain/evm/ManageContractMethodBlockedListProposal", nil)
 
 	cdc.RegisterConcreteUnmarshaller(ChainConfigName, func(c *amino.Codec, bytes []byte) (interface{}, int, error) {
 		var cc ChainConfig

@@ -19,7 +19,7 @@ var _ govtypes.Content = CommunityPoolSpendProposal{}
 
 func init() {
 	govtypes.RegisterProposalType(ProposalTypeCommunityPoolSpend)
-	govtypes.RegisterProposalTypeCodec(CommunityPoolSpendProposal{}, "fbchain/distribution/CommunityPoolSpendProposal")
+	govtypes.RegisterProposalTypeCodec(CommunityPoolSpendProposal{}, "fbexchain/distribution/CommunityPoolSpendProposal")
 }
 
 // CommunityPoolSpendProposal spends from the community pool

@@ -6,17 +6,17 @@ import (
 
 // RegisterCodec registers concrete types on the Amino codec
 func RegisterCodec(cdc *codec.Codec) {
-	cdc.RegisterConcrete(MsgTokenIssue{}, "fbchain/token/MsgIssue", nil)
-	cdc.RegisterConcrete(MsgTokenBurn{}, "fbchain/token/MsgBurn", nil)
-	cdc.RegisterConcrete(MsgTokenMint{}, "fbchain/token/MsgMint", nil)
-	cdc.RegisterConcrete(MsgMultiSend{}, "fbchain/token/MsgMultiTransfer", nil)
-	cdc.RegisterConcrete(MsgSend{}, "fbchain/token/MsgTransfer", nil)
-	cdc.RegisterConcrete(MsgTransferOwnership{}, "fbchain/token/MsgTransferOwnership", nil)
-	cdc.RegisterConcrete(MsgConfirmOwnership{}, "fbchain/token/MsgConfirmOwnership", nil)
-	cdc.RegisterConcrete(MsgTokenModify{}, "fbchain/token/MsgModify", nil)
+	cdc.RegisterConcrete(MsgTokenIssue{}, "fbexchain/token/MsgIssue", nil)
+	cdc.RegisterConcrete(MsgTokenBurn{}, "fbexchain/token/MsgBurn", nil)
+	cdc.RegisterConcrete(MsgTokenMint{}, "fbexchain/token/MsgMint", nil)
+	cdc.RegisterConcrete(MsgMultiSend{}, "fbexchain/token/MsgMultiTransfer", nil)
+	cdc.RegisterConcrete(MsgSend{}, "fbexchain/token/MsgTransfer", nil)
+	cdc.RegisterConcrete(MsgTransferOwnership{}, "fbexchain/token/MsgTransferOwnership", nil)
+	cdc.RegisterConcrete(MsgConfirmOwnership{}, "fbexchain/token/MsgConfirmOwnership", nil)
+	cdc.RegisterConcrete(MsgTokenModify{}, "fbexchain/token/MsgModify", nil)
 
 	// for test
-	//cdc.RegisterConcrete(MsgTokenDestroy{}, "fbchain/token/MsgDestroy", nil)
+	//cdc.RegisterConcrete(MsgTokenDestroy{}, "fbexchain/token/MsgDestroy", nil)
 }
 
 // generic sealed codec to be used throughout this module

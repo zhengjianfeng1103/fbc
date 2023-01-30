@@ -16,7 +16,7 @@ const FlagApollo = "config.apollo"
 type ApolloClient struct {
 	Namespace string
 	*agollo.Client
-	fecConf *FecConfig
+	oecConf *FecConfig
 }
 
 func NewApolloClient(fecConf *FecConfig) *ApolloClient {
@@ -65,7 +65,7 @@ func (a *ApolloClient) LoadConfig() (loaded bool) {
 }
 
 type CustomChangeListener struct {
-	oecConf *FecConfig
+	fecConf *FecConfig
 }
 
 func (c *CustomChangeListener) OnChange(changeEvent *storage.ChangeEvent) {

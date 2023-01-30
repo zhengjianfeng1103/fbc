@@ -17,7 +17,7 @@ type TreasuresTestSuite struct {
 	suite.Suite
 
 	ctx     sdk.Context
-	app     *app.FibonacciApp
+	app     *app.FBchainApp
 	stateDB *evm_types.CommitStateDB
 	codec   *codec.Codec
 

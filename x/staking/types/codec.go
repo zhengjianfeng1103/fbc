@@ -8,6 +8,7 @@ import (
 func RegisterCodec(cdc *codec.Codec) {
 	cdc.RegisterConcrete(MsgCreateValidator{}, "fbexchain/staking/MsgCreateValidator", nil)
 	cdc.RegisterConcrete(MsgEditValidator{}, "fbexchain/staking/MsgEditValidator", nil)
+	cdc.RegisterConcrete(MsgEditValidatorCommissionRate{}, "fbexchain/staking/MsgEditValidatorCommissionRate", nil)
 	cdc.RegisterConcrete(MsgDestroyValidator{}, "fbexchain/staking/MsgDestroyValidator", nil)
 	cdc.RegisterConcrete(MsgDeposit{}, "fbexchain/staking/MsgDeposit", nil)
 	cdc.RegisterConcrete(MsgWithdraw{}, "fbexchain/staking/MsgWithdraw", nil)

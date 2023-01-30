@@ -3,18 +3,18 @@ package staking
 import (
 	"time"
 
-	tmstrings "github.com/FiboChain/fbc/libs/tendermint/libs/strings"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	tmstrings "github.com/okex/exchain/libs/tendermint/libs/strings"
+	tmtypes "github.com/okex/exchain/libs/tendermint/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	"github.com/okex/exchain/libs/cosmos-sdk/x/staking/keeper"
+	"github.com/okex/exchain/libs/cosmos-sdk/x/staking/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {
 	return func(ctx sdk.Context, msg sdk.Msg) (*sdk.Result, error) {
-		ctx = ctx.WithEventManager(sdk.NewEventManager())
+		ctx.SetEventManager(sdk.NewEventManager())
 
 		switch msg := msg.(type) {
 		case types.MsgCreateValidator:

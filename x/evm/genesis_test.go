@@ -289,7 +289,7 @@ func (suite *EvmTestSuite) TestInit() {
 			suite.SetupTest() // reset values
 
 			db := dbm.NewMemDB()
-			chain := app.NewFBchainApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, 0)
+			chain := app.NewFBChainApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, 0)
 			genesisState := app.NewDefaultGenesisState()
 
 			tc.malleate(&genesisState)
@@ -447,6 +447,7 @@ func (suite *EvmTestSuite) TestExport_db() {
 	viper.SetEnvPrefix("FIBOCHAIN")
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_", "-", "_"))
 	viper.AutomaticEnv()
+	viper.Set(sdk.FlagDBBackend, string(dbm.GoLevelDBBackend))
 
 	privkey, err := ethsecp256k1.GenerateKey()
 	suite.Require().NoError(err)
@@ -485,7 +486,7 @@ func (suite *EvmTestSuite) TestExport_db() {
 	evm.InitGenesis(suite.ctx, *suite.app.EvmKeeper, &suite.app.AccountKeeper, initGenesis)
 
 	tmpPath := "./test_tmp_db"
-	os.Setenv("FIBOCHAIN_EVM_EXPORT_MODE", "db")
+	os.Setenv("FIBOCHAIN_EVM_IMPORT_MODE", "db")
 	os.Setenv("FIBOCHAIN_EVM_EXPORT_PATH", tmpPath)
 
 	defer func() {
@@ -521,6 +522,7 @@ func testImport_db(suite *EvmTestSuite,
 
 	suite.app.AccountKeeper.SetAccount(suite.ctx, ethAccount)
 
+	viper.Set(sdk.FlagDBBackend, string(dbm.GoLevelDBBackend))
 	os.Setenv("FIBOCHAIN_EVM_IMPORT_MODE", "db")
 	os.Setenv("FIBOCHAIN_EVM_IMPORT_PATH", dbPath)
 
@@ -582,8 +584,8 @@ func (suite *EvmTestSuite) TestExport_files() {
 	evm.InitGenesis(suite.ctx, *suite.app.EvmKeeper, &suite.app.AccountKeeper, initGenesis)
 
 	tmpPath := "./test_tmp_db"
-	os.Setenv("FIBOCHAIN_EVM_EXPORT_MODE", "files")
-	os.Setenv("FIBOCHAIN_EVM_EXPORT_PATH", tmpPath)
+	os.Setenv("FIBOCHAIN_EVM_IMPORT_MODE", "files")
+	os.Setenv("FIBOCHAIN_EVM_EXPORT_MODE", tmpPath)
 
 	defer func() {
 		os.Setenv("FIBOCHAIN_EVM_IMPORT_MODE", "default")

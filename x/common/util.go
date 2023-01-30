@@ -108,11 +108,10 @@ func HasSufficientCoins(addr sdk.AccAddress, availableCoins, amt sdk.Coins) (err
 }
 
 // SkipSysTestChecker is supported to used in System Unit Test
-// (described in http://gitlab.okcoin-inc.com/dex/fbexchain/issues/472)
+// (described in http://gitlab.okcoin-inc.com/dex/okexchain/issues/472)
 // if System environment variables "SYS_TEST_ALL" is set to 1, all of the system test will be enable. \n
 // if System environment variables "ORM_MYSQL_SYS_TEST" is set to 1,
-//
-//	all of the system test in orm_mysql_sys_test.go will be enble.
+// 				all of the system test in orm_mysql_sys_test.go will be enble.
 func SkipSysTestChecker(t *testing.T) {
 	_, fname, _, ok := runtime.Caller(0)
 	enable := ok
@@ -327,4 +326,12 @@ func ValidateUint16Positive(param string) subspace.ValueValidatorFn {
 
 		return nil
 	}
+}
+
+// CheckSignerAddress delegators must be the same as to the signers and amount only one
+func CheckSignerAddress(signers, delegators []sdk.AccAddress) bool {
+	if len(signers) == 1 && len(delegators) == 1 {
+		return signers[0].Equals(delegators[0])
+	}
+	return false
 }

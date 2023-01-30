@@ -3,21 +3,22 @@ package cli
 import (
 	"bufio"
 	"fmt"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	utils2 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/client/utils"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
-	"github.com/FiboChain/fbc/x/gov"
+	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
+	"github.com/okex/exchain/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
+	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	"github.com/okex/exchain/libs/cosmos-sdk/version"
+	"github.com/okex/exchain/libs/cosmos-sdk/x/auth"
+	"github.com/okex/exchain/libs/cosmos-sdk/x/auth/client/utils"
+	utils2 "github.com/okex/exchain/libs/cosmos-sdk/x/mint/client/utils"
+	"github.com/okex/exchain/libs/cosmos-sdk/x/mint/internal/types"
+	"github.com/okex/exchain/x/gov"
 	"github.com/spf13/cobra"
 	"strings"
 )
 
 // GetCmdManageTreasuresProposal implements a command handler for submitting a manage treasures proposal transaction
-func GetCmdManageTreasuresProposal(cdc *codec.Codec) *cobra.Command {
+func GetCmdManageTreasuresProposal(cdcP *codec.CodecProxy, reg interfacetypes.InterfaceRegistry) *cobra.Command {
 	return &cobra.Command{
 		Use:   "treasures [proposal-file]",
 		Args:  cobra.ExactArgs(1),
@@ -57,6 +58,7 @@ Where proposal.json contains:
 `, version.ClientName, sdk.DefaultBondDenom,
 			)),
 		RunE: func(cmd *cobra.Command, args []string) error {
+			cdc := cdcP.GetCdc()
 			inBuf := bufio.NewReader(cmd.InOrStdin())
 			txBldr := auth.NewTxBuilderFromCLI(inBuf).WithTxEncoder(utils.GetTxEncoder(cdc))
 			cliCtx := context.NewCLIContext().WithCodec(cdc)

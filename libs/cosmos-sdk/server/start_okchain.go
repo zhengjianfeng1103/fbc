@@ -9,22 +9,25 @@ import (
 	"reflect"
 	"strconv"
 
-	cmn "github.com/FiboChain/fbc/libs/tendermint/libs/os"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/flatkv"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/iavl"
-	"github.com/FiboChain/fbc/libs/system"
-	"github.com/FiboChain/fbc/libs/tendermint/state"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
-
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt"
+	mpttypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt/types"
+	sdkstoretypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
 	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
 	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	tmiavl "github.com/FiboChain/fbc/libs/iavl"
+	"github.com/FiboChain/fbc/libs/system"
 	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	cmn "github.com/FiboChain/fbc/libs/tendermint/libs/os"
+	"github.com/FiboChain/fbc/libs/tendermint/state"
 	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 )
 
 // exchain full-node start flags
@@ -36,9 +39,12 @@ const (
 	FlagCORS               = "cors"
 	FlagMaxOpenConnections = "max-open"
 	FlagHookstartInProcess = "startInProcess"
-	FlagWebsocket          = "wsport"
 	FlagWsMaxConnections   = "ws.max_connections"
 	FlagWsSubChannelLength = "ws.sub_channel_length"
+)
+
+var (
+	ChainID = "fbc-1230"
 )
 
 //module hook
@@ -55,7 +61,7 @@ func InstallHookEx(flag string, hooker fnHookstartInProcess) {
 	gSrvHookTable.hookTable[flag] = hooker
 }
 
-//call hooker function
+// call hooker function
 func callHooker(flag string, args ...interface{}) error {
 	params := make([]interface{}, 0)
 	switch flag {
@@ -113,7 +119,7 @@ func StopCmd(ctx *Context) *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			f, err := os.Open(filepath.Join(ctx.Config.RootDir, "config", "pid"))
 			if err != nil {
-				errStr := fmt.Sprintf("%s Please finish the process of fbchaind through kill -2 pid to stop gracefully", err.Error())
+				errStr := fmt.Sprintf("%s Please finish the process of exchaind through kill -2 pid to stop gracefully", err.Error())
 				cmn.Exit(errStr)
 			}
 			defer f.Close()
@@ -121,7 +127,7 @@ func StopCmd(ctx *Context) *cobra.Command {
 			in.Scan()
 			pid, err := strconv.Atoi(in.Text())
 			if err != nil {
-				errStr := fmt.Sprintf("%s Please finish the process of fbchaind through kill -2 pid to stop gracefully", err.Error())
+				errStr := fmt.Sprintf("%s Please finish the process of exchaind through kill -2 pid to stop gracefully", err.Error())
 				cmn.Exit(errStr)
 			}
 			process, err := os.FindProcess(pid)
@@ -165,7 +171,7 @@ func RegisterServerFlags(cmd *cobra.Command) *cobra.Command {
 	cmd.Flags().Bool(FlagInterBlockCache, true, "Enable inter-block caching")
 	cmd.Flags().String(flagCPUProfile, "", "Enable CPU profiling and write to the provided file")
 
-	cmd.Flags().String(FlagPruning, storetypes.PruningOptionDefault, "Pruning strategy (default|nothing|everything|custom)")
+	cmd.Flags().String(FlagPruning, storetypes.PruningOptionEverything, "Pruning strategy (default|nothing|everything|custom)")
 	cmd.Flags().Uint64(FlagPruningKeepRecent, 0, "Number of recent heights to keep on disk (ignored if pruning is not 'custom')")
 	cmd.Flags().Uint64(FlagPruningKeepEvery, 0, "Offset heights to keep on disk after 'keep-every' (ignored if pruning is not 'custom')")
 	cmd.Flags().Uint64(FlagPruningInterval, 0, "Height interval at which pruned heights are removed from disk (ignored if pruning is not 'custom')")
@@ -188,31 +194,45 @@ func RegisterServerFlags(cmd *cobra.Command) *cobra.Command {
 	cmd.Flags().Int(tmtypes.FlagBufferSize, 10, "delta buffer size")
 	cmd.Flags().String(FlagLogServerUrl, "", "log server url")
 	cmd.Flags().Int(tmtypes.FlagDeltaVersion, tmtypes.DeltaVersion, "Specify delta version")
+	cmd.Flags().Int(tmtypes.FlagBlockCompressType, 0, "block compress type. 0|1|2|3")
+	cmd.Flags().Int(tmtypes.FlagBlockCompressFlag, 0, "block compress flag. 0|1|2")
+	cmd.Flags().Int(tmtypes.FlagBlockCompressThreshold, 1024000, "Compress only if block size exceeds the threshold.")
+	cmd.Flags().Bool(FlagActiveViewChange, false, "Enable active view change")
 
-	cmd.Flags().Int(iavl.FlagIavlCacheSize, 1000000, "Max size of iavl cache")
-	cmd.Flags().Float64(tmiavl.FlagIavlCacheInitRatio, 0, "iavl cache init ratio, 0.0~1.0, default is 0, iavl cache map would be init with (cache size * init ratio)")
+	cmd.Flags().Int(iavl.FlagIavlCacheSize, 10000000, "Max size of iavl cache")
+	cmd.Flags().Float64(tmiavl.FlagIavlCacheInitRatio, 1, "iavl cache init ratio, 0.0~1.0, default is 0, iavl cache map would be init with (cache size * init ratio)")
+	cmd.Flags().Bool(tmiavl.FlagIavlCommitAsyncNoBatch, false, "experimental: iavl commit async without batch")
 	cmd.Flags().StringToInt(tmiavl.FlagOutputModules, map[string]int{"evm": 1, "acc": 1}, "decide which module in iavl to be printed")
 	cmd.Flags().Int64(tmiavl.FlagIavlCommitIntervalHeight, 100, "Max interval to commit node cache into leveldb")
-	cmd.Flags().Int64(tmiavl.FlagIavlMinCommitItemCount, 500000, "Min nodes num to triggle node cache commit") //触发节点缓存提交的最小节点数
-	cmd.Flags().Int(tmiavl.FlagIavlHeightOrphansCacheSize, 8, "Max orphan version to cache in memory")         //缓存在内存中的最大孤儿版本
-	cmd.Flags().Int(tmiavl.FlagIavlMaxCommittedHeightNum, 30, "Max committed version to cache in memory")      //缓存在内存中的最大提交版本
-	cmd.Flags().Bool(tmiavl.FlagIavlEnableAsyncCommit, false, "Enable async commit")
-	cmd.Flags().Bool(abci.FlagDisableABCIQueryMutex, false, "Disable local client query mutex for better concurrency")
+	cmd.Flags().Int64(tmiavl.FlagIavlMinCommitItemCount, 1000000, "Min nodes num to triggle node cache commit")
+	cmd.Flags().Int(tmiavl.FlagIavlHeightOrphansCacheSize, 8, "Max orphan version to cache in memory")
+	cmd.Flags().Int(tmiavl.FlagIavlMaxCommittedHeightNum, 30, "Max committed version to cache in memory")
+	cmd.Flags().Bool(tmiavl.FlagIavlEnableAsyncCommit, true, "Enable async commit")
+	cmd.Flags().Bool(tmiavl.FlagIavlDiscardFastStorage, false, "Discard fast storage")
+	cmd.Flags().MarkHidden(tmiavl.FlagIavlDiscardFastStorage)
+	cmd.Flags().Bool(tmiavl.FlagIavlEnableFastStorage, false, "Enable fast storage")
+	cmd.Flags().MarkHidden(tmiavl.FlagIavlEnableFastStorage)
+	cmd.Flags().Int(tmiavl.FlagIavlFastStorageCacheSize, tmiavl.DefaultIavlFastStorageCacheSize, "Max size of iavl fast storage cache")
+	cmd.Flags().Bool(abci.FlagDisableABCIQueryMutex, true, "Disable local client query mutex for better concurrency")
 	cmd.Flags().Bool(abci.FlagDisableCheckTx, false, "Disable checkTx for test")
+	cmd.Flags().Bool(sdkstoretypes.FlagLoadVersionAsync, false, "Enable async for each kvstore to load version")
 	cmd.Flags().MarkHidden(abci.FlagDisableCheckTx)
 	cmd.Flags().Bool(abci.FlagCloseMutex, false, fmt.Sprintf("Deprecated in v0.19.13 version, use --%s instead.", abci.FlagDisableABCIQueryMutex))
 	cmd.Flags().MarkHidden(abci.FlagCloseMutex)
 	cmd.Flags().Bool(FlagExportKeystore, false, "export keystore file when call newaccount ")
 	cmd.Flags().Bool(system.FlagEnableGid, false, "Display goroutine id in log")
-
+	cmd.Flags().Int(FlagBlockPartSizeBytes, 65536, "Size of one block part by byte")
 	cmd.Flags().Int(state.FlagApplyBlockPprofTime, -1, "time(ms) of executing ApplyBlock, if it is higher than this value, save pprof")
 
 	cmd.Flags().Float64Var(&baseapp.GasUsedFactor, baseapp.FlagGasUsedFactor, 0.4, "factor to calculate history gas used")
 
 	cmd.Flags().Bool(sdk.FlagMultiCache, false, "Enable multi cache")
+	cmd.Flags().MarkHidden(sdk.FlagMultiCache)
 	cmd.Flags().Int(sdk.MaxAccInMultiCache, 0, "max acc in multi cache")
 	cmd.Flags().Int(sdk.MaxStorageInMultiCache, 0, "max storage in multi cache")
 	cmd.Flags().Bool(flatkv.FlagEnable, false, "Enable flat kv storage for read performance")
+
+	cmd.Flags().Bool(FlagEventBlockTime, false, "Enable to publish event of latest block time")
 
 	// Don`t use cmd.Flags().*Var functions(such as cmd.Flags.IntVar) here, because it doesn't work with environment variables.
 	// Use setExternalPackageValue function instead.
@@ -228,20 +248,33 @@ func RegisterServerFlags(cmd *cobra.Command) *cobra.Command {
 	viper.BindPFlag(FlagEvmImportPath, cmd.Flags().Lookup(FlagEvmImportPath))
 	viper.BindPFlag(FlagGoroutineNum, cmd.Flags().Lookup(FlagGoroutineNum))
 
-	cmd.Flags().Bool(state.FlagParalleledTx, false, "Enable Parallel Tx")
+	cmd.Flags().Int(state.FlagDeliverTxsExecMode, 0, "Execution mode for deliver txs, (0:serial[default], 1:deprecated, 2:parallel)")
+	cmd.Flags().Bool(state.FlagEnableConcurrency, false, "Enable concurrency for deliver txs")
 
 	cmd.Flags().String(FlagListenAddr, "tcp://0.0.0.0:26659", "EVM RPC and cosmos-sdk REST API listen address.")
 	cmd.Flags().String(FlagUlockKey, "", "Select the keys to unlock on the RPC server")
-	cmd.Flags().String(FlagUlockKeyHome, os.ExpandEnv("$HOME/.fbchaincli"), "The keybase home path")
-	cmd.Flags().String(FlagRestPathPrefix, "fbchain", "Path prefix for registering rest api route.")
+	cmd.Flags().String(FlagUlockKeyHome, os.ExpandEnv("$HOME/.exchaincli"), "The keybase home path")
+	cmd.Flags().String(FlagRestPathPrefix, "exchain", "Path prefix for registering rest api route.")
 	cmd.Flags().String(flags.FlagKeyringBackend, flags.DefaultKeyringBackend, "Select keyring's backend (os|file|test)")
 	cmd.Flags().String(FlagCORS, "", "Set the rest-server domains that can make CORS requests (* for all)")
 	cmd.Flags().Int(FlagMaxOpenConnections, 1000, "The number of maximum open connections of rest-server")
-	cmd.Flags().String(FlagWebsocket, "8546", "websocket port to listen to")
 	cmd.Flags().Int(FlagWsMaxConnections, 20000, "the max capacity number of websocket client connections")
 	cmd.Flags().Int(FlagWsSubChannelLength, 100, "the length of subscription channel")
-	cmd.Flags().String(flags.FlagChainID, "", "Chain ID of tendermint node for web3")
+	cmd.Flags().String(flags.FlagChainID, ChainID, "Chain ID of tendermint node for web3")
 	cmd.Flags().StringP(flags.FlagBroadcastMode, "b", flags.BroadcastSync, "Transaction broadcasting mode (sync|async|block) for web3")
+
+	cmd.Flags().UintVar(&mpttypes.TrieRocksdbBatchSize, mpttypes.FlagTrieRocksdbBatchSize, 10, "Concurrent rocksdb batch size for mpt")
+	cmd.Flags().BoolVar(&mpt.TrieWriteAhead, mpt.FlagTrieWriteAhead, false, "Enable double write data (acc & evm) to the MPT tree when using the IAVL tree")
+	cmd.Flags().BoolVar(&mpt.TrieDirtyDisabled, mpt.FlagTrieDirtyDisabled, false, "Disable cache dirty trie nodes")
+	cmd.Flags().UintVar(&mpt.TrieCacheSize, mpt.FlagTrieCacheSize, 2048, "Size (MB) to cache trie nodes")
+	cmd.Flags().UintVar(&mpt.TrieNodesLimit, mpt.FlagTrieNodesLimit, 256, "Max node size (MB) cached in triedb")
+	cmd.Flags().UintVar(&mpt.TrieImgsLimit, mpt.FlagTrieImgsLimit, 4, "Max img size (MB) cached in triedb")
+	cmd.Flags().UintVar(&mpt.TrieAccStoreCache, mpt.FlagTrieAccStoreCache, 32, "Size (MB) to cache account")
+	cmd.Flags().BoolVar(&evmtypes.TrieUseCompositeKey, evmtypes.FlagTrieUseCompositeKey, false, "Use composite key to store contract state in mpt")
+	cmd.Flags().Int64(FlagCommitGapHeight, 100, "Block interval to commit cached data into db, affects iavl & mpt")
+
+	cmd.Flags().Int64(FlagFastSyncGap, 20, "Block height interval to switch fast-sync mode")
+
 	return cmd
 }
 
@@ -249,8 +282,10 @@ func nodeModeCmd(ctx *Context) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "node-mode",
 		Short: "fbchaind start --node-mode help info",
-		Long: `There are three node modes that can be set when the fbchaind start
+		Long: `There are three node modes that can be set when the exchaind start
 set --node-mode=rpc to manage the following flags:
+	--disable-checktx-mutex=true
+	--disable-query-mutex=true
 	--enable-bloom-filter=true
 	--fast-lru=10000
 	--fast-query=true
@@ -260,14 +295,16 @@ set --node-mode=rpc to manage the following flags:
 	--cors=*
 
 set --node-mode=validator to manage the following flags:
+	--disable-checktx-mutex=true
 	--disable-query-mutex=true
-	--enable-dynamic-gp=false
+	--dynamic-gp-mode=2
 	--iavl-enable-async-commit=true
 	--iavl-cache-size=10000000
 	--pruning=everything
 
 set --node-mode=archive to manage the following flags:
 	--pruning=nothing
+	--disable-checktx-mutex=true
 	--disable-query-mutex=true
 	--enable-bloom-filter=true
 	--iavl-enable-async-commit=true

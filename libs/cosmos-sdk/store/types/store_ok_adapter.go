@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
 	ics23 "github.com/confio/ics23/go"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/tendermint/crypto/merkle"
 )
 
 const (

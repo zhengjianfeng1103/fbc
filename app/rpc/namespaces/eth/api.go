@@ -266,7 +266,7 @@ func (api *PublicEthereumAPI) GasPrice() *hexutil.Big {
 		}
 
 		if appconfig.GetFecConfig().GetDynamicGpCoefficient() > 0 {
-			coefficient := big.NewInt(int64(appconfig.GetOecConfig().GetDynamicGpCoefficient()))
+			coefficient := big.NewInt(int64(appconfig.GetFecConfig().GetDynamicGpCoefficient()))
 			recommendGP = new(big.Int).Mul(price, coefficient)
 		} else {
 			recommendGP = price
@@ -292,7 +292,7 @@ func (api *PublicEthereumAPI) GasPriceIn3Gears() *rpctypes.GPIn3Gears {
 		}
 
 		if appconfig.GetFecConfig().GetDynamicGpCoefficient() > 0 {
-			coefficient := big.NewInt(int64(appconfig.GetOecConfig().GetDynamicGpCoefficient()))
+			coefficient := big.NewInt(int64(appconfig.GetFecConfig().GetDynamicGpCoefficient()))
 			avgGP = new(big.Int).Mul(price, coefficient)
 		} else {
 			avgGP = price
@@ -1093,7 +1093,7 @@ func (api *PublicEthereumAPI) EstimateGas(args rpctypes.CallArgs) (hexutil.Uint6
 		return hexutil.Uint64(estimatedGas), nil
 	}
 
-	gasBuffer := estimatedGas / 100 * config.GetOecConfig().GetGasLimitBuffer()
+	gasBuffer := estimatedGas / 100 * config.GetFecConfig().GetGasLimitBuffer()
 	//EvmHookGasEstimate: evm tx with cosmos hook,we cannot estimate hook gas
 	//simple add EvmHookGasEstimate,run tx will refund the extra gas
 	gas := estimatedGas + gasBuffer + EvmHookGasEstimate

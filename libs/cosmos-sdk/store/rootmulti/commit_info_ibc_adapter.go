@@ -2,11 +2,12 @@ package rootmulti
 
 import (
 	"fmt"
+
+	sdkmaps "github.com/FiboChain/fbc/libs/cosmos-sdk/store/internal/maps"
+	sdkproofs "github.com/FiboChain/fbc/libs/cosmos-sdk/store/internal/proofs"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
 	ics23 "github.com/confio/ics23/go"
-	sdkmaps "github.com/okex/exchain/libs/cosmos-sdk/store/internal/maps"
-	sdkproofs "github.com/okex/exchain/libs/cosmos-sdk/store/internal/proofs"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	"github.com/okex/exchain/libs/tendermint/crypto/merkle"
 )
 
 func (ci commitInfo) ProofOp(storeName string) merkle.ProofOp {

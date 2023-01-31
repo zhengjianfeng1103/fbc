@@ -4,17 +4,17 @@ import (
 	"math/big"
 	"testing"
 
-	appante "github.com/okex/exchain/app/ante"
-	"github.com/okex/exchain/libs/cosmos-sdk/simapp/helpers"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	ibcmsg "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	ibctesting "github.com/okex/exchain/libs/ibc-go/testing"
-	"github.com/okex/exchain/libs/ibc-go/testing/mock"
-	helpers2 "github.com/okex/exchain/libs/ibc-go/testing/simapp/helpers"
-	evmtypes "github.com/okex/exchain/x/evm/types"
-	"github.com/okex/exchain/x/order"
+	appante "github.com/FiboChain/fbc/app/ante"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/helpers"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	ibcmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
+	helpers2 "github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/helpers"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	"github.com/FiboChain/fbc/x/order"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -413,7 +413,7 @@ func (suite *AnteTestSuite) TestAnteDecorator() {
 		{
 			"no success if msgs contain update clients and redundant packet messages",
 			func(suite *AnteTestSuite) []ibcmsg.Msg {
-				msgs := []ibcmsg.Msg{&clienttypes.MsgUpdateClient{Signer: "ex1mnd48anr8jwjjzt347tpdzwfddem08r4d66j3z"}, &clienttypes.MsgUpdateClient{Signer: "ex1mnd48anr8jwjjzt347tpdzwfddem08r4d66j3z"}, &clienttypes.MsgUpdateClient{Signer: "ex1mnd48anr8jwjjzt347tpdzwfddem08r4d66j3z"}}
+				msgs := []ibcmsg.Msg{&clienttypes.MsgUpdateClient{Signer: "fb1gjfgxzpe2k908udw9kw8zfpdc66edcqh5alez2"}, &clienttypes.MsgUpdateClient{Signer: "fb1gjfgxzpe2k908udw9kw8zfpdc66edcqh5alez2"}, &clienttypes.MsgUpdateClient{Signer: "fb1gjfgxzpe2k908udw9kw8zfpdc66edcqh5alez2"}}
 
 				for i := 1; i <= 3; i++ {
 					packet := channeltypes.NewPacket([]byte(mock.MockPacketData), uint64(i),

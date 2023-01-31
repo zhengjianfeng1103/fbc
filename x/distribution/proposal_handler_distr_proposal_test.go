@@ -3,11 +3,11 @@ package distribution
 import (
 	"testing"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	"github.com/okex/exchain/x/distribution/keeper"
-	"github.com/okex/exchain/x/distribution/types"
-	govtypes "github.com/okex/exchain/x/gov/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/FiboChain/fbc/x/distribution/keeper"
+	"github.com/FiboChain/fbc/x/distribution/types"
+	govtypes "github.com/FiboChain/fbc/x/gov/types"
 	"github.com/stretchr/testify/require"
 )
 

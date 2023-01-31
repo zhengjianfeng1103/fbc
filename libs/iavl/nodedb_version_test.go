@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/FiboChain/fbc/libs/iavl/mock"
 	"github.com/golang/mock/gomock"
-	"github.com/okex/exchain/libs/iavl/mock"
 	"github.com/stretchr/testify/require"
 )
 

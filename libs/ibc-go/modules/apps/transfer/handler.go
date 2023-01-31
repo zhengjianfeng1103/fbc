@@ -3,12 +3,12 @@ package transfer
 import (
 	"fmt"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/keeper"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/keeper"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
 )
 
 // NewHandler returns sdk.Handler for IBC token transfer module messages

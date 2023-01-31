@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 )
 
 var (

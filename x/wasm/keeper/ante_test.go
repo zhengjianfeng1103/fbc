@@ -4,20 +4,20 @@ import (
 	"testing"
 	"time"
 
-	types2 "github.com/okex/exchain/libs/tendermint/types"
+	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
 
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 
-	"github.com/okex/exchain/x/wasm/keeper"
+	"github.com/FiboChain/fbc/x/wasm/keeper"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/store"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	dbm "github.com/okex/exchain/libs/tm-db"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/x/wasm/types"
+	"github.com/FiboChain/fbc/x/wasm/types"
 )
 
 func TestCountTxDecorator(t *testing.T) {

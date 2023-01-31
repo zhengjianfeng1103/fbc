@@ -1,9 +1,9 @@
 package client
 
 import (
-	"github.com/okex/exchain/x/erc20/client/cli"
-	"github.com/okex/exchain/x/erc20/client/rest"
-	govcli "github.com/okex/exchain/x/gov/client"
+	"github.com/FiboChain/fbc/x/erc20/client/cli"
+	"github.com/FiboChain/fbc/x/erc20/client/rest"
+	govcli "github.com/FiboChain/fbc/x/gov/client"
 )
 
 var (

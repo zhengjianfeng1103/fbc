@@ -1,16 +1,16 @@
 package ibc_tx
 
 import (
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	ibcmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	sigtx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibcsigning"
 	"github.com/gogo/protobuf/proto"
-	"github.com/okex/exchain/libs/cosmos-sdk/client"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	ibcmsg "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/tx"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/tx/signing"
-	sigtx "github.com/okex/exchain/libs/cosmos-sdk/x/auth/ibcsigning"
 )
 
 // wrapper is a wrapper around the tx.Tx proto.Message which retain the raw

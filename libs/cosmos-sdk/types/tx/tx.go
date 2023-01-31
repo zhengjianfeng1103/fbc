@@ -3,12 +3,12 @@ package tx
 import (
 	"errors"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	anytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	types "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
 	"github.com/golang/protobuf/ptypes/wrappers"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	anytypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdktypes "github.com/okex/exchain/libs/cosmos-sdk/types"
-	types "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
 )
 
 var (

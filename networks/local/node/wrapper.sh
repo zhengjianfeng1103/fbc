@@ -4,16 +4,16 @@
 ## Input parameters
 ##
 ID=${ID:-0}
-LOG=${LOG:-exchaind.log}
+LOG=${LOG:-fbchaind.log}
 
 ##
 ## Run binary with all parameters
 ##
-export EXCHAINDHOME="/exchaind/node${ID}/exchaind"
+export FBCHAINHOME="/fbchaind/node${ID}/fbchaind"
 
-if [ -d "$(dirname "${EXCHAINDHOME}"/"${LOG}")" ]; then
-  exchaind --chain-id exchain-1 --home "${EXCHAINDHOME}" "$@" | tee "${EXCHAINDHOME}/${LOG}"
+if [ -d "$(dirname "${FBCHAINHOME}"/"${LOG}")" ]; then
+  fbchaind --chain-id fbc-1 --home "${FBCHAINHOME}" "$@" | tee "${FBCHAINHOME}/${LOG}"
 else
-  exchaind --chain-id exchain-1 --home "${EXCHAINDHOME}" "$@"
+  fbchaind --chain-id fbc-1 --home "${FBCHAINHOME}" "$@"
 fi
 

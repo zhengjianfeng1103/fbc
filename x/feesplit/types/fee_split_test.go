@@ -3,10 +3,10 @@ package types
 import (
 	"testing"
 
+	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mock"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/okex/exchain/app/crypto/ethsecp256k1"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/mock"
 	"github.com/stretchr/testify/suite"
 )
 

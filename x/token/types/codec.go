@@ -16,7 +16,7 @@ func RegisterCodec(cdc *codec.Codec) {
 	cdc.RegisterConcrete(MsgTokenModify{}, "fbexchain/token/MsgModify", nil)
 
 	// for test
-	//cdc.RegisterConcrete(MsgTokenDestroy{}, "okexchain/token/MsgDestroy", nil)
+	//cdc.RegisterConcrete(MsgTokenDestroy{}, "fbexchain/token/MsgDestroy", nil)
 }
 
 // generic sealed codec to be used throughout this module

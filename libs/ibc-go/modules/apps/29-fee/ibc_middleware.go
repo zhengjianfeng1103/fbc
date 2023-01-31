@@ -3,15 +3,15 @@ package fee
 import (
 	"strings"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	porttypes "github.com/okex/exchain/libs/ibc-go/modules/core/05-port/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	porttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
 
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/29-fee/keeper"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/29-fee/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/keeper"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 )
 
 var _ porttypes.Middleware = &IBCMiddleware{}

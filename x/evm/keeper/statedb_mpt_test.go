@@ -2,14 +2,14 @@ package keeper_test
 
 import (
 	"fmt"
+
+	"github.com/FiboChain/fbc/x/evm/types"
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
-	"github.com/okex/exchain/x/evm/types"
 
-	ethermint "github.com/okex/exchain/app/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	ethermint "github.com/FiboChain/fbc/app/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
-
 
 func (suite *KeeperMptTestSuite) TestCommitStateDB_CommitMpt() {
 	testCase := []struct {

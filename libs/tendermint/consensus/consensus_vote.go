@@ -4,11 +4,12 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
-	cstypes "github.com/okex/exchain/libs/tendermint/consensus/types"
-	"github.com/okex/exchain/libs/tendermint/p2p"
-	"github.com/okex/exchain/libs/tendermint/types"
-	tmtime "github.com/okex/exchain/libs/tendermint/types/time"
 	"time"
+
+	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
+	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
+	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
 )
 
 // Attempt to add the vote. if its a duplicate signature, dupeout the validator

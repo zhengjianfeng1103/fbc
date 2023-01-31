@@ -1,10 +1,10 @@
 package watcher
 
 import (
+	prototypes "github.com/FiboChain/fbc/x/evm/watcher/proto"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	prototypes "github.com/okex/exchain/x/evm/watcher/proto"
 )
 
 func transactionToProto(tr *Transaction) *prototypes.Transaction {

@@ -1,13 +1,13 @@
 package types
 
 import (
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 )
 
 var (
@@ -22,6 +22,7 @@ var (
 
 // NewMsgConnectionOpenInit creates a new MsgConnectionOpenInit instance. It sets the
 // counterparty connection identifier to be empty.
+//
 //nolint:interfacer
 func NewMsgConnectionOpenInit(
 	clientID, counterpartyClientID string,
@@ -87,6 +88,7 @@ func (msg MsgConnectionOpenInit) GetSigners() []sdk.AccAddress {
 }
 
 // NewMsgConnectionOpenTry creates a new MsgConnectionOpenTry instance
+//
 //nolint:interfacer
 func NewMsgConnectionOpenTry(
 	previousConnectionID, clientID, counterpartyConnectionID,
@@ -200,6 +202,7 @@ func (msg MsgConnectionOpenTry) GetSigners() []sdk.AccAddress {
 }
 
 // NewMsgConnectionOpenAck creates a new MsgConnectionOpenAck instance
+//
 //nolint:interfacer
 func NewMsgConnectionOpenAck(
 	connectionID, counterpartyConnectionID string, counterpartyClient exported.ClientState,
@@ -297,6 +300,7 @@ func (msg MsgConnectionOpenAck) GetSigners() []sdk.AccAddress {
 }
 
 // NewMsgConnectionOpenConfirm creates a new MsgConnectionOpenConfirm instance
+//
 //nolint:interfacer
 func NewMsgConnectionOpenConfirm(
 	connectionID string, proofAck []byte, proofHeight clienttypes.Height,

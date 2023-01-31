@@ -3,13 +3,14 @@ package keeper
 import (
 	"bytes"
 	"fmt"
-	"github.com/okex/exchain/libs/tendermint/libs/kv"
 	"sort"
 
+	"github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/x/wasm/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/x/wasm/types"
 )
 
 // Messenger is an extension point for custom wasmd message handling

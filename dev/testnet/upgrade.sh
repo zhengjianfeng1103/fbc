@@ -392,7 +392,7 @@ if [ -z ${IP} ]; then
   IP="127.0.0.1"
 fi
 
-### send two params , the first is the old version of exchain, the second is the newer version.
+### send two params , the first is the old version of fbc, the second is the newer version.
 exc_version1=$1
 exc_version2=$2
 caseopt $exc_version1 $exc_version2

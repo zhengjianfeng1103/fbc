@@ -2,22 +2,24 @@ package baseapp_test
 
 import (
 	"context"
-	okexchaincodec "github.com/okex/exchain/app/codec"
-	"github.com/okex/exchain/libs/cosmos-sdk/simapp"
-	simapp2 "github.com/okex/exchain/libs/ibc-go/testing/simapp"
-	"github.com/okex/exchain/x/evm"
 	"os"
 	"testing"
 
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	dbm "github.com/okex/exchain/libs/tm-db"
+	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
+	simapp2 "github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	"github.com/FiboChain/fbc/x/evm"
+
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/baseapp"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	//"github.com/okex/exchain/libs/cosmos-sdk/simapp"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/x/evm/types/testdata"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+
+	//"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/x/evm/types/testdata"
 )
 
 func TestGRPCGatewayRouter(t *testing.T) {
@@ -58,7 +60,7 @@ func TestRegisterQueryServiceTwice(t *testing.T) {
 	// Setup baseapp.
 	db := dbm.NewMemDB()
 	encCfg := simapp2.MakeTestEncodingConfig()
-	codecProxy, _ := okexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
+	codecProxy, _ := fbexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
 	app := baseapp.NewBaseApp("test", log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, evm.TxDecoder(codecProxy))
 	app.SetInterfaceRegistry(encCfg.InterfaceRegistry)
 	testdata.RegisterInterfaces(encCfg.InterfaceRegistry)

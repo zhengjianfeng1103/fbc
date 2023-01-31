@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"net/url"
 
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/FiboChain/fbc/libs/tendermint/proto/crypto"
 	ics23 "github.com/confio/ics23/go"
 	"github.com/gogo/protobuf/proto"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
-	"github.com/okex/exchain/libs/tendermint/proto/crypto"
 )
 
 var _ exported.Root = (*MerkleRoot)(nil)

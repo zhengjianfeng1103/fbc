@@ -3,18 +3,19 @@ package keeper
 import (
 	"encoding/json"
 	"fmt"
-	ibcadapter "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/okex/exchain/x/wasm/keeper/testdata"
 	"io/ioutil"
 	"strconv"
 	"testing"
 
-	"github.com/okex/exchain/x/wasm/types"
+	ibcadapter "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/FiboChain/fbc/x/wasm/keeper/testdata"
+
+	"github.com/FiboChain/fbc/x/wasm/types"
 
 	"github.com/stretchr/testify/assert"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )
 

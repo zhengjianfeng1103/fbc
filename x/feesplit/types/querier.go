@@ -1,9 +1,9 @@
 package types
 
 import (
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	query "github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
 	_ "github.com/gogo/protobuf/gogoproto"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	query "github.com/okex/exchain/libs/cosmos-sdk/types/query"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 )
 

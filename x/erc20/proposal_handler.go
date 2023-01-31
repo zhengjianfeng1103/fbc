@@ -3,12 +3,12 @@ package erc20
 import (
 	ethcmm "github.com/ethereum/go-ethereum/common"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	"github.com/okex/exchain/x/common"
-	"github.com/okex/exchain/x/erc20/types"
-	govTypes "github.com/okex/exchain/x/gov/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/FiboChain/fbc/x/common"
+	"github.com/FiboChain/fbc/x/erc20/types"
+	govTypes "github.com/FiboChain/fbc/x/gov/types"
 )
 
 // NewProposalHandler handles "gov" type message in "erc20"

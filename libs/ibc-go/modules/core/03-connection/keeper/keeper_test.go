@@ -2,13 +2,14 @@ package keeper_test
 
 import (
 	"fmt"
-	types2 "github.com/okex/exchain/libs/tendermint/types"
 	"testing"
+
+	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
-	ibctesting "github.com/okex/exchain/libs/ibc-go/testing"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
 )
 
 type KeeperTestSuite struct {

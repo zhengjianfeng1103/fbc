@@ -9,71 +9,72 @@ import (
 	"strconv"
 	"testing"
 
-	ibccommon "github.com/okex/exchain/libs/ibc-go/modules/core/common"
+	ibccommon "github.com/FiboChain/fbc/libs/ibc-go/modules/core/common"
 
-	"github.com/okex/exchain/libs/tendermint/libs/cli"
-	"github.com/okex/exchain/libs/tm-db/common"
-	"github.com/okex/exchain/x/wasm"
-	wasmkeeper "github.com/okex/exchain/x/wasm/keeper"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
+	"github.com/FiboChain/fbc/libs/tm-db/common"
+	"github.com/FiboChain/fbc/x/wasm"
+	wasmkeeper "github.com/FiboChain/fbc/x/wasm/keeper"
 	"github.com/spf13/viper"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt"
+	cosmost "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	capabilityModule "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil"
+	"github.com/FiboChain/fbc/libs/system/trace"
+	commonversion "github.com/FiboChain/fbc/x/common/version"
 	"github.com/gorilla/mux"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/mpt"
-	cosmost "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	capabilityModule "github.com/okex/exchain/libs/cosmos-sdk/x/capability"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/genutil"
-	"github.com/okex/exchain/libs/system/trace"
-	commonversion "github.com/okex/exchain/x/common/version"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/app/ante"
-	okexchaincodec "github.com/okex/exchain/app/codec"
-	"github.com/okex/exchain/app/refund"
-	okexchain "github.com/okex/exchain/app/types"
-	bam "github.com/okex/exchain/libs/cosmos-sdk/baseapp"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	upgradetypes "github.com/okex/exchain/libs/cosmos-sdk/types/upgrade"
-	"github.com/okex/exchain/libs/cosmos-sdk/version"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/bank"
-	capabilitykeeper "github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/crisis"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/mint"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/supply"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/upgrade"
-	"github.com/okex/exchain/libs/iavl"
-	ibctransfer "github.com/okex/exchain/libs/ibc-go/modules/apps/transfer"
-	ibctransferkeeper "github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/keeper"
-	ibctransfertypes "github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	ibc "github.com/okex/exchain/libs/ibc-go/modules/core"
-	ibcclient "github.com/okex/exchain/libs/ibc-go/modules/core/02-client"
-	ibcporttypes "github.com/okex/exchain/libs/ibc-go/modules/core/05-port/types"
-	ibchost "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	tmos "github.com/okex/exchain/libs/tendermint/libs/os"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	dbm "github.com/okex/exchain/libs/tm-db"
-	"github.com/okex/exchain/x/ammswap"
-	"github.com/okex/exchain/x/dex"
-	distr "github.com/okex/exchain/x/distribution"
-	"github.com/okex/exchain/x/erc20"
-	"github.com/okex/exchain/x/evidence"
-	"github.com/okex/exchain/x/evm"
-	evmtypes "github.com/okex/exchain/x/evm/types"
-	"github.com/okex/exchain/x/farm"
-	"github.com/okex/exchain/x/gov"
-	"github.com/okex/exchain/x/gov/keeper"
-	"github.com/okex/exchain/x/order"
-	"github.com/okex/exchain/x/params"
-	"github.com/okex/exchain/x/slashing"
-	"github.com/okex/exchain/x/staking"
-	"github.com/okex/exchain/x/token"
+	"github.com/FiboChain/fbc/app/ante"
+	fbchaincodec "github.com/FiboChain/fbc/app/codec"
+	"github.com/FiboChain/fbc/app/refund"
+	bam "github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	upgradetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
+	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/crisis"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade"
+	"github.com/FiboChain/fbc/libs/iavl"
+	ibctransfer "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer"
+	ibctransferkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/keeper"
+	ibctransfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
+	ibcclient "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client"
+	ibcporttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
+	ibchost "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/FiboChain/fbc/x/ammswap"
+	"github.com/FiboChain/fbc/x/dex"
+	distr "github.com/FiboChain/fbc/x/distribution"
+	"github.com/FiboChain/fbc/x/erc20"
+	"github.com/FiboChain/fbc/x/evidence"
+	"github.com/FiboChain/fbc/x/evm"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	"github.com/FiboChain/fbc/x/farm"
+	"github.com/FiboChain/fbc/x/gov"
+	"github.com/FiboChain/fbc/x/gov/keeper"
+	"github.com/FiboChain/fbc/x/order"
+	"github.com/FiboChain/fbc/x/params"
+	"github.com/FiboChain/fbc/x/slashing"
+	"github.com/FiboChain/fbc/x/staking"
+	"github.com/FiboChain/fbc/x/token"
+
+	fbchain "github.com/FiboChain/fbc/app/types"
 )
 
 var (
@@ -256,7 +257,7 @@ func setupModuleBasics(bs ...module.AppModule) *module.Manager {
 }
 
 type testSimApp struct {
-	*OKExChainApp
+	*FBChainApp
 	// the module manager
 }
 
@@ -283,9 +284,9 @@ func newTestOkcChainApp(
 		logStartingFlags(logger)
 	})
 
-	codecProxy, interfaceReg := okexchaincodec.MakeCodecSuit(ModuleBasics)
+	codecProxy, interfaceReg := fbchaincodec.MakeCodecSuit(ModuleBasics)
 
-	// NOTE we use custom OKExChain transaction decoder that supports the sdk.Tx interface instead of sdk.StdTx
+	// NOTE we use custom fbchaintransaction decoder that supports the sdk.Tx interface instead of sdk.StdTx
 	bApp := bam.NewBaseApp(appName, logger, db, evm.TxDecoder(codecProxy))
 
 	bApp.SetCommitMultiStoreTracer(traceStore)
@@ -299,7 +300,7 @@ func newTestOkcChainApp(
 	memKeys := sdk.NewMemoryStoreKeys(capabilitytypes.MemStoreKey)
 
 	ret := &testSimApp{}
-	app := &OKExChainApp{
+	app := &FBChainApp{
 		BaseApp:        bApp,
 		invCheckPeriod: invCheckPeriod,
 		keys:           keys,
@@ -307,7 +308,7 @@ func newTestOkcChainApp(
 		subspaces:      make(map[string]params.Subspace),
 		heightTasks:    make(map[int64]*upgradetypes.HeightTasks),
 	}
-	ret.OKExChainApp = app
+	ret.FBChainApp = app
 	bApp.SetInterceptors(makeInterceptors())
 
 	// init params keeper and subspaces
@@ -334,9 +335,9 @@ func newTestOkcChainApp(
 
 	//proxy := codec.NewMarshalProxy(cc, cdc)
 	app.marshal = codecProxy
-	// use custom OKExChain account for contracts
+	// use custom fbchainaccount for contracts
 	app.AccountKeeper = auth.NewAccountKeeper(
-		codecProxy.GetCdc(), keys[auth.StoreKey], keys[mpt.StoreKey], app.subspaces[auth.ModuleName], okexchain.ProtoAccount,
+		codecProxy.GetCdc(), keys[auth.StoreKey], keys[mpt.StoreKey], app.subspaces[auth.ModuleName], fbchain.ProtoAccount,
 	)
 
 	bankKeeper := bank.NewBaseKeeperWithMarshal(
@@ -698,7 +699,7 @@ func createKeysByCases(caseas []UpgradeCase) map[string]*sdk.KVStoreKey {
 	return keys
 }
 
-///
+// /
 type RecordMemDB struct {
 	db *dbm.MemDB
 	common.PlaceHolder

@@ -1,9 +1,9 @@
 package types
 
 import (
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
 )
 
 // Event Hooks

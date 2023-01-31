@@ -1,12 +1,12 @@
 package module
 
 import (
+	clictx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	clictx "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
 	"github.com/spf13/cobra"
 )
 

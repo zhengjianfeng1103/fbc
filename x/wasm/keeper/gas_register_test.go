@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	storetypes "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/assert"
 )
 

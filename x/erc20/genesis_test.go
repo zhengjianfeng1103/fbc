@@ -1,8 +1,8 @@
 package erc20_test
 
 import (
-	"github.com/okex/exchain/x/erc20"
-	"github.com/okex/exchain/x/erc20/types"
+	"github.com/FiboChain/fbc/x/erc20"
+	"github.com/FiboChain/fbc/x/erc20/types"
 )
 
 func (suite *Erc20TestSuite) TestInitGenesis() {

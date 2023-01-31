@@ -8,9 +8,9 @@ import (
 	"sync"
 	"sync/atomic"
 
+	tmdb "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/cosmos/gorocksdb"
 	"github.com/ethereum/go-ethereum/ethdb"
-	tmdb "github.com/okex/exchain/libs/tm-db"
 )
 
 type BatchCache struct {

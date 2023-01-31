@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 )
 
 var (

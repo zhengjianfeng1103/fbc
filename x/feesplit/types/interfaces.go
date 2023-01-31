@@ -1,10 +1,10 @@
 package types
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	authexported "github.com/okex/exchain/libs/cosmos-sdk/x/auth/exported"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/params"
-	govtypes "github.com/okex/exchain/x/gov/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	govtypes "github.com/FiboChain/fbc/x/gov/types"
 )
 
 // AccountKeeper defines the expected interface needed to retrieve account info.

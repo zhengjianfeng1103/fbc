@@ -3,13 +3,13 @@ package types
 import (
 	"strings"
 
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/common"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/common"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
 )
 
 var (
@@ -305,7 +305,7 @@ func (m Metadata) Empty() bool {
 	return len(m.FeeVersion) == 0 || len(m.AppVersion) == 0
 }
 
-//////////
+// ////////
 func (msg MsgPayPacketFeeAsync) ValidWithHeight(h int64) error {
 	return common.MsgNotSupportBeforeHeight(&msg, h)
 }

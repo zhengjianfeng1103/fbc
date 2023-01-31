@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	appconfig "github.com/okex/exchain/app/config"
-	"github.com/okex/exchain/app/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/server"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	appconfig "github.com/FiboChain/fbc/app/config"
+	"github.com/FiboChain/fbc/app/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
 
 var (
@@ -64,8 +64,8 @@ func NewOracle(params GPOConfig) *Oracle {
 
 func (gpo *Oracle) RecommendGP() *big.Int {
 
-	maxGasUsed := appconfig.GetOecConfig().GetDynamicGpMaxGasUsed()
-	maxTxNum := appconfig.GetOecConfig().GetDynamicGpMaxTxNum()
+	maxGasUsed := appconfig.GetFecConfig().GetDynamicGpMaxGasUsed()
+	maxTxNum := appconfig.GetFecConfig().GetDynamicGpMaxTxNum()
 	allTxsLen := int64(len(gpo.CurrentBlockGPs.GetAll()))
 	// If the current block's total gas consumption is more than maxGasUsed,
 	// or the number of tx in the current block is more than maxTxNum,
@@ -73,7 +73,7 @@ func (gpo *Oracle) RecommendGP() *big.Int {
 	isCongested := (int64(gpo.CurrentBlockGPs.GetGasUsed()) >= maxGasUsed) || (allTxsLen >= maxTxNum)
 
 	// When the network is congested, increase the recommended gas price.
-	adoptHigherGp := (appconfig.GetOecConfig().GetDynamicGpMode() == types.CongestionHigherGpMode) && isCongested
+	adoptHigherGp := (appconfig.GetFecConfig().GetDynamicGpMode() == types.CongestionHigherGpMode) && isCongested
 
 	txPrices := gpo.BlockGPQueue.ExecuteSamplingBy(gpo.lastPrice, adoptHigherGp)
 

@@ -1,11 +1,11 @@
 package keeper
 
 import (
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerror "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerror "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/x/evm/types"
 )
 
 var (

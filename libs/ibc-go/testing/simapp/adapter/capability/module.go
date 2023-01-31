@@ -2,13 +2,14 @@ package capability
 
 import (
 	"encoding/json"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	capabilityModule "github.com/okex/exchain/libs/cosmos-sdk/x/capability"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	types2 "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp/adapter"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	capabilityModule "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/adapter"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 )
 
 type CapabilityModuleAdapter struct {

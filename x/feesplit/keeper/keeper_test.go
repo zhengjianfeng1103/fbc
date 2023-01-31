@@ -4,12 +4,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/okex/exchain/app"
-	"github.com/okex/exchain/app/crypto/ethsecp256k1"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/x/feesplit/keeper"
-	"github.com/okex/exchain/x/feesplit/types"
+	"github.com/FiboChain/fbc/app"
+	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/x/feesplit/keeper"
+	"github.com/FiboChain/fbc/x/feesplit/types"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -27,7 +27,7 @@ type KeeperTestSuite struct {
 	suite.Suite
 
 	ctx sdk.Context
-	app *app.OKExChainApp
+	app *app.FBChainApp
 
 	querier sdk.Querier
 }

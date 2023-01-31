@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"errors"
 
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth/types"
 )
 
 // CompiledContract contains compiled bytecode and abi

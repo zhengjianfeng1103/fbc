@@ -1,11 +1,11 @@
 package ante
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/keeper"
-	"github.com/okex/exchain/libs/tendermint/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/keeper"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 type AnteDecorator struct {

@@ -6,21 +6,21 @@ import (
 	"errors"
 	"strconv"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	capabilitykeeper "github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
 	"github.com/spf13/cobra"
 
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 )
 
 const (

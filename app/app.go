@@ -122,7 +122,7 @@ func init() {
 }
 
 const (
-	appName = "OKExChain"
+	appName = "FBChain"
 )
 
 var (
@@ -220,12 +220,12 @@ var (
 	onceLog sync.Once
 )
 
-var _ simapp.App = (*FBchainApp)(nil)
+var _ simapp.App = (*FBChainApp)(nil)
 
-// OKExChainApp implements an extended ABCI application. It is an application
+// FBChainApp implements an extended ABCI application. It is an application
 // that may process transactions through Ethereum's EVM running atop of
 // Tendermint consensus.
-type FBchainApp struct {
+type FBChainApp struct {
 	*bam.BaseApp
 
 	invCheckPeriod uint
@@ -289,8 +289,8 @@ type FBchainApp struct {
 	WasmHandler wasmkeeper.HandlerOption
 }
 
-// NewOKExChainApp returns a reference to a new initialized OKExChain application.
-func NewOKExChainApp(
+// NewFBChainApp returns a reference to a new initialized FBChain application.
+func NewFBChainApp(
 	logger log.Logger,
 	db dbm.DB,
 	traceStore io.Writer,
@@ -298,7 +298,7 @@ func NewOKExChainApp(
 	skipUpgradeHeights map[int64]bool,
 	invCheckPeriod uint,
 	baseAppOptions ...func(*bam.BaseApp),
-) *FBchainApp {
+) *FBChainApp {
 	logger.Info("Starting "+system.ChainName,
 		"GenesisHeight", tmtypes.GetStartBlockHeight(),
 		"MercuryHeight", tmtypes.GetMercuryHeight(),
@@ -317,7 +317,7 @@ func NewOKExChainApp(
 
 	codecProxy, interfaceReg := fbexchaincodec.MakeCodecSuit(ModuleBasics)
 	vmbridge.RegisterInterface(interfaceReg)
-	// NOTE we use custom OKExChain transaction decoder that supports the sdk.Tx interface instead of sdk.StdTx
+	// NOTE we use custom fbchaintransaction decoder that supports the sdk.Tx interface instead of sdk.StdTx
 	bApp := bam.NewBaseApp(appName, logger, db, evm.TxDecoder(codecProxy), baseAppOptions...)
 
 	bApp.SetCommitMultiStoreTracer(traceStore)
@@ -345,7 +345,7 @@ func NewOKExChainApp(
 	tkeys := sdk.NewTransientStoreKeys(params.TStoreKey)
 	memKeys := sdk.NewMemoryStoreKeys(capabilitytypes.MemStoreKey)
 
-	app := &FBchainApp{
+	app := &FBChainApp{
 		BaseApp:        bApp,
 		invCheckPeriod: invCheckPeriod,
 		keys:           keys,
@@ -384,7 +384,7 @@ func NewOKExChainApp(
 	app.marshal = codecProxy
 	// use custom FBchain account for contracts
 	app.AccountKeeper = auth.NewAccountKeeper(
-		codecProxy.GetCdc(), keys[auth.StoreKey], keys[mpt.StoreKey], app.subspaces[auth.ModuleName], okexchain.ProtoAccount,
+		codecProxy.GetCdc(), keys[auth.StoreKey], keys[mpt.StoreKey], app.subspaces[auth.ModuleName], fbchain.ProtoAccount,
 	)
 
 	bankKeeper := bank.NewBaseKeeperWithMarshal(
@@ -761,7 +761,7 @@ func NewOKExChainApp(
 	app.SetEvmSysContractAddressHandler(NewEvmSysContractAddressHandler(app.EvmKeeper))
 	app.SetEvmWatcherCollector(app.EvmKeeper.Watcher.Collect)
 
-	gpoConfig := gasprice.NewGPOConfig(appconfig.GetOecConfig().GetDynamicGpWeight(), appconfig.GetOecConfig().GetDynamicGpCheckBlocks())
+	gpoConfig := gasprice.NewGPOConfig(appconfig.GetFecConfig().GetDynamicGpWeight(), appconfig.GetFecConfig().GetDynamicGpCheckBlocks())
 	app.gpo = gasprice.NewOracle(gpoConfig)
 	app.SetUpdateGPOHandler(updateGPOHandler(app.gpo))
 
@@ -790,7 +790,7 @@ func NewOKExChainApp(
 	return app
 }
 
-func (app *FBchainApp) SetOption(req abci.RequestSetOption) (res abci.ResponseSetOption) {
+func (app *FBChainApp) SetOption(req abci.RequestSetOption) (res abci.ResponseSetOption) {
 	if req.Key == "CheckChainID" {
 		if err := fbchain.IsValidateChainIdWithGenesisHeight(req.Value); err != nil {
 			app.Logger().Error(err.Error())
@@ -805,20 +805,20 @@ func (app *FBchainApp) SetOption(req abci.RequestSetOption) (res abci.ResponseSe
 	return app.BaseApp.SetOption(req)
 }
 
-func (app *FBchainApp) LoadStartVersion(height int64) error {
+func (app *FBChainApp) LoadStartVersion(height int64) error {
 	return app.LoadVersion(height, app.keys[bam.MainStoreKey])
 }
 
 // Name returns the name of the App
-func (app *FBchainApp) Name() string { return app.BaseApp.Name() }
+func (app *FBChainApp) Name() string { return app.BaseApp.Name() }
 
 // BeginBlocker updates every begin block
-func (app *FBchainApp) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
+func (app *FBChainApp) BeginBlocker(ctx sdk.Context, req abci.RequestBeginBlock) abci.ResponseBeginBlock {
 	return app.mm.BeginBlock(ctx, req)
 }
 
 // EndBlocker updates every end block
-func (app *FBchainApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
+func (app *FBChainApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abci.ResponseEndBlock {
 	if appconfig.GetFecConfig().GetDynamicGpMode() != types.MinimalGpMode {
 		currentBlockGPsCopy := app.gpo.CurrentBlockGPs.Copy()
 		_ = app.gpo.BlockGPQueue.Push(currentBlockGPsCopy)
@@ -830,7 +830,7 @@ func (app *FBchainApp) EndBlocker(ctx sdk.Context, req abci.RequestEndBlock) abc
 }
 
 // InitChainer updates at chain initialization
-func (app *FBchainApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
+func (app *FBChainApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) abci.ResponseInitChain {
 
 	var genesisState simapp.GenesisState
 	app.marshal.GetCdc().MustUnmarshalJSON(req.AppStateBytes, &genesisState)
@@ -838,12 +838,12 @@ func (app *FBchainApp) InitChainer(ctx sdk.Context, req abci.RequestInitChain) a
 }
 
 // LoadHeight loads state at a particular height
-func (app *FBchainApp) LoadHeight(height int64) error {
+func (app *FBChainApp) LoadHeight(height int64) error {
 	return app.LoadVersion(height, app.keys[bam.MainStoreKey])
 }
 
 // ModuleAccountAddrs returns all the app's module account addresses.
-func (app *FBchainApp) ModuleAccountAddrs() map[string]bool {
+func (app *FBChainApp) ModuleAccountAddrs() map[string]bool {
 	modAccAddrs := make(map[string]bool)
 	for acc := range maccPerms {
 		modAccAddrs[supply.NewModuleAddress(acc).String()] = true
@@ -853,33 +853,33 @@ func (app *FBchainApp) ModuleAccountAddrs() map[string]bool {
 }
 
 // SimulationManager implements the SimulationApp interface
-func (app *FBchainApp) SimulationManager() *module.SimulationManager {
+func (app *FBChainApp) SimulationManager() *module.SimulationManager {
 	return app.sm
 }
 
 // GetKey returns the KVStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *FBchainApp) GetKey(storeKey string) *sdk.KVStoreKey {
+func (app *FBChainApp) GetKey(storeKey string) *sdk.KVStoreKey {
 	return app.keys[storeKey]
 }
 
-// Codec returns OKExChain's codec.
+// Codec returns FBChain's codec.
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *FBchainApp) Codec() *codec.Codec {
+func (app *FBChainApp) Codec() *codec.Codec {
 	return app.marshal.GetCdc()
 }
 
-func (app *FBchainApp) Marshal() *codec.CodecProxy {
+func (app *FBChainApp) Marshal() *codec.CodecProxy {
 	return app.marshal
 }
 
 // GetSubspace returns a param subspace for a given module name.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *FBchainApp) GetSubspace(moduleName string) params.Subspace {
+func (app *FBChainApp) GetSubspace(moduleName string) params.Subspace {
 	return app.subspaces[moduleName]
 }
 

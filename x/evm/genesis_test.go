@@ -5,11 +5,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	ethcmn "github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/FiboChain/fbc/app"
 	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
 	ethermint "github.com/FiboChain/fbc/app/types"
@@ -23,6 +18,11 @@ import (
 	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/FiboChain/fbc/x/evm"
 	"github.com/FiboChain/fbc/x/evm/types"
+	"github.com/ethereum/go-ethereum/common"
+	ethcmn "github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/hexutil"
+	ethtypes "github.com/ethereum/go-ethereum/core/types"
+	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/spf13/viper"
 )
 

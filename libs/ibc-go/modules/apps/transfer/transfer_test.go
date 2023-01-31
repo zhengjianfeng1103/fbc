@@ -1,15 +1,16 @@
 package transfer_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/suite"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	ibctesting "github.com/okex/exchain/libs/ibc-go/testing"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
 )
 
 type TransferTestSuite struct {
@@ -82,9 +83,10 @@ func (suite *TransferTestSuite) TestHandleMsgTransfer() {
 
 	balanceB := suite.chainB.GetSimApp().BankKeeper.GetCoins(suite.chainB.GetContext(), suite.chainB.SenderAccount().GetAddress())
 
+	fmt.Println("balanceB: ", balanceB)
 	denomTrace := types.ParseDenomTrace(types.GetPrefixedDenom(pathA2B.EndpointB.ChannelConfig.PortID, pathA2B.EndpointB.ChannelID, sdk.DefaultIbcWei))
 	coinSentFromAToB := sdk.NewCoin(denomTrace.IBCDenom(), amount)
-	suite.Require().Equal(coinSentFromAToB, balanceB[0])
+	suite.Require().Equal(coinSentFromAToB, balanceB[1])
 
 	// setup between chainB to chainC
 	// NOTE:
@@ -133,7 +135,7 @@ func (suite *TransferTestSuite) TestHandleMsgTransfer() {
 
 	balanceB = suite.chainB.GetSimApp().BankKeeper.GetCoins(suite.chainB.GetContext(), suite.chainB.SenderAccount().GetAddress())
 	// check that the balance on chainA returned back to the original state
-	suite.Require().Equal(coinSentFromAToB, balanceB[0])
+	suite.Require().Equal(coinSentFromAToB, balanceB[1])
 
 	// check that module account escrow address is empty
 	escrowAddress := types.GetEscrowAddress(packet.GetDestPort(), packet.GetDestChannel())

@@ -39,7 +39,7 @@ type AnteTestSuite struct {
 	suite.Suite
 
 	ctx         sdk.Context
-	app         *app.FBchainApp
+	app         *app.FBChainApp
 	anteHandler sdk.AnteHandler
 }
 

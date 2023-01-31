@@ -2,14 +2,15 @@ package staking
 
 import (
 	"fmt"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/params"
-	types2 "github.com/okex/exchain/libs/cosmos-sdk/x/staking/types"
-	"github.com/okex/exchain/x/common"
-	"github.com/okex/exchain/x/staking/keeper"
-	"github.com/okex/exchain/x/staking/types"
 	"time"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/FiboChain/fbc/x/common"
+	"github.com/FiboChain/fbc/x/staking/keeper"
+	"github.com/FiboChain/fbc/x/staking/types"
 )
 
 type StakingKeeper struct {

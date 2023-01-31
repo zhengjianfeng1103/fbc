@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sort"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
 
 var (
@@ -44,7 +44,7 @@ func (m Selectors) Swap(i, j int) {
 	m[i], m[j] = m[j], m[i]
 }
 
-////////
+// //////
 var (
 	_ Selector = (*CommonHeightSelector)(nil)
 )

@@ -6,7 +6,10 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	ethcrypto "github.com/ethereum/go-ethereum/crypto"
+	"net"
+	"os"
+	"path/filepath"
+
 	"github.com/FiboChain/fbc/app/crypto/hd"
 	ethermint "github.com/FiboChain/fbc/app/types"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
@@ -32,11 +35,9 @@ import (
 	"github.com/FiboChain/fbc/x/genutil"
 	"github.com/FiboChain/fbc/x/gov"
 	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
+	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"net"
-	"os"
-	"path/filepath"
 )
 
 var (
@@ -150,7 +151,7 @@ func InitTestnet(
 ) error {
 
 	if chainID == "" {
-		chainID = fmt.Sprintf("exchain-%d", tmrand.Int63n(9999999999999)+1)
+		chainID = fmt.Sprintf("fbc-%d", tmrand.Int63n(9999999999999)+1)
 	}
 
 	if !ethermint.IsValidChainID(chainID) {

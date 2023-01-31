@@ -2,9 +2,10 @@ package token
 
 import (
 	"fmt"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	"github.com/okex/exchain/x/token/types"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/x/token/types"
 )
 
 type WalletTokenTransfer interface {

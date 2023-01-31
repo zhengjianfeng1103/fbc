@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 // CheckMisbehaviourAndUpdateState determines whether or not two conflicting

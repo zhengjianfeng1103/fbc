@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/x/distribution/types"
-	stakingexported "github.com/okex/exchain/x/staking/exported"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/x/distribution/types"
+	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
 )
 
 // HandleChangeDistributionTypeProposal is a handler for executing a passed change distribution type proposal

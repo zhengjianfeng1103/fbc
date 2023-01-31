@@ -2,15 +2,16 @@ package keeper
 
 import (
 	"fmt"
-	"github.com/ethereum/go-ethereum/common"
-	ethermint "github.com/okex/exchain/app/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	erc20types "github.com/okex/exchain/x/erc20/types"
-	evmtypes "github.com/okex/exchain/x/evm/types"
-	"github.com/okex/exchain/x/vmbridge/types"
 	"math/big"
+
+	ethermint "github.com/FiboChain/fbc/app/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	erc20types "github.com/FiboChain/fbc/x/erc20/types"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	"github.com/FiboChain/fbc/x/vmbridge/types"
+	"github.com/ethereum/go-ethereum/common"
 )
 
 // event __SendToWasmEventName(string wasmAddr,string recipient, string amount)

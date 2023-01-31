@@ -2,11 +2,12 @@ package ibc_tx
 
 import (
 	"fmt"
-	"github.com/okex/exchain/libs/cosmos-sdk/client"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	ibctx "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	signing2 "github.com/okex/exchain/libs/cosmos-sdk/types/tx/signing"
-	signing "github.com/okex/exchain/libs/cosmos-sdk/x/auth/ibcsigning"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	signing2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	signing "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibcsigning"
 )
 
 type config struct {
@@ -57,7 +58,6 @@ func (g config) TxDecoder() ibctx.IbcTxDecoder {
 	return g.decoder
 }
 
-//
 func (g config) TxJSONEncoder() ibctx.IBCTxEncoder {
 	return g.jsonEncoder
 }

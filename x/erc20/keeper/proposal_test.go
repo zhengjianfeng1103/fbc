@@ -4,10 +4,10 @@ import (
 	"math/big"
 	"time"
 
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/x/erc20/types"
+	govtypes "github.com/FiboChain/fbc/x/gov/types"
 	ethcmn "github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/x/erc20/types"
-	govtypes "github.com/okex/exchain/x/gov/types"
 	"github.com/stretchr/testify/require"
 )
 

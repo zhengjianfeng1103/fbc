@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/flags"
-	"github.com/okex/exchain/libs/cosmos-sdk/types"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/suite"
 )
@@ -25,8 +25,8 @@ func TestInstanceTestSuite(t *testing.T) {
 }
 
 func (suite *InstanceTestSuite) SetupTest() {
-	// set exchaind path
-	serverDir, err := ioutil.TempDir("", ".exchaind")
+	// set fbchaind path
+	serverDir, err := ioutil.TempDir("", ".fbchaind")
 	if err != nil {
 		panic(err)
 	}

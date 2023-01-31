@@ -17,9 +17,9 @@ Version=v1.6.7.7
 CosmosSDK=v0.39.2
 Tendermint=v0.33.9
 Iavl=v0.14.3
-Name=exchain
-ServerName=exchaind
-ClientName=exchaincli
+Name=fbc
+ServerName=fbchaind
+ClientName=fbchaincli
 # the height of the 1st block is GenesisHeight+1
 GenesisHeight=0
 MercuryHeight=1
@@ -107,7 +107,7 @@ ifeq ($(WITH_ROCKSDB),true)
 endif
 
 ifeq ($(MAKECMDGOALS),testnet)
-  ldflags += -X github.com/FiboChain/fbc/libs/cosmos-sdk/server.ChainID=exchain-65
+  ldflags += -X github.com/FiboChain/fbc/libs/cosmos-sdk/server.ChainID=fbc-65
 endif
 
 ifeq ($(LINK_STATICALLY),true)
@@ -159,19 +159,19 @@ endif
 
 all: install
 
-install: exchain
+install: fbc
 
 
-exchain: check_version
-	$(cgo_flags) go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/exchaind
-	$(cgo_flags) go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/exchaincli
+fbc: check_version
+	$(cgo_flags) go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/fbchaind
+	$(cgo_flags) go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/fbchaincli
 
 check_version:
 	@sh $(shell pwd)/dev/check-version.sh $(GO_VERSION) $(ROCKSDB_VERSION)
 
-mainnet: exchain
+mainnet: fbc
 
-testnet: exchain
+testnet: fbc
 
 test-unit:
 	@VERSION=$(VERSION) go test -mod=readonly -tags='ledger test_ledger_mock' ./app/...
@@ -208,21 +208,21 @@ go.sum: go.mod
 	@go mod tidy
 
 cli:
-	go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/exchaincli
+	go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/fbchaincli
 
 server:
-	go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/exchaind
+	go install -v $(BUILD_FLAGS) -tags "$(build_tags)" ./cmd/fbchaind
 
 format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./client/lcd/statik/statik.go" | xargs gofmt -w -s
 
 build:
 ifeq ($(OS),Windows_NT)
-	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/exchaind.exe ./cmd/exchaind
-	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/exchaincli.exe ./cmd/exchaincli
+	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/fbchaind.exe ./cmd/fbchaind
+	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/fbchaincli.exe ./cmd/fbchaincli
 else
-	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/exchaind ./cmd/exchaind
-	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/exchaincli ./cmd/exchaincli
+	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/fbchaind ./cmd/fbchaind
+	go build $(BUILD_FLAGS) -tags "$(build_tags)" -o build/fbchaincli ./cmd/fbchaincli
 endif
 
 
@@ -259,7 +259,7 @@ build-docker-exchainnode:
 
 # Run a 4-node testnet locally
 localnet-start: localnet-stop
-	@if ! [ -f build/node0/exchaind/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/exchaind:Z exchain/node testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
+	@if ! [ -f build/node0/fbchaind/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/fbchaind:Z fbc/node testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
 	docker-compose up -d
 
 # Stop testnet

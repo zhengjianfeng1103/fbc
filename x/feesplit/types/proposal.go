@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/tendermint/global"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	govtypes "github.com/okex/exchain/x/gov/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/tendermint/global"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	govtypes "github.com/FiboChain/fbc/x/gov/types"
 )
 
 const (
@@ -17,7 +17,7 @@ const (
 
 func init() {
 	govtypes.RegisterProposalType(proposalTypeFeeSplitShares)
-	govtypes.RegisterProposalTypeCodec(FeeSplitSharesProposal{}, "okexchain/feesplit/SharesProposal")
+	govtypes.RegisterProposalTypeCodec(FeeSplitSharesProposal{}, "fbexchain/feesplit/SharesProposal")
 }
 
 var (

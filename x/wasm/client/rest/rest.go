@@ -1,8 +1,8 @@
 package rest
 
 import (
+	clientCtx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
 	"github.com/gorilla/mux"
-	clientCtx "github.com/okex/exchain/libs/cosmos-sdk/client/context"
 )
 
 // RegisterRoutes registers staking-related REST handlers to a router

@@ -1,9 +1,10 @@
 package types
 
 import (
-	cryptotypes "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
 	"time"
+
+	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
 
 type AccountI interface {

@@ -1,8 +1,8 @@
 package keeperadapter
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	supplyexported "github.com/okex/exchain/libs/cosmos-sdk/x/supply/exported"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	supplyexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
 )
 
 type SupplyKeeper interface {

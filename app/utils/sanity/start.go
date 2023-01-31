@@ -105,7 +105,7 @@ var (
 			configA: boolItem{name: iavl.FlagIavlEnableFastStorage, expect: true},
 			configB: funcItem{name: "Upgraded to fast IAVL", expect: false, f: appstatus.IsFastStorageStrategy},
 			tips: fmt.Sprintf("Upgrade to IAVL fast storage may take several hours, "+
-				"you can use exchaind fss create command to upgrade, or unset --%v", iavl.FlagIavlEnableFastStorage),
+				"you can use fbchaind fss create command to upgrade, or unset --%v", iavl.FlagIavlEnableFastStorage),
 		},
 	}
 

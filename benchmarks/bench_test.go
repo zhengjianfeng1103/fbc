@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	token "github.com/FiboChain/fbc/x/token/types"
+	wasmtypes "github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/ethereum/go-ethereum/rlp"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/crypto/secp256k1"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	dbm "github.com/okex/exchain/libs/tm-db"
-	evmtypes "github.com/okex/exchain/x/evm/types"
-	token "github.com/okex/exchain/x/token/types"
-	wasmtypes "github.com/okex/exchain/x/wasm/types"
 	"github.com/stretchr/testify/require"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 )
@@ -159,7 +159,7 @@ func BenchmarkTxSending(b *testing.B) {
 
 			for i := 0; i < b.N; {
 				if i%blockSize == 0 {
-					appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+					appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 				}
 				//res := appInfo.App.CheckTx(abci.RequestCheckTx{
 				//	Tx: txs[idx],

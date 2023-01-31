@@ -1,11 +1,12 @@
 package types
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/stretchr/testify/require"
 	"math/big"
 	"testing"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/stretchr/testify/require"
 )
 
 func TestGetEVMABIConfig(t *testing.T) {

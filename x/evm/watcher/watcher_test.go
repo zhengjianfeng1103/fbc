@@ -3,23 +3,21 @@ package watcher_test
 import (
 	"encoding/hex"
 	"fmt"
-	ethcommon "github.com/ethereum/go-ethereum/common"
-	okexchaincodec "github.com/FiboChain/fbc/app/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
 	"math/big"
 	"os"
 	"strings"
 	"testing"
 	"time"
 
+	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	ethcommon "github.com/ethereum/go-ethereum/common"
+
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
 	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 
-	"github.com/ethereum/go-ethereum/common"
-	ethcmn "github.com/ethereum/go-ethereum/common"
-	jsoniter "github.com/json-iterator/go"
 	"github.com/FiboChain/fbc/app"
 	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
 	ethermint "github.com/FiboChain/fbc/app/types"
@@ -31,6 +29,9 @@ import (
 	"github.com/FiboChain/fbc/x/evm/types"
 	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 	"github.com/FiboChain/fbc/x/evm/watcher"
+	"github.com/ethereum/go-ethereum/common"
+	ethcmn "github.com/ethereum/go-ethereum/common"
+	jsoniter "github.com/json-iterator/go"
 	"github.com/spf13/viper"
 	"github.com/status-im/keycard-go/hexutils"
 	"github.com/stretchr/testify/require"
@@ -55,7 +56,7 @@ func calcHash(kvs []KV) []byte {
 
 type WatcherTestSt struct {
 	ctx     sdk.Context
-	app     *app.FBchainApp
+	app     *app.FBChainApp
 	handler sdk.Handler
 }
 
@@ -471,7 +472,7 @@ func TestDeliverRealTx(t *testing.T) {
 	privKey, _ := ethsecp256k1.GenerateKey()
 	err := tx.Sign(big.NewInt(3), privKey.ToECDSA())
 	require.NoError(t, err)
-	codecProxy, _ := okexchaincodec.MakeCodecSuit(module.NewBasicManager())
+	codecProxy, _ := fbexchaincodec.MakeCodecSuit(module.NewBasicManager())
 	w.app.EvmKeeper.Watcher.RecordTxAndFailedReceipt(tx, nil, evm.TxDecoder(codecProxy))
 }
 

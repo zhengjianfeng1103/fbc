@@ -1,8 +1,9 @@
 package types
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
 	"io"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
 )
 
 // WriteListener interface for streaming data out from a listenkv.Store

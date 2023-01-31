@@ -1,14 +1,14 @@
 package types
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 
-	//"github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
+	//"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
 	"strings"
 
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
 )
 
 // msg types
@@ -40,6 +40,7 @@ const (
 //}
 
 // NewMsgTransfer creates a new MsgTransfer instance
+//
 //nolint:interfacer
 func NewMsgTransfer(
 	sourcePort, sourceChannel string,

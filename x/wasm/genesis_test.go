@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/tendermint/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/stretchr/testify/require"
 )
 

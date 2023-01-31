@@ -68,9 +68,9 @@ var (
 	govProposalID2 = uint64(2)
 )
 
-func TestOKExChainAppExport(t *testing.T) {
+func TestFBChainAppExport(t *testing.T) {
 	db := dbm.NewMemDB()
-	app := NewOKExChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
+	app := NewFBChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
 
 	genesisState := ModuleBasics.DefaultGenesis()
 	stateBytes, err := codec.MarshalJSONIndent(app.Codec(), genesisState)
@@ -86,14 +86,14 @@ func TestOKExChainAppExport(t *testing.T) {
 	app.Commit(abci.RequestCommit{})
 
 	// Making a new app object with the db, so that initchain hasn't been called
-	app2 := NewOKExChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
+	app2 := NewFBChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
 	_, _, err = app2.ExportAppStateAndValidators(false, []string{})
 	require.NoError(t, err, "ExportAppStateAndValidators should not have an error")
 }
 
 func TestModuleManager(t *testing.T) {
 	db := dbm.NewMemDB()
-	app := NewOKExChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
+	app := NewFBChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
 
 	for moduleName, _ := range ModuleBasics {
 		if moduleName == upgrade.ModuleName {
@@ -106,7 +106,7 @@ func TestModuleManager(t *testing.T) {
 
 func TestProposalManager(t *testing.T) {
 	db := dbm.NewMemDB()
-	app := NewOKExChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
+	app := NewFBChainApp(log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, nil, true, map[int64]bool{}, 0)
 
 	require.True(t, app.GovKeeper.Router().HasRoute(params.RouterKey))
 	require.True(t, app.GovKeeper.Router().HasRoute(dex.RouterKey))
@@ -124,7 +124,7 @@ func TestFakeBlockTxSuite(t *testing.T) {
 
 type FakeBlockTxTestSuite struct {
 	suite.Suite
-	app   *FBchainApp
+	app   *FBChainApp
 	codec *codec.Codec
 
 	evmSenderPrivKey   ethsecp256k1.PrivKey

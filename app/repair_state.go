@@ -50,7 +50,7 @@ const (
 
 type repairApp struct {
 	db dbm.DB
-	*FBchainApp
+	*FBChainApp
 }
 
 func (app *repairApp) getLatestVersion() int64 {
@@ -165,7 +165,7 @@ func createRepairApp(ctx *server.Context) (proxy.AppConns, *repairApp, error) {
 }
 
 func newRepairApp(logger tmlog.Logger, db dbm.DB, traceStore io.Writer) *repairApp {
-	return &repairApp{db, NewFBchainApp(
+	return &repairApp{db, NewFBChainApp(
 		logger,
 		db,
 		traceStore,

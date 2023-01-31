@@ -2,29 +2,30 @@ package types_test
 
 import (
 	"fmt"
-	types2 "github.com/okex/exchain/libs/tendermint/types"
 	"testing"
 	"time"
 
+	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+
 	"github.com/stretchr/testify/suite"
 
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	dbm "github.com/okex/exchain/libs/tm-db"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/store/iavl"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/rootmulti"
-	storetypes "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	ibctmtypes "github.com/okex/exchain/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/okex/exchain/libs/ibc-go/testing"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/iavl"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/rootmulti"
+	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
 )
 
 var (
 	//signer = "cosmos1ckgw5d7jfj7wwxjzs9fdrdev9vc8dzcw3n2lht"
-	signer = "ex15nnhqdf9sds0s063kaaretxj3ftlnzrguhfdeq"
+	signer = "fb1e34x06m7hqwt4n98yuaxuxljr0juumktxdav63"
 
 	emptyPrefix = commitmenttypes.MerklePrefix{}
 	emptyProof  = []byte{}

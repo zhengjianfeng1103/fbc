@@ -2,17 +2,18 @@ package cli
 
 import (
 	"fmt"
-	"github.com/okex/exchain/libs/cosmos-sdk/client"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/flags"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/version"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/client/utils"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/spf13/cobra"
 	"strconv"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/client/utils"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/spf13/cobra"
 )
 
 const (

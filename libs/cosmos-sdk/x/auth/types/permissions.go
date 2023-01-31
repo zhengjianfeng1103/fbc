@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
 	"strings"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
 
 // permissions

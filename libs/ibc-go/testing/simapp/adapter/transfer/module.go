@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"fmt"
 
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	porttypes "github.com/okex/exchain/libs/ibc-go/modules/core/05-port/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	porttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/keeper"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp/adapter"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/keeper"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/adapter"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 )
 
 var (

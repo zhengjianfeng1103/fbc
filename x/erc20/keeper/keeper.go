@@ -5,12 +5,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	ethermint "github.com/okex/exchain/app/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	"github.com/okex/exchain/x/erc20/types"
-	"github.com/okex/exchain/x/params"
+	ethermint "github.com/FiboChain/fbc/app/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/x/erc20/types"
+	"github.com/FiboChain/fbc/x/params"
 )
 
 // Keeper wraps the CommitStateDB, allowing us to pass in SDK context while adhering

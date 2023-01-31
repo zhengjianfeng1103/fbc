@@ -4,13 +4,13 @@ import (
 	fmt "fmt"
 	"strings"
 
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/common"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/common"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 	proto "github.com/gogo/protobuf/proto"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
 )
 
 var (
@@ -144,7 +144,7 @@ func (m *MsgSubmitTx) GetSignBytes() []byte {
 	panic("MsgSubmitTx messages do not support amino")
 }
 
-//////////
+// ////////
 func (msg MsgRegisterAccount) ValidWithHeight(h int64) error {
 	return common.MsgNotSupportBeforeHeight(&msg, h)
 }

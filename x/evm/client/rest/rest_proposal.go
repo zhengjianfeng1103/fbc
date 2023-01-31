@@ -3,14 +3,14 @@ package rest
 import (
 	"net/http"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/rest"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth/client/utils"
-	comm "github.com/okex/exchain/x/common"
-	"github.com/okex/exchain/x/evm/types"
-	"github.com/okex/exchain/x/gov"
-	govrest "github.com/okex/exchain/x/gov/client/rest"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	comm "github.com/FiboChain/fbc/x/common"
+	"github.com/FiboChain/fbc/x/evm/types"
+	"github.com/FiboChain/fbc/x/gov"
+	govrest "github.com/FiboChain/fbc/x/gov/client/rest"
 )
 
 type ManageSysContractAddressProposalReq struct {

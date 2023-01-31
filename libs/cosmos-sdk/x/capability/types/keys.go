@@ -2,7 +2,8 @@ package types
 
 import (
 	"fmt"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
 
 const (

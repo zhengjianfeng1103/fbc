@@ -1,11 +1,11 @@
 package typesadapter
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	txmsg "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	okc_types "github.com/okex/exchain/libs/cosmos-sdk/x/bank/internal/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	txmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	okc_types "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/types"
 )
 
 var (
@@ -160,6 +160,7 @@ func (in Input) ValidateBasic() error {
 }
 
 // NewInput - create a transaction input, used with MsgMultiSend
+//
 //nolint:interfacer
 func NewInput(addr sdk.AccAddress, coins sdk.Coins) Input {
 	return Input{
@@ -187,6 +188,7 @@ func (out Output) ValidateBasic() error {
 }
 
 // NewOutput - create a transaction output, used with MsgMultiSend
+//
 //nolint:interfacer
 func NewOutput(addr sdk.AccAddress, coins sdk.Coins) Output {
 	return Output{

@@ -4,13 +4,14 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/x/vmbridge/keeper"
-	"github.com/okex/exchain/x/vmbridge/types"
-	wasmtypes "github.com/okex/exchain/x/wasm/types"
 	"math/big"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/x/vmbridge/keeper"
+	"github.com/FiboChain/fbc/x/vmbridge/types"
+	wasmtypes "github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/ethereum/go-ethereum/common"
 )
 
 func (suite *KeeperTestSuite) TestKeeper_SendToWasm() {

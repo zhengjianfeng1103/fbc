@@ -1,12 +1,12 @@
 package types
 
 import (
-	"github.com/okex/exchain/libs/ibc-go/modules/core/common"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/common"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 )
 
 var (

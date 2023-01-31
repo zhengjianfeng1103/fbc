@@ -8,22 +8,23 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/okex/exchain/libs/tendermint/crypto/secp256k1"
-	//	tmjson "github.com/okex/exchain/libs/tendermint/libs/json"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	//	tmjson "github.com/FiboChain/fbc/libs/tendermint/libs/json"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 
 	//stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	stakingtypes "github.com/okex/exchain/libs/cosmos-sdk/x/staking/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+
 	//banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	banktypes "github.com/okex/exchain/libs/cosmos-sdk/x/bank"
+	banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
 	//	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth/types"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	//simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	simtypes "github.com/okex/exchain/libs/cosmos-sdk/x/simulation"
-	simappparams "github.com/okex/exchain/libs/ibc-go/testing/simapp/params"
+	simtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	simappparams "github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/params"
 )
 
 // AppStateFn returns the initial application state using a genesis or the simulation parameters.

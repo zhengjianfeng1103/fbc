@@ -3,14 +3,14 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	storetypes "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	capabilitykeeper "github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	icacontrollerkeeper "github.com/okex/exchain/libs/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	"github.com/okex/exchain/x/icamauth/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	icacontrollerkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/x/icamauth/types"
 )
 
 type Keeper struct {

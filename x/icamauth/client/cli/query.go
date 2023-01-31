@@ -1,12 +1,12 @@
 package cli
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/client"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/flags"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	"github.com/okex/exchain/x/icamauth/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/FiboChain/fbc/x/icamauth/types"
 	"github.com/spf13/cobra"
 )
 

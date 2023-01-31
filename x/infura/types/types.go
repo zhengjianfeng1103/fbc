@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
+	evm "github.com/FiboChain/fbc/x/evm/watcher"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	evm "github.com/okex/exchain/x/evm/watcher"
 	"gorm.io/gorm"
 )
 

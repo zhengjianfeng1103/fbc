@@ -3,14 +3,14 @@ package mem
 import (
 	"io"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/store/cachekv"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/listenkv"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/tracekv"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	"github.com/okex/exchain/libs/iavl"
-	dbm "github.com/okex/exchain/libs/tm-db"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/cachekv"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/listenkv"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/tracekv"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/FiboChain/fbc/libs/iavl"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/store/dbadapter"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/dbadapter"
 )
 
 var (

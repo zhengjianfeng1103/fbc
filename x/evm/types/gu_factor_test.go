@@ -1,9 +1,10 @@
 package types
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/stretchr/testify/require"
 )
 
 func TestMarshalGuFactor(t *testing.T) {

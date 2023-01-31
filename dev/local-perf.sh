@@ -66,7 +66,7 @@ set -x # activate debugging
 # run
 
 # remove existing daemon and client
-rm -rf ~/.exchain*
+rm -rf ~/.fbc*
 rm -rf $HOME_SERVER
 
 (cd .. && make install VenusHeight=1)

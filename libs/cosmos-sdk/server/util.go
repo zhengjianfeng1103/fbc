@@ -10,8 +10,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/gogo/protobuf/jsonpb"
-	"github.com/google/gops/agent"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/lcd"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
@@ -23,6 +21,8 @@ import (
 	tmflags "github.com/FiboChain/fbc/libs/tendermint/libs/cli/flags"
 	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/FiboChain/fbc/libs/tendermint/state"
+	"github.com/gogo/protobuf/jsonpb"
+	"github.com/google/gops/agent"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -129,7 +129,7 @@ func interceptLoadConfig() (conf *cfg.Config, err error) {
 		}
 	}
 
-	appConfigFilePath := filepath.Join(rootDir, "config/exchaind.toml")
+	appConfigFilePath := filepath.Join(rootDir, "config/fbchaind.toml")
 	if _, err := os.Stat(appConfigFilePath); os.IsNotExist(err) {
 		appConf, _ := config.ParseConfig()
 		config.WriteConfigFile(appConfigFilePath, appConf)

@@ -1,9 +1,9 @@
 package client
 
 import (
-	govclient "github.com/okex/exchain/x/gov/client"
-	"github.com/okex/exchain/x/wasm/client/cli"
-	"github.com/okex/exchain/x/wasm/client/rest"
+	govclient "github.com/FiboChain/fbc/x/gov/client"
+	"github.com/FiboChain/fbc/x/wasm/client/cli"
+	"github.com/FiboChain/fbc/x/wasm/client/rest"
 )
 
 // ProposalHandlers define the wasm cli proposal types and rest handler.

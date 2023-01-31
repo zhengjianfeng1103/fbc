@@ -1,20 +1,20 @@
 package keeper
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	types2 "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	capabilitykeeper "github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/params"
-	paramtypes "github.com/okex/exchain/libs/cosmos-sdk/x/params"
-	clientkeeper "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/keeper"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	connectionkeeper "github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/keeper"
-	connectiontypes "github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
-	channelkeeper "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/keeper"
-	portkeeper "github.com/okex/exchain/libs/ibc-go/modules/core/05-port/keeper"
-	porttypes "github.com/okex/exchain/libs/ibc-go/modules/core/05-port/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	paramtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	clientkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/keeper"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	connectionkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/keeper"
+	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channelkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/keeper"
+	portkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/keeper"
+	porttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
 )
 
 var _ types.QueryServer = (*Keeper)(nil)
@@ -83,7 +83,7 @@ func (k *Keeper) SetRouter(rtr *porttypes.Router) {
 	k.Router.Seal()
 }
 
-///
+// /
 func (k Keeper) GetPacketReceipt(ctx sdk.Context, portID, channelID string, sequence uint64) (string, bool) {
 	return k.ChannelKeeper.GetPacketReceipt(ctx, portID, channelID, sequence)
 }

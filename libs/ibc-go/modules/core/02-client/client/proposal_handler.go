@@ -1,12 +1,13 @@
 package client
 
 import (
-	cliContext "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/rest"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/02-client/client/cli"
-	govclient "github.com/okex/exchain/x/gov/client"
-	govrest "github.com/okex/exchain/x/gov/client/rest"
 	"net/http"
+
+	cliContext "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/client/cli"
+	govclient "github.com/FiboChain/fbc/x/gov/client"
+	govrest "github.com/FiboChain/fbc/x/gov/client/rest"
 )
 
 var (

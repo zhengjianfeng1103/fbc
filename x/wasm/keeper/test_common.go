@@ -9,76 +9,77 @@ import (
 	"testing"
 	"time"
 
-	"github.com/okex/exchain/x/wasm/keeper/testdata"
+	"github.com/FiboChain/fbc/x/wasm/keeper/testdata"
 
-	okexchaincodec "github.com/okex/exchain/app/codec"
-	okexchain "github.com/okex/exchain/app/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/baseapp"
-	"github.com/okex/exchain/libs/cosmos-sdk/client"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/store"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/mpt"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth"
-	cosmoscryptocodec "github.com/okex/exchain/libs/cosmos-sdk/x/auth/ibc-tx"
-	ibc_tx "github.com/okex/exchain/libs/cosmos-sdk/x/auth/ibc-tx"
-	authkeeper "github.com/okex/exchain/libs/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/bank"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability"
-	capabilitykeeper "github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/crisis"
-	crisistypes "github.com/okex/exchain/libs/cosmos-sdk/x/crisis"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/evidence"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/mint"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/slashing"
-	slashingtypes "github.com/okex/exchain/libs/cosmos-sdk/x/slashing"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/supply"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/upgrade"
-	upgradekeeper "github.com/okex/exchain/libs/cosmos-sdk/x/upgrade"
-	upgradetypes "github.com/okex/exchain/libs/cosmos-sdk/x/upgrade"
-	"github.com/okex/exchain/x/ammswap"
-	dex "github.com/okex/exchain/x/dex/types"
-	distr "github.com/okex/exchain/x/distribution"
-	"github.com/okex/exchain/x/erc20"
-	"github.com/okex/exchain/x/evm"
-	"github.com/okex/exchain/x/farm"
-	"github.com/okex/exchain/x/order"
-	"github.com/okex/exchain/x/staking"
-	token "github.com/okex/exchain/x/token/types"
+	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
+	cosmoscryptocodec "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	ibc_tx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	authkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability"
+	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/crisis"
+	crisistypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/crisis"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/slashing"
+	slashingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/slashing"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade"
+	upgradekeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade"
+	upgradetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade"
+	"github.com/FiboChain/fbc/x/ammswap"
+	dex "github.com/FiboChain/fbc/x/dex/types"
+	distr "github.com/FiboChain/fbc/x/distribution"
+	"github.com/FiboChain/fbc/x/erc20"
+	"github.com/FiboChain/fbc/x/evm"
+	"github.com/FiboChain/fbc/x/farm"
+	"github.com/FiboChain/fbc/x/order"
+	"github.com/FiboChain/fbc/x/staking"
+	token "github.com/FiboChain/fbc/x/token/types"
 
-	//upgradeclient "github.com/okex/exchain/libs/cosmos-sdk/x/upgrade/client"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer"
-	ibctransfertypes "github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	ibc "github.com/okex/exchain/libs/ibc-go/modules/core"
-	ibchost "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	ibckeeper "github.com/okex/exchain/libs/ibc-go/modules/core/keeper"
-	tmproto "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/crypto"
-	"github.com/okex/exchain/libs/tendermint/crypto/ed25519"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	"github.com/okex/exchain/libs/tendermint/libs/rand"
-	dbm "github.com/okex/exchain/libs/tm-db"
-	"github.com/okex/exchain/x/distribution"
-	distrclient "github.com/okex/exchain/x/distribution/client"
-	distributionkeeper "github.com/okex/exchain/x/distribution/keeper"
-	distributiontypes "github.com/okex/exchain/x/distribution/types"
-	"github.com/okex/exchain/x/gov"
-	govkeeper "github.com/okex/exchain/x/gov/keeper"
-	govtypes "github.com/okex/exchain/x/gov/types"
-	"github.com/okex/exchain/x/params"
-	paramproposal "github.com/okex/exchain/x/params"
-	paramskeeper "github.com/okex/exchain/x/params"
-	paramstypes "github.com/okex/exchain/x/params"
-	paramsclient "github.com/okex/exchain/x/params/client"
-	stakingkeeper "github.com/okex/exchain/x/staking/keeper"
-	stakingtypes "github.com/okex/exchain/x/staking/types"
-	"github.com/okex/exchain/x/wasm/keeper/wasmtesting"
-	"github.com/okex/exchain/x/wasm/types"
+	fbexchain "github.com/FiboChain/fbc/app/types"
+
+	//upgradeclient "github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade/client"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer"
+	ibctransfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
+	ibchost "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	ibckeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/keeper"
+	tmproto "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/FiboChain/fbc/x/distribution"
+	distrclient "github.com/FiboChain/fbc/x/distribution/client"
+	distributionkeeper "github.com/FiboChain/fbc/x/distribution/keeper"
+	distributiontypes "github.com/FiboChain/fbc/x/distribution/types"
+	"github.com/FiboChain/fbc/x/gov"
+	govkeeper "github.com/FiboChain/fbc/x/gov/keeper"
+	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	"github.com/FiboChain/fbc/x/params"
+	paramproposal "github.com/FiboChain/fbc/x/params"
+	paramskeeper "github.com/FiboChain/fbc/x/params"
+	paramstypes "github.com/FiboChain/fbc/x/params"
+	paramsclient "github.com/FiboChain/fbc/x/params/client"
+	stakingkeeper "github.com/FiboChain/fbc/x/staking/keeper"
+	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
+	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
+	"github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/stretchr/testify/require"
 )
 
@@ -117,7 +118,7 @@ func MakeTestCodec(t testing.TB) codec.CodecProxy {
 }
 
 func MakeEncodingConfig(_ testing.TB) EncodingConfig {
-	codecProxy, interfaceReg := okexchaincodec.MakeCodecSuit(moduleBasics)
+	codecProxy, interfaceReg := fbexchaincodec.MakeCodecSuit(moduleBasics)
 	txConfig := ibc_tx.NewTxConfig(codecProxy.GetProtocMarshal(), ibc_tx.DefaultSignModes)
 	encodingConfig := EncodingConfig{
 		InterfaceRegistry: interfaceReg,
@@ -312,7 +313,7 @@ func createTestInput(
 		erc20.ModuleName:            {authtypes.Minter, authtypes.Burner},
 		types.ModuleName:            nil,
 	}
-	accountKeeper := auth.NewAccountKeeper(legacyAmino, keys[authtypes.StoreKey], keys[mpt.StoreKey], subspace(authtypes.ModuleName), okexchain.ProtoAccount)
+	accountKeeper := auth.NewAccountKeeper(legacyAmino, keys[authtypes.StoreKey], keys[mpt.StoreKey], subspace(authtypes.ModuleName), fbexchain.ProtoAccount)
 	blockedAddrs := make(map[string]bool)
 	for acc := range maccPerms {
 		blockedAddrs[authtypes.NewModuleAddress(acc).String()] = true
@@ -357,7 +358,7 @@ func createTestInput(
 	faucet := NewTestFaucet(t, ctx, bankKeeper, supplyKeeper, mint.ModuleName, sdk.NewCoin("stake", sdk.NewInt(100_000_000_000)))
 
 	// set some funds ot pay out validatores, based on code from:
-	// https://github.com/okex/exchain/libs/cosmos-sdk/blob/fea231556aee4d549d7551a6190389c4328194eb/x/distribution/keeper/keeper_test.go#L50-L57
+	// https://github.com/FiboChain/fbc/libs/cosmos-sdk/blob/fea231556aee4d549d7551a6190389c4328194eb/x/distribution/keeper/keeper_test.go#L50-L57
 	distrAcc := distKeeper.GetDistributionAccount(ctx)
 	faucet.Fund(ctx, distrAcc.GetAddress(), sdk.NewCoin("stake", sdk.NewInt(2000000)))
 

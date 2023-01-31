@@ -3,9 +3,9 @@ package keeper_test
 import (
 	"math/big"
 
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/x/erc20/types"
 	"github.com/ethereum/go-ethereum/common"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/x/erc20/types"
 )
 
 func (suite *KeeperTestSuite) TestQuerier() {

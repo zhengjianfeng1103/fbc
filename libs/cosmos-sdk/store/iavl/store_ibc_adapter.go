@@ -3,13 +3,13 @@ package iavl
 import (
 	"fmt"
 
+	storetyeps "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/iavl"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
 	ics23 "github.com/confio/ics23/go"
-	storetyeps "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/iavl"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/crypto/merkle"
 )
 
 func (st *Store) queryWithCM40(req abci.RequestQuery) (res abci.ResponseQuery) {

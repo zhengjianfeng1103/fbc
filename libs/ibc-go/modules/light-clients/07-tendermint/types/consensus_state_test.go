@@ -3,9 +3,9 @@ package types_test
 import (
 	"time"
 
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
-	"github.com/okex/exchain/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
 )
 
 func (suite *TendermintTestSuite) TestConsensusStateValidateBasic() {

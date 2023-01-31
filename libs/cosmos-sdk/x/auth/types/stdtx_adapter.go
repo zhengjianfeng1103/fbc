@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
 	"github.com/gogo/protobuf/proto"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/tx/signing"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth/exported"
 )
 
 type IbcTx struct {
@@ -151,7 +151,7 @@ func IbcDirectSignBytes(chainID string, accnum uint64,
 
 //////
 
-///////////
+// /////////
 type ProtobufViewMsg struct {
 	TypeStr string `json:"type"`
 	Data    string `json:"data"`

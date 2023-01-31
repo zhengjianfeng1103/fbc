@@ -16,23 +16,23 @@ import (
 	"os"
 	"testing"
 
+	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	"github.com/FiboChain/fbc/app/rpc"
+	"github.com/FiboChain/fbc/app/rpc/backend"
+	util "github.com/FiboChain/fbc/app/rpc/tests"
+	cosmos_context "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	cmserver "github.com/FiboChain/fbc/libs/cosmos-sdk/server"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	apptesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	tmamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/x/evm/watcher"
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	gorpc "github.com/ethereum/go-ethereum/rpc"
-	"github.com/okex/exchain/app/crypto/ethsecp256k1"
-	"github.com/okex/exchain/app/rpc"
-	"github.com/okex/exchain/app/rpc/backend"
-	util "github.com/okex/exchain/app/rpc/tests"
-	cosmos_context "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/flags"
-	cmserver "github.com/okex/exchain/libs/cosmos-sdk/server"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	apptesting "github.com/okex/exchain/libs/ibc-go/testing"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	tmamino "github.com/okex/exchain/libs/tendermint/crypto/encoding/amino"
-	"github.com/okex/exchain/libs/tendermint/crypto/multisig"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	"github.com/okex/exchain/x/evm/watcher"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/suite"
 )
@@ -101,16 +101,16 @@ func commitBlock(suite *RPCPendingTestSuite) {
 	mck.CommitBlock()
 }
 func (suite *RPCPendingTestSuite) SetupTest() {
-	// set exchaincli path
-	cliDir, err := ioutil.TempDir("", ".exchaincli")
+	// set fbchaincli path
+	cliDir, err := ioutil.TempDir("", ".fbchaincli")
 	if err != nil {
 		panic(err)
 	}
 	defer os.RemoveAll(cliDir)
 	viper.Set(cmserver.FlagUlockKeyHome, cliDir)
 
-	// set exchaind path
-	serverDir, err := ioutil.TempDir("", ".exchaind")
+	// set fbchaind path
+	serverDir, err := ioutil.TempDir("", ".fbchaind")
 	if err != nil {
 		panic(err)
 	}

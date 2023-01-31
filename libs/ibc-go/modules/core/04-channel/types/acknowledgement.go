@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"strings"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 )
 
 // NewResultAcknowledgement returns a new instance of Acknowledgement using an Acknowledgement_Result
@@ -20,7 +20,7 @@ func NewResultAcknowledgement(result []byte) Acknowledgement {
 
 // NewErrorAcknowledgement returns a new instance of Acknowledgement using an Acknowledgement_Error
 // type in the Response field.
-//deprecated
+// deprecated
 func NewErrorAcknowledgement(err string) Acknowledgement {
 	return Acknowledgement{
 		Response: &Acknowledgement_Error{

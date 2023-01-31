@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	ibc "github.com/okex/exchain/libs/ibc-go/modules/core"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/keeper"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/types"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp/adapter"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/keeper"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/adapter"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 )
 
 type CoreModule struct {
@@ -41,7 +41,7 @@ func (CoreModule) DefaultGenesis() json.RawMessage {
 
 // InitGenesis performs genesis initialization for the ibc module. It returns
 // no validator updates.
-//func (am CoreModule) InitGenesis(ctx sdk.Context, cdc Corec.JSONMarshaler, bz json.RawMessage) []abci.ValidatorUpdate {
+// func (am CoreModule) InitGenesis(ctx sdk.Context, cdc Corec.JSONMarshaler, bz json.RawMessage) []abci.ValidatorUpdate {
 func (am CoreModule) InitGenesis(ctx sdk.Context, data json.RawMessage) []abci.ValidatorUpdate {
 	return am.initGenesis(ctx, data)
 }

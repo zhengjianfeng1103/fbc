@@ -2,9 +2,10 @@ package types
 
 import (
 	"fmt"
-	"github.com/okex/exchain/libs/tendermint/libs/rand"
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	"github.com/stretchr/testify/require"
 )
 
 func TestNewABI(t *testing.T) {

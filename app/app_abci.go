@@ -11,13 +11,13 @@ import (
 )
 
 // BeginBlock implements the Application interface
-func (app *FBchainApp) BeginBlock(req abci.RequestBeginBlock) (res abci.ResponseBeginBlock) {
+func (app *FBChainApp) BeginBlock(req abci.RequestBeginBlock) (res abci.ResponseBeginBlock) {
 	trace.OnAppBeginBlockEnter(app.LastBlockHeight() + 1)
 	app.EvmKeeper.Watcher.DelayEraseKey()
 	return app.BaseApp.BeginBlock(req)
 }
 
-func (app *FBchainApp) DeliverTx(req abci.RequestDeliverTx) (res abci.ResponseDeliverTx) {
+func (app *FBChainApp) DeliverTx(req abci.RequestDeliverTx) (res abci.ResponseDeliverTx) {
 
 	trace.OnAppDeliverTxEnter()
 
@@ -26,11 +26,11 @@ func (app *FBchainApp) DeliverTx(req abci.RequestDeliverTx) (res abci.ResponseDe
 	return resp
 }
 
-func (app *FBchainApp) PreDeliverRealTx(req []byte) (res abci.TxEssentials) {
+func (app *FBChainApp) PreDeliverRealTx(req []byte) (res abci.TxEssentials) {
 	return app.BaseApp.PreDeliverRealTx(req)
 }
 
-func (app *FBchainApp) DeliverRealTx(req abci.TxEssentials) (res abci.ResponseDeliverTx) {
+func (app *FBChainApp) DeliverRealTx(req abci.TxEssentials) (res abci.ResponseDeliverTx) {
 	trace.OnAppDeliverTxEnter()
 	resp := app.BaseApp.DeliverRealTx(req)
 	app.EvmKeeper.Watcher.RecordTxAndFailedReceipt(req, &resp, app.GetTxDecoder())
@@ -39,12 +39,12 @@ func (app *FBchainApp) DeliverRealTx(req abci.TxEssentials) (res abci.ResponseDe
 }
 
 // EndBlock implements the Application interface
-func (app *FBchainApp) EndBlock(req abci.RequestEndBlock) (res abci.ResponseEndBlock) {
+func (app *FBChainApp) EndBlock(req abci.RequestEndBlock) (res abci.ResponseEndBlock) {
 	return app.BaseApp.EndBlock(req)
 }
 
 // Commit implements the Application interface
-func (app *FBchainApp) Commit(req abci.RequestCommit) abci.ResponseCommit {
+func (app *FBChainApp) Commit(req abci.RequestCommit) abci.ResponseCommit {
 	if gcInterval := appconfig.GetFecConfig().GetGcInterval(); gcInterval > 0 {
 		if (app.BaseApp.LastBlockHeight()+1)%int64(gcInterval) == 0 {
 			startTime := time.Now()

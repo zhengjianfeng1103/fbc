@@ -1,8 +1,9 @@
 package listenkv
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/store/types"
 	"io"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
 )
 
 var _ types.KVStore = &Store{}
@@ -113,8 +114,8 @@ func (li *listenIterator) Value() []byte {
 }
 
 // Close implements the Iterator interface.
-func (li *listenIterator) Close()  {
-	 li.parent.Close()
+func (li *listenIterator) Close() {
+	li.parent.Close()
 }
 
 // Error delegates the Error call to the parent iterator.

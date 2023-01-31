@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/fsnotify/fsnotify"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
 )
 
 const (
@@ -16,13 +16,13 @@ const (
 type LocalClient struct {
 	path    string
 	dir     string
-	oecConf *OecConfig
+	fecConf *FecConfig
 	logger  log.Logger
 	watcher *fsnotify.Watcher
 	close   chan struct{}
 }
 
-func NewLocalClient(path string, oecConf *OecConfig, logger log.Logger) (*LocalClient, error) {
+func NewLocalClient(path string, oecConf *FecConfig, logger log.Logger) (*LocalClient, error) {
 	if logger == nil {
 		logger = log.NewNopLogger()
 	}
@@ -34,7 +34,7 @@ func NewLocalClient(path string, oecConf *OecConfig, logger log.Logger) (*LocalC
 	client := &LocalClient{
 		path:    path,
 		dir:     dir,
-		oecConf: oecConf,
+		fecConf: oecConf,
 		logger:  logger,
 		watcher: watcher,
 		close:   make(chan struct{}),
@@ -99,8 +99,8 @@ func (a *LocalClient) LoadConfig() (loaded bool) {
 	}
 	loaded = true
 	for k, v := range conf {
-		a.oecConf.updateFromKVStr(k, v)
+		a.fecConf.updateFromKVStr(k, v)
 	}
-	a.logger.Info(a.oecConf.format())
+	a.logger.Info(a.fecConf.format())
 	return
 }

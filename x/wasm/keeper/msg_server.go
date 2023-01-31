@@ -3,10 +3,10 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 
-	"github.com/okex/exchain/x/wasm/types"
+	"github.com/FiboChain/fbc/x/wasm/types"
 )
 
 var _ types.MsgServer = msgServer{}

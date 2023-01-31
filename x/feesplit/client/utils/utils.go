@@ -3,9 +3,9 @@ package utils
 import (
 	"io/ioutil"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/x/feesplit/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/x/feesplit/types"
 )
 
 type FeeSplitSharesProposalJSON struct {

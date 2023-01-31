@@ -1,17 +1,18 @@
 package types
 
 import (
-	ics23 "github.com/confio/ics23/go"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	cryptotypes "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/tx/signing"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
 	"reflect"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	ics23 "github.com/confio/ics23/go"
 )
 
 var _ exported.ClientState = (*ClientState)(nil)

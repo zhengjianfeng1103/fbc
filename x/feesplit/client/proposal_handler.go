@@ -1,9 +1,9 @@
 package client
 
 import (
-	"github.com/okex/exchain/x/feesplit/client/cli"
-	"github.com/okex/exchain/x/feesplit/client/rest"
-	govcli "github.com/okex/exchain/x/gov/client"
+	"github.com/FiboChain/fbc/x/feesplit/client/cli"
+	"github.com/FiboChain/fbc/x/feesplit/client/rest"
+	govcli "github.com/FiboChain/fbc/x/gov/client"
 )
 
 var (

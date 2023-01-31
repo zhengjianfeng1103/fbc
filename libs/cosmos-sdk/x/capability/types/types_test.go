@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
 )
 
 func TestCapabilityKey(t *testing.T) {

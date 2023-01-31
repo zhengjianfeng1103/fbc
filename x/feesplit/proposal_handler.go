@@ -1,12 +1,12 @@
 package feesplit
 
 import (
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/x/common"
+	"github.com/FiboChain/fbc/x/feesplit/types"
+	govTypes "github.com/FiboChain/fbc/x/gov/types"
 	ethcommon "github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/x/common"
-	"github.com/okex/exchain/x/feesplit/types"
-	govTypes "github.com/okex/exchain/x/gov/types"
 )
 
 // NewProposalHandler handles "gov" type message in "feesplit"

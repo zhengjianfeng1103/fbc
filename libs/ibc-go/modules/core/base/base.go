@@ -1,11 +1,11 @@
 package base
 
 import (
-	cosmost "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/upgrade"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/params"
-	"github.com/okex/exchain/libs/tendermint/types"
+	cosmost "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 var (

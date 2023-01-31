@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/google/uuid"
 	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/google/uuid"
 
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/mintkey"
@@ -158,7 +158,7 @@ func (api *PrivateAccountAPI) NewAccount(password string) (common.Address, error
 	}
 
 	api.logger.Info("Your new key was generated", "address", addr.String())
-	api.logger.Info("Please backup your key file!", "path", os.Getenv("HOME")+"/.exchaind/"+name)
+	api.logger.Info("Please backup your key file!", "path", os.Getenv("HOME")+"/.fbchaind/"+name)
 	api.logger.Info("Please remember your password!")
 	return addr, nil
 }

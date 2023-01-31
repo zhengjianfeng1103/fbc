@@ -6,8 +6,8 @@ package types
 import (
 	"fmt"
 
+	tmdb "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/ethereum/go-ethereum/ethdb"
-	tmdb "github.com/okex/exchain/libs/tm-db"
 )
 
 var _ ethdb.Iterator = (*WrapRocksDBIterator)(nil)

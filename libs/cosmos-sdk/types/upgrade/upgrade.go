@@ -2,9 +2,10 @@ package upgrade
 
 import (
 	"errors"
-	store "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/params"
+
+	store "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
 )
 
 type UpgradeModule interface {

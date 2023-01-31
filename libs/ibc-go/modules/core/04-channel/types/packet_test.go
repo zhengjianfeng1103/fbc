@@ -1,16 +1,17 @@
 package types_test
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
 	"testing"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
 
 	"github.com/stretchr/testify/require"
 
 	// "github.com/cosmos/cosmos-sdk/codec"
 	// codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
 )
 
 func TestCommitPacket(t *testing.T) {

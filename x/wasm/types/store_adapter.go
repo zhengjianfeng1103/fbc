@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	dbm "github.com/tendermint/tm-db"
 )
 

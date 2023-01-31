@@ -1,12 +1,13 @@
 package gov
 
 import (
-	okexchaincodec "github.com/FiboChain/fbc/app/codec"
+	"testing"
+
+	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
 	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
 	ibctransfer "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer"
 	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
-	"testing"
 
 	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
 	cliLcd "github.com/FiboChain/fbc/libs/cosmos-sdk/client/lcd"
@@ -47,8 +48,8 @@ func TestNewAppModuleBasic(t *testing.T) {
 		ibc.AppModuleBasic{},
 		ibctransfer.AppModuleBasic{},
 	)
-	//cdc := okexchaincodec.MakeCodec(ModuleBasics)
-	interfaceReg := okexchaincodec.MakeIBC(ModuleBasics)
+	//cdc := fbexchaincodec.MakeCodec(ModuleBasics)
+	interfaceReg := fbexchaincodec.MakeIBC(ModuleBasics)
 	protoCodec := codec.NewProtoCodec(interfaceReg)
 	codecProxy := codec.NewCodecProxy(protoCodec, cdc)
 

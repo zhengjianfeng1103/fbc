@@ -29,24 +29,24 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/okex/exchain/app/crypto/ethsecp256k1"
-	"github.com/okex/exchain/app/rpc/backend"
-	cosmos_context "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/client/flags"
-	cmserver "github.com/okex/exchain/libs/cosmos-sdk/server"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/mpt"
-	cosmost "github.com/okex/exchain/libs/cosmos-sdk/store/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	"github.com/okex/exchain/x/evm/watcher"
+	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	"github.com/FiboChain/fbc/app/rpc/backend"
+	cosmos_context "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	cmserver "github.com/FiboChain/fbc/libs/cosmos-sdk/server"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt"
+	cosmost "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/FiboChain/fbc/x/evm/watcher"
 
-	"github.com/okex/exchain/app/rpc"
-	"github.com/okex/exchain/app/rpc/types"
-	apptesting "github.com/okex/exchain/libs/ibc-go/testing"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	tmamino "github.com/okex/exchain/libs/tendermint/crypto/encoding/amino"
-	"github.com/okex/exchain/libs/tendermint/crypto/multisig"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/app/rpc"
+	"github.com/FiboChain/fbc/app/rpc/types"
+	apptesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	tmamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 )
 
 const (
@@ -95,16 +95,16 @@ func (suite *RPCTestSuite) SetupTest() {
 
 	viper.Set(rpc.FlagDebugAPI, true)
 	viper.Set(cmserver.FlagPruning, cosmost.PruningOptionNothing)
-	// set exchaincli path
-	cliDir, err := ioutil.TempDir("", ".exchaincli")
+	// set fbchaincli path
+	cliDir, err := ioutil.TempDir("", ".fbchaincli")
 	if err != nil {
 		panic(err)
 	}
 	defer os.RemoveAll(cliDir)
 	viper.Set(cmserver.FlagUlockKeyHome, cliDir)
 
-	// set exchaind path
-	serverDir, err := ioutil.TempDir("", ".exchaind")
+	// set fbchaind path
+	serverDir, err := ioutil.TempDir("", ".fbchaind")
 	if err != nil {
 		panic(err)
 	}
@@ -951,7 +951,7 @@ func (suite *RPCTestSuite) TestEth_GetBlockByHash() {
 	hash := sendTestTransaction(suite.T(), suite.addr, senderAddr, receiverAddr, 1024)
 	expectedBlockHash := getBlockHashFromTxHash(suite.T(), suite.addr, hash)
 
-	// TODO: OKExChain only supports the block query with txs' hash inside no matter what the second bool argument is.
+	// TODO: fbchainonly supports the block query with txs' hash inside no matter what the second bool argument is.
 	// 		eth rpc: 	false -> txs' hash inside
 	//				  	true  -> txs full content
 
@@ -987,7 +987,7 @@ func (suite *RPCTestSuite) TestEth_GetBlockByNumber() {
 
 	expectedHeight := getBlockHeightFromTxHash(suite.T(), suite.addr, hash)
 
-	// TODO: OKExChain only supports the block query with txs' hash inside no matter what the second bool argument is.
+	// TODO: fbchainonly supports the block query with txs' hash inside no matter what the second bool argument is.
 	// 		eth rpc: 	false -> txs' hash inside
 	rpcRes := Call(suite.T(), suite.addr, "eth_getBlockByNumber", []interface{}{expectedHeight, false})
 	var res map[string]interface{}

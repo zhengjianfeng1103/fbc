@@ -1,6 +1,6 @@
 # Makefile for the "exchainnode" docker image.
 
 all:
-	docker build --tag exchain/node -f node/Dockerfile ../../../exchain
+	docker build --tag fbc/node -f node/Dockerfile ../../../fbc
 
 .PHONY: all

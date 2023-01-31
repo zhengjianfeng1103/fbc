@@ -11,16 +11,16 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/okex/exchain/app"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	minttypes "github.com/okex/exchain/libs/cosmos-sdk/x/mint"
-	transfertypes "github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	tmbytes "github.com/okex/exchain/libs/tendermint/libs/bytes"
-	"github.com/okex/exchain/x/erc20/keeper"
-	"github.com/okex/exchain/x/erc20/types"
-	evmtypes "github.com/okex/exchain/x/evm/types"
+	"github.com/FiboChain/fbc/app"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	minttypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint"
+	transfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
+	"github.com/FiboChain/fbc/x/erc20/keeper"
+	"github.com/FiboChain/fbc/x/erc20/types"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 )
 
 var (
@@ -35,7 +35,7 @@ type KeeperTestSuite struct {
 	suite.Suite
 
 	ctx sdk.Context
-	app *app.OKExChainApp
+	app *app.FBChainApp
 
 	querier sdk.Querier
 }

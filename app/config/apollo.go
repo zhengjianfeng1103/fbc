@@ -16,7 +16,7 @@ const FlagApollo = "config.apollo"
 type ApolloClient struct {
 	Namespace string
 	*agollo.Client
-	oecConf *FecConfig
+	fecConf *FecConfig
 }
 
 func NewApolloClient(fecConf *FecConfig) *ApolloClient {
@@ -71,10 +71,10 @@ type CustomChangeListener struct {
 func (c *CustomChangeListener) OnChange(changeEvent *storage.ChangeEvent) {
 	for key, value := range changeEvent.Changes {
 		if value.ChangeType != storage.DELETED {
-			c.oecConf.update(key, value.NewValue)
+			c.fecConf.update(key, value.NewValue)
 		}
 	}
-	confLogger.Info(c.oecConf.format())
+	confLogger.Info(c.fecConf.format())
 }
 
 func (c *CustomChangeListener) OnNewestChange(event *storage.FullChangeEvent) {

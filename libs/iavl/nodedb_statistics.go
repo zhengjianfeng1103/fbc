@@ -2,8 +2,9 @@ package iavl
 
 import (
 	"fmt"
-	"github.com/okex/exchain/libs/system/trace"
 	"sync/atomic"
+
+	"github.com/FiboChain/fbc/libs/system/trace"
 )
 
 type RuntimeState struct {
@@ -17,14 +18,15 @@ type RuntimeState struct {
 	totalDeletedCount   int64
 	totalOrphanCount    int64
 
-	fromPpnc         int64
-	fromTpp          int64
-	fromNodeCache    int64
-	fromOrphanCache  int64
-	fromDisk         int64
+	fromPpnc        int64
+	fromTpp         int64
+	fromNodeCache   int64
+	fromOrphanCache int64
+	fromDisk        int64
 }
 
 type retrieveType int
+
 const (
 	unknown retrieveType = iota
 	fromPpnc
@@ -128,7 +130,7 @@ func inOutputModules(name string) bool {
 	return ok && v != 0
 }
 
-//================================
+// ================================
 func (ndb *nodeDB) sprintCacheLog(version int64) (printLog string) {
 	if !EnableAsyncCommit {
 		return
@@ -172,9 +174,8 @@ func (ndb *nodeDB) sprintCacheLog(version int64) (printLog string) {
 		trace.GetElapsedInfo().AddInfo(trace.IavlRuntime, printLog)
 	}
 
-	return header+printLog
+	return header + printLog
 }
-
 
 func (ndb *nodeDB) getDBReadTime() int {
 	return ndb.state.getDBReadTime()

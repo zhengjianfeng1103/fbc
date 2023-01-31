@@ -4,13 +4,13 @@ import (
 	"os"
 	"testing"
 
-	authkeeper "github.com/okex/exchain/libs/cosmos-sdk/x/auth/keeper"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/params"
+	authkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/x/wasm/keeper/wasmtesting"
-	"github.com/okex/exchain/x/wasm/types"
+	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
+	"github.com/FiboChain/fbc/x/wasm/types"
 )
 
 func TestConstructorOptions(t *testing.T) {

@@ -3,23 +3,23 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/okex/exchain/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 
 	"github.com/stretchr/testify/suite"
 
 	// sdk "github.com/cosmos/cosmos-sdk/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/keeper"
-	ibctmtypes "github.com/okex/exchain/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/okex/exchain/libs/ibc-go/testing"
-	ibcmock "github.com/okex/exchain/libs/ibc-go/testing/mock"
-	types2 "github.com/okex/exchain/libs/ibc-go/testing/simapp/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/keeper"
+	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	ibcmock "github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
+	types2 "github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/types"
 )
 
 const height = 10
@@ -513,7 +513,7 @@ func (suite *KeeperTestSuite) TestHandleTimeoutPacket() {
 // and unordered channels. It verifies that the deletion of a packet
 // commitment occurs. It tests high level properties like ordering and basic
 // sanity checks. More rigorous testing of 'TimeoutOnClose' and
-//'TimeoutExecuted' can be found in the 04-channel/keeper/timeout_test.go.
+// 'TimeoutExecuted' can be found in the 04-channel/keeper/timeout_test.go.
 func (suite *KeeperTestSuite) TestHandleTimeoutOnClosePacket() {
 	var (
 		packet    channeltypes.Packet

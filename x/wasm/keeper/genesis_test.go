@@ -12,21 +12,21 @@ import (
 	"testing"
 	"time"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	authkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
+	paramskeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	paramtypes "github.com/FiboChain/fbc/x/params"
 	fuzz "github.com/google/gofuzz"
-	"github.com/okex/exchain/libs/cosmos-sdk/store"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/prefix"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	authkeeper "github.com/okex/exchain/libs/cosmos-sdk/x/auth/keeper"
-	paramskeeper "github.com/okex/exchain/libs/cosmos-sdk/x/params"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	dbm "github.com/okex/exchain/libs/tm-db"
-	paramtypes "github.com/okex/exchain/x/params"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/x/wasm/types"
-	wasmTypes "github.com/okex/exchain/x/wasm/types"
+	"github.com/FiboChain/fbc/x/wasm/types"
+	wasmTypes "github.com/FiboChain/fbc/x/wasm/types"
 )
 
 const firstCodeID = 1

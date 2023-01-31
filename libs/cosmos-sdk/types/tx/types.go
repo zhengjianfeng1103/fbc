@@ -3,13 +3,13 @@ package tx
 import (
 	"fmt"
 
-	ibcmsg "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
+	ibcmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
 
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	ibckeys "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	ibckeys "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 )
 
 // MaxGasWanted defines the max gas allowed.
@@ -18,7 +18,7 @@ const MaxGasWanted = uint64((1 << 63) - 1)
 // Interface implementation checks.
 var _, _, _, _ codectypes.UnpackInterfacesMessage = &Tx{}, &TxBody{}, &AuthInfo{}, &SignerInfo{}
 
-//var _ sdk.Tx = &Tx{}
+// var _ sdk.Tx = &Tx{}
 var _ *Tx = &Tx{}
 
 // GetMsgs implements the GetMsgs method on sdk.Tx.
@@ -138,7 +138,7 @@ func (t *Tx) GetGas() uint64 {
 	return t.AuthInfo.Fee.GasLimit
 }
 
-//func (t *Tx) GetFee() sdk.Coins {
+// func (t *Tx) GetFee() sdk.Coins {
 func (t *Tx) GetFee() sdk.CoinAdapters {
 	return t.AuthInfo.Fee.Amount
 }

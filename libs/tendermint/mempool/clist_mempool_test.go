@@ -12,21 +12,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/okex/exchain/libs/tendermint/libs/clist"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/clist"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/okex/exchain/libs/tendermint/abci/example/counter"
-	"github.com/okex/exchain/libs/tendermint/abci/example/kvstore"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	cfg "github.com/okex/exchain/libs/tendermint/config"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	tmrand "github.com/okex/exchain/libs/tendermint/libs/rand"
-	"github.com/okex/exchain/libs/tendermint/proxy"
-	"github.com/okex/exchain/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/tendermint/abci/example/counter"
+	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	"github.com/FiboChain/fbc/libs/tendermint/proxy"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 const (

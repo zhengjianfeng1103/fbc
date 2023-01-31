@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/go-redis/redis/v8"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
 )
 
 var unlockScript = redis.NewScript(`

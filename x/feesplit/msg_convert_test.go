@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/x/feesplit/types"
 	"github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/x/feesplit/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -8,13 +8,13 @@ import (
 	"strconv"
 	"strings"
 
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 
-	"github.com/okex/exchain/libs/tendermint/state/indexer"
+	"github.com/FiboChain/fbc/libs/tendermint/state/indexer"
 
-	"github.com/okex/exchain/libs/tendermint/libs/pubsub/query"
-	"github.com/okex/exchain/libs/tendermint/types"
-	dbm "github.com/okex/exchain/libs/tm-db"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 
 	"github.com/google/orderedcode"
 )

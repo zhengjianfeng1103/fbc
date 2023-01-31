@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/okex/exchain/libs/tendermint/version"
+	"github.com/FiboChain/fbc/libs/tendermint/version"
 
-	ce "github.com/okex/exchain/libs/tendermint/crypto/encoding"
-	"github.com/okex/exchain/libs/tendermint/libs/bits"
-	tmbytes "github.com/okex/exchain/libs/tendermint/libs/bytes"
-	tmproto "github.com/okex/exchain/libs/tendermint/proto/types"
-	tmversion "github.com/okex/exchain/libs/tendermint/proto/version"
+	ce "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/bits"
+	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
+	tmproto "github.com/FiboChain/fbc/libs/tendermint/proto/types"
+	tmversion "github.com/FiboChain/fbc/libs/tendermint/proto/version"
 )
 
 type CM40Block struct {

@@ -1,9 +1,9 @@
 package channel
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/keeper"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/keeper"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
 )
 
 // InitGenesis initializes the ibc channel submodule's state from a provided genesis

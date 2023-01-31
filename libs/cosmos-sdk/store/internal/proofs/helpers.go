@@ -1,10 +1,11 @@
 package proofs
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/store/internal/maps"
-	"github.com/okex/exchain/libs/tendermint/libs/rand"
-	"github.com/okex/exchain/libs/tendermint/proto/crypto/merkle"
 	"sort"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/internal/maps"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	"github.com/FiboChain/fbc/libs/tendermint/proto/crypto/merkle"
 )
 
 // SimpleResult contains a merkle.SimpleProof along with all data needed to build the confio/proof

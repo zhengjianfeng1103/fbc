@@ -1,11 +1,11 @@
 package connection
 
 import (
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/client/cli"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
 	"github.com/gogo/protobuf/grpc"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/client/cli"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
 	"github.com/spf13/cobra"
 )
 

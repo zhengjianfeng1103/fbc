@@ -2,22 +2,7 @@
 
 printLogo() {
   echo '
-     OOOOOOOOO     KKKKKKKKK    KKKKKKKEEEEEEEEEEEEEEEEEEEEEE                                        hhhhhhh                                 iiii
-   OO:::::::::OO   K:::::::K    K:::::KE::::::::::::::::::::E                                        h:::::h                                i::::i
- OO:::::::::::::OO K:::::::K    K:::::KE::::::::::::::::::::E                                        h:::::h                                 iiii
-O:::::::OOO:::::::OK:::::::K   K::::::KEE::::::EEEEEEEEE::::E                                        h:::::h
-O::::::O   O::::::OKK::::::K  K:::::KKK  E:::::E       EEEEEExxxxxxx      xxxxxxx    cccccccccccccccc h::::h hhhhh         aaaaaaaaaaaaa   iiiiiii nnnn  nnnnnnnn
-O:::::O     O:::::O  K:::::K K:::::K     E:::::E              x:::::x    x:::::x   cc:::::::::::::::c h::::hh:::::hhh      a::::::::::::a  i:::::i n:::nn::::::::nn
-O:::::O     O:::::O  K::::::K:::::K      E::::::EEEEEEEEEE     x:::::x  x:::::x   c:::::::::::::::::c h::::::::::::::hh    aaaaaaaaa:::::a  i::::i n::::::::::::::nn
-O:::::O     O:::::O  K:::::::::::K       E:::::::::::::::E      x:::::xx:::::x   c:::::::cccccc:::::c h:::::::hhh::::::h            a::::a  i::::i nn:::::::::::::::n
-O:::::O     O:::::O  K:::::::::::K       E:::::::::::::::E       x::::::::::x    c::::::c     ccccccc h::::::h   h::::::h    aaaaaaa:::::a  i::::i   n:::::nnnn:::::n
-O:::::O     O:::::O  K::::::K:::::K      E::::::EEEEEEEEEE        x::::::::x     c:::::c              h:::::h     h:::::h  aa::::::::::::a  i::::i   n::::n    n::::n
-O:::::O     O:::::O  K:::::K K:::::K     E:::::E                  x::::::::x     c:::::c              h:::::h     h:::::h a::::aaaa::::::a  i::::i   n::::n    n::::n
-O::::::O   O::::::OKK::::::K  K:::::KKK  E:::::E       EEEEEE    x::::::::::x    c::::::c     ccccccc h:::::h     h:::::ha::::a    a:::::a  i::::i   n::::n    n::::n
-O:::::::OOO:::::::OK:::::::K   K::::::KEE::::::EEEEEEEE:::::E   x:::::xx:::::x   c:::::::cccccc:::::c h:::::h     h:::::ha::::a    a:::::a i::::::i  n::::n    n::::n
- OO:::::::::::::OO K:::::::K    K:::::KE::::::::::::::::::::E  x:::::x  x:::::x   c:::::::::::::::::c h:::::h     h:::::ha:::::aaaa::::::a i::::::i  n::::n    n::::n
-   OO:::::::::OO   K:::::::K    K:::::KE::::::::::::::::::::E x:::::x    x:::::x   cc:::::::::::::::c h:::::h     h:::::h a::::::::::aa:::ai::::::i  n::::n    n::::n
-     OOOOOOOOO     KKKKKKKKK    KKKKKKKEEEEEEEEEEEEEEEEEEEEEExxxxxxx      xxxxxxx    cccccccccccccccc hhhhhhh     hhhhhhh  aaaaaaaaaa  aaaaiiiiiiii  nnnnnn    nnnnnn
+    FBChain...
   '
 }
 
@@ -121,12 +106,12 @@ GetArchitecture() {
 }
 
 download() {
-  rm -rf "$HOME"/.exchain/src
-  mkdir -p "$HOME"/.exchain/src
-  tag=`wget -qO- -t1 -T2 --no-check-certificate "https://api.github.com/repos/okex/exchain/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g'`
-  wget --no-check-certificate "https://github.com/okex/exchain/archive/refs/tags/${tag}.tar.gz" -O "$HOME"/.exchain/src/exchain.tar.gz
+  rm -rf "$HOME"/.fbc/src
+  mkdir -p "$HOME"/.fbc/src
+  tag=`wget -qO- -t1 -T2 --no-check-certificate "https://api.github.com/repos/FiboChain/fbc/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g'`
+  wget --no-check-certificate "https://github.com/FiboChain/fbc/archive/refs/tags/${tag}.tar.gz" -O "$HOME"/.fbc/src/fbc.tar.gz
   ver=$(echo $tag| sed 's/v//g')
-  cd "$HOME"/.exchain/src && tar zxvf exchain.tar.gz &&  cd exchain-"$ver"
+  cd "$HOME"/.fbc/src && tar zxvf fbc.tar.gz &&  cd fbc-"$ver"
 }
 
 function checkgoversion { echo "$@" | awk -F. '{ printf("%d%03d%03d%03d\n", $1,$2,$3,$4); }'; }
@@ -264,13 +249,13 @@ checkjcmalloc() {
 }
 
 InstallExchain() {
-  echo "InstallExchain...."
+  echo "InstallFBChain...."
 
   download
-  cd "$HOME"/.exchain/src/exchain-${ver}
+  cd "$HOME"/.fbc/src/fbc-${ver}
   checkjcmalloc
   #if alpine add LINK_STATICALLY=true
-  echo "compile exchain...."
+  echo "compile fbc...."
   rm -rf ~/.cache/go-build
   if [ "$dynamicLink" == "TRUE" ]; then
     make mainnet WITH_ROCKSDB=true
@@ -279,10 +264,10 @@ InstallExchain() {
     make mainnet WITH_ROCKSDB=true LINK_STATICALLY=true
   fi
 
-  if ! type exchaind > /dev/null 2>&1; then
+  if ! type fbchaind > /dev/null 2>&1; then
     export PATH=$PATH:$HOME/go/bin
   fi
-  echo "InstallExchain completed"
+  echo "InstallFBChain completed"
   printLogo
 }
 

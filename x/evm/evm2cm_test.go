@@ -6,9 +6,9 @@ import (
 	"math/big"
 	"testing"
 
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	etypes "github.com/FiboChain/fbc/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	etypes "github.com/okex/exchain/x/evm/types"
 	"github.com/stretchr/testify/require"
 )
 

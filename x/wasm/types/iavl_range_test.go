@@ -3,10 +3,10 @@ package types
 import (
 	"testing"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/store"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/iavl"
-	iavl2 "github.com/okex/exchain/libs/iavl"
-	dbm "github.com/okex/exchain/libs/tm-db"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/iavl"
+	iavl2 "github.com/FiboChain/fbc/libs/iavl"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/require"
 )
 

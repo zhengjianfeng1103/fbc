@@ -30,7 +30,7 @@ import (
 	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 )
 
-// exchain full-node start flags
+// fbc full-node start flags
 const (
 	FlagListenAddr         = "rest.laddr"
 	FlagUlockKey           = "rest.unlock_key"
@@ -119,7 +119,7 @@ func StopCmd(ctx *Context) *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			f, err := os.Open(filepath.Join(ctx.Config.RootDir, "config", "pid"))
 			if err != nil {
-				errStr := fmt.Sprintf("%s Please finish the process of exchaind through kill -2 pid to stop gracefully", err.Error())
+				errStr := fmt.Sprintf("%s Please finish the process of fbchaind through kill -2 pid to stop gracefully", err.Error())
 				cmn.Exit(errStr)
 			}
 			defer f.Close()
@@ -127,7 +127,7 @@ func StopCmd(ctx *Context) *cobra.Command {
 			in.Scan()
 			pid, err := strconv.Atoi(in.Text())
 			if err != nil {
-				errStr := fmt.Sprintf("%s Please finish the process of exchaind through kill -2 pid to stop gracefully", err.Error())
+				errStr := fmt.Sprintf("%s Please finish the process of fbchaind through kill -2 pid to stop gracefully", err.Error())
 				cmn.Exit(errStr)
 			}
 			process, err := os.FindProcess(pid)
@@ -253,8 +253,8 @@ func RegisterServerFlags(cmd *cobra.Command) *cobra.Command {
 
 	cmd.Flags().String(FlagListenAddr, "tcp://0.0.0.0:26659", "EVM RPC and cosmos-sdk REST API listen address.")
 	cmd.Flags().String(FlagUlockKey, "", "Select the keys to unlock on the RPC server")
-	cmd.Flags().String(FlagUlockKeyHome, os.ExpandEnv("$HOME/.exchaincli"), "The keybase home path")
-	cmd.Flags().String(FlagRestPathPrefix, "exchain", "Path prefix for registering rest api route.")
+	cmd.Flags().String(FlagUlockKeyHome, os.ExpandEnv("$HOME/.fbchaincli"), "The keybase home path")
+	cmd.Flags().String(FlagRestPathPrefix, "fbc", "Path prefix for registering rest api route.")
 	cmd.Flags().String(flags.FlagKeyringBackend, flags.DefaultKeyringBackend, "Select keyring's backend (os|file|test)")
 	cmd.Flags().String(FlagCORS, "", "Set the rest-server domains that can make CORS requests (* for all)")
 	cmd.Flags().Int(FlagMaxOpenConnections, 1000, "The number of maximum open connections of rest-server")
@@ -282,7 +282,7 @@ func nodeModeCmd(ctx *Context) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "node-mode",
 		Short: "fbchaind start --node-mode help info",
-		Long: `There are three node modes that can be set when the exchaind start
+		Long: `There are three node modes that can be set when the fbchaind start
 set --node-mode=rpc to manage the following flags:
 	--disable-checktx-mutex=true
 	--disable-query-mutex=true

@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	cfg "github.com/okex/exchain/libs/tendermint/config"
-	cstypes "github.com/okex/exchain/libs/tendermint/consensus/types"
-	"github.com/okex/exchain/libs/tendermint/libs/automation"
-	"github.com/okex/exchain/libs/tendermint/p2p"
-	"github.com/okex/exchain/libs/tendermint/types"
+	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
+	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/automation"
+	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 // SetProposal inputs a proposal.
@@ -77,7 +77,9 @@ func (cs *State) isBlockProducer() (string, string) {
 
 // Enter (CreateEmptyBlocks): from enterNewRound(height,round)
 // Enter (CreateEmptyBlocks, CreateEmptyBlocksInterval > 0 ):
-// 		after enterNewRound(height,round), after timeout of CreateEmptyBlocksInterval
+//
+//	after enterNewRound(height,round), after timeout of CreateEmptyBlocksInterval
+//
 // Enter (!CreateEmptyBlocks) : after enterNewRound(height,round), once txs are in the mempool
 func (cs *State) enterPropose(height int64, round int) {
 	logger := cs.Logger.With("height", height, "round", round)

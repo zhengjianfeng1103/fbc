@@ -1,22 +1,23 @@
 package types
 
 import (
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
 	"strings"
 	"time"
 
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	common2 "github.com/FiboChain/fbc/libs/ibc-go/modules/core/common"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	lite "github.com/FiboChain/fbc/libs/tendermint/lite2"
 	ics23 "github.com/confio/ics23/go"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	common2 "github.com/okex/exchain/libs/ibc-go/modules/core/common"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
-	lite "github.com/okex/exchain/libs/tendermint/lite2"
 )
 
 var _ exported.ClientState = (*ClientState)(nil)

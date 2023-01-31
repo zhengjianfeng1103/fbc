@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	"github.com/okex/exchain/libs/tendermint/libs/kv"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/kv"
 )
 
 // TransferUnmarshaler defines the expected encoding store functions.

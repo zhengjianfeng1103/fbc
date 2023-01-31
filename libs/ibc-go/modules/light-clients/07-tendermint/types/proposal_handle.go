@@ -4,24 +4,24 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/okex/exchain/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // CheckSubstituteAndUpdateState will try to update the client with the state of the
 // substitute if and only if the proposal passes and one of the following conditions are
 // satisfied:
-//	1) AllowUpdateAfterMisbehaviour and Status() == Frozen
-// 	2) AllowUpdateAfterExpiry=true and Status() == Expired
+//  1. AllowUpdateAfterMisbehaviour and Status() == Frozen
+//  2. AllowUpdateAfterExpiry=true and Status() == Expired
 //
 // The following must always be true:
-//	- The substitute client is the same type as the subject client
-//	- The subject and substitute client states match in all parameters (expect frozen height, latest height, and chain-id)
+//   - The substitute client is the same type as the subject client
+//   - The subject and substitute client states match in all parameters (expect frozen height, latest height, and chain-id)
 //
 // In case 1) before updating the client, the client will be unfrozen by resetting
 // the FrozenHeight to the zero Height. If a client is frozen and AllowUpdateAfterMisbehaviour

@@ -1,9 +1,9 @@
 package core
 
 import (
-	"github.com/okex/exchain/libs/tendermint/proto/version"
-	coretypes "github.com/okex/exchain/libs/tendermint/rpc/core/types"
-	"github.com/okex/exchain/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/tendermint/proto/version"
+	coretypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 func ConvBlock2CM40Block(r *types.Block) *types.CM40Block {

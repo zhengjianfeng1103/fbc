@@ -11,26 +11,26 @@ import (
 	"testing"
 	"time"
 
+	"github.com/FiboChain/fbc/app"
+	types3 "github.com/FiboChain/fbc/app/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/helpers"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
+	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
+	banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	"github.com/FiboChain/fbc/libs/tendermint/global"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	types2 "github.com/FiboChain/fbc/x/evm/types"
+	wasmtypes "github.com/FiboChain/fbc/x/wasm/types"
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/okex/exchain/app"
-	types3 "github.com/okex/exchain/app/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/simapp"
-	"github.com/okex/exchain/libs/cosmos-sdk/simapp/helpers"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth"
-	authexported "github.com/okex/exchain/libs/cosmos-sdk/x/auth/exported"
-	banktypes "github.com/okex/exchain/libs/cosmos-sdk/x/bank"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/crypto"
-	"github.com/okex/exchain/libs/tendermint/crypto/secp256k1"
-	"github.com/okex/exchain/libs/tendermint/global"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	"github.com/okex/exchain/libs/tendermint/types"
-	dbm "github.com/okex/exchain/libs/tm-db"
-	types2 "github.com/okex/exchain/x/evm/types"
-	wasmtypes "github.com/okex/exchain/x/wasm/types"
 	"github.com/stretchr/testify/require"
 )
 
@@ -40,7 +40,7 @@ func TestTxSending(t *testing.T) {
 	appInfo := InitializeOKXApp(t, db, 50)
 	height := int64(2)
 	global.SetGlobalHeight(height - 1)
-	appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+	appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 	txs := GenSequenceOfTxs(&appInfo, bankSendMsg, 100)
 	for _, tx := range txs {
 		res := appInfo.App.DeliverTx(abci.RequestDeliverTx{Tx: tx})
@@ -59,7 +59,7 @@ func TestOip20TxSending(t *testing.T) {
 	require.NoError(t, err)
 	global.SetGlobalHeight(appInfo.height)
 	height := appInfo.height + 1
-	appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+	appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 	txs := buildOip20Transfer(100, &appInfo)
 	for _, tx := range txs {
 		res := appInfo.App.DeliverTx(abci.RequestDeliverTx{Tx: tx})
@@ -80,7 +80,7 @@ func TestCw20TxSending(t *testing.T) {
 	require.NoError(t, err)
 
 	height := appInfo.height + 1
-	appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+	appInfo.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 	txs := buildTxFromMsg(cw20TransferMsg)(100, &appInfo)
 	for _, tx := range txs {
 		res := appInfo.App.DeliverTx(abci.RequestDeliverTx{Tx: tx})
@@ -94,7 +94,7 @@ func TestCw20TxSending(t *testing.T) {
 type AppInfo struct {
 	height int64
 
-	App              *app.OKExChainApp
+	App              *app.FBChainApp
 	evmMintKey       *ecdsa.PrivateKey
 	evmMintAddr      sdk.AccAddress
 	MinterKey        crypto.PrivKey
@@ -142,13 +142,13 @@ func InitializeOKXApp(b testing.TB, db dbm.DB, numAccounts int) AppInfo {
 			PubKey:  priv.PubKey(),
 		}
 	}
-	okxApp := SetupWithGenesisAccounts(b, db, genAccs)
+	fbcApp := SetupWithGenesisAccounts(b, db, genAccs)
 
 	types.UnittestOnlySetMilestoneVenusHeight(1)
 
 	info := AppInfo{
 		height:      1,
-		App:         okxApp,
+		App:         fbcApp,
 		evmMintKey:  evmMinter,
 		evmMintAddr: evmMinterAddr,
 		MinterKey:   minter,
@@ -162,20 +162,20 @@ func InitializeOKXApp(b testing.TB, db dbm.DB, numAccounts int) AppInfo {
 	return info
 }
 
-func setup(db dbm.DB, withGenesis bool, invCheckPeriod uint) (*app.OKExChainApp, simapp.GenesisState) {
-	okxApp := app.NewOKExChainApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, invCheckPeriod)
+func setup(db dbm.DB, withGenesis bool, invCheckPeriod uint) (*app.FBChainApp, simapp.GenesisState) {
+	fbcApp := app.NewFBChainApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, invCheckPeriod)
 	if withGenesis {
-		return okxApp, app.NewDefaultGenesisState()
+		return fbcApp, app.NewDefaultGenesisState()
 	}
-	return okxApp, simapp.GenesisState{}
+	return fbcApp, simapp.GenesisState{}
 }
 
-// SetupWithGenesisAccounts initializes a new OKExChainApp with the provided genesis
+// SetupWithGenesisAccounts initializes a new FBChainApp with the provided genesis
 // accounts and possible balances.
-func SetupWithGenesisAccounts(b testing.TB, db dbm.DB, genAccs []authexported.GenesisAccount) *app.OKExChainApp {
-	okxApp, genesisState := setup(db, true, 0)
+func SetupWithGenesisAccounts(b testing.TB, db dbm.DB, genAccs []authexported.GenesisAccount) *app.FBChainApp {
+	fbcApp, genesisState := setup(db, true, 0)
 	authGenesis := authtypes.NewGenesisState(authtypes.DefaultParams(), genAccs)
-	appCodec := okxApp.Codec()
+	appCodec := fbcApp.Codec()
 
 	genesisState[authtypes.ModuleName] = appCodec.MustMarshalJSON(authGenesis)
 
@@ -197,7 +197,7 @@ func SetupWithGenesisAccounts(b testing.TB, db dbm.DB, genAccs []authexported.Ge
 		panic(err)
 	}
 
-	okxApp.InitChain(
+	fbcApp.InitChain(
 		abci.RequestInitChain{
 			Validators:      []abci.ValidatorUpdate{},
 			ConsensusParams: types.TM2PB.ConsensusParams(types.DefaultConsensusParams()),
@@ -205,17 +205,17 @@ func SetupWithGenesisAccounts(b testing.TB, db dbm.DB, genAccs []authexported.Ge
 		},
 	)
 
-	okxApp.Commit(abci.RequestCommit{})
-	okxApp.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{Height: okxApp.LastBlockHeight() + 1}})
+	fbcApp.Commit(abci.RequestCommit{})
+	fbcApp.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{Height: fbcApp.LastBlockHeight() + 1}})
 
-	return okxApp
+	return fbcApp
 }
 
 func deployOip20(info *AppInfo) error {
 	// add oip20 contract
 	global.SetGlobalHeight(info.height)
 	height := info.height + 1
-	info.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+	info.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 
 	// deploy oip20
 	OipBytes, err := hex.DecodeString(Oip20Bin)
@@ -248,7 +248,7 @@ func deployCw20(info *AppInfo) error {
 	// add cw20 contract
 	global.SetGlobalHeight(info.height)
 	height := info.height + 1
-	info.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+	info.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 
 	// upload cw20
 	txs := buildTxFromMsg(cw20StoreMsg)(1, info)
@@ -280,7 +280,7 @@ func deployCw20(info *AppInfo) error {
 func emptyBlock(info *AppInfo) {
 	global.SetGlobalHeight(info.height)
 	height := info.height + 1
-	info.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "exchain-67", Height: height, Time: time.Now()}})
+	info.App.BeginBlock(abci.RequestBeginBlock{Header: abci.Header{ChainID: "fbc-67", Height: height, Time: time.Now()}})
 	info.App.EndBlock(abci.RequestEndBlock{Height: height})
 	info.App.Commit(abci.RequestCommit{})
 
@@ -300,7 +300,7 @@ func GenSequenceOfTxs(info *AppInfo, msgGen func(*AppInfo) ([]sdk.Msg, error), n
 			msgs,
 			fees,
 			1e8,
-			"exchain-67",
+			"fbc-67",
 			[]uint64{info.AccNum},
 			[]uint64{info.SeqNum},
 			info.MinterKey,

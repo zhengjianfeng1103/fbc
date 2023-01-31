@@ -1,27 +1,28 @@
 package baseapp_test
 
 import (
-	okexchaincodec "github.com/okex/exchain/app/codec"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp"
-	"github.com/okex/exchain/x/evm"
 	"os"
 	"testing"
 
-	"github.com/okex/exchain/libs/tendermint/libs/log"
+	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	"github.com/FiboChain/fbc/x/evm"
 
-	dbm "github.com/okex/exchain/libs/tm-db"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+
+	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/baseapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
 
-	"github.com/okex/exchain/x/evm/types/testdata"
+	"github.com/FiboChain/fbc/x/evm/types/testdata"
 )
 
 func TestRegisterMsgService(t *testing.T) {
 	db := dbm.NewMemDB()
 
 	// Create an encoding config that doesn't register testdata Msg services.
-	codecProxy, interfaceRegistry := okexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
+	codecProxy, interfaceRegistry := fbexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
 	app := baseapp.NewBaseApp("test", log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, evm.TxDecoder(codecProxy))
 	app.SetInterfaceRegistry(interfaceRegistry)
 	require.Panics(t, func() {
@@ -44,7 +45,7 @@ func TestRegisterMsgService(t *testing.T) {
 func TestRegisterMsgServiceTwice(t *testing.T) {
 	// Setup baseapp.
 	db := dbm.NewMemDB()
-	codecProxy, interfaceRegistry := okexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
+	codecProxy, interfaceRegistry := fbexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
 	app := baseapp.NewBaseApp("test", log.NewTMLogger(log.NewSyncWriter(os.Stdout)), db, evm.TxDecoder(codecProxy))
 	app.SetInterfaceRegistry(interfaceRegistry)
 	testdata.RegisterInterfaces(interfaceRegistry)

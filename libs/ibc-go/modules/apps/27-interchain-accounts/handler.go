@@ -3,11 +3,11 @@ package ica
 import (
 	"fmt"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	controllerkeeper "github.com/okex/exchain/libs/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
-	hostkeeper "github.com/okex/exchain/libs/ibc-go/modules/apps/27-interchain-accounts/host/keeper"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	controllerkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
+	hostkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/keeper"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 func NewHandler(hostKeeper *hostkeeper.Keeper, ck *controllerkeeper.Keeper) sdk.Handler {

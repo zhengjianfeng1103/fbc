@@ -3,9 +3,9 @@ package simulation
 import (
 	"math/rand"
 
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
 	gogotypes "github.com/gogo/protobuf/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/simulation"
-	"github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
 )
 
 // ParamChanges defines the parameters that can be modified by param change proposals

@@ -2,9 +2,10 @@ package types
 
 import (
 	"fmt"
+	"strings"
+
 	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	govtypes "github.com/FiboChain/fbc/x/gov/types"
-	"strings"
 )
 
 const (
@@ -17,7 +18,7 @@ const (
 
 func init() {
 	govtypes.RegisterProposalType(proposalTypeManageTreasures)
-	govtypes.RegisterProposalTypeCodec(ManageTreasuresProposal{}, "okexchain/mint/ManageTreasuresProposal")
+	govtypes.RegisterProposalTypeCodec(ManageTreasuresProposal{}, "fbexchain/mint/ManageTreasuresProposal")
 }
 
 var (

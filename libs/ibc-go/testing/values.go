@@ -1,6 +1,6 @@
 /*
-	This file contains the variables, constants, and default values
-	used in the testing package and commonly defined in tests.
+This file contains the variables, constants, and default values
+used in the testing package and commonly defined in tests.
 */
 package ibctesting
 
@@ -8,16 +8,16 @@ import (
 	"strconv"
 	"time"
 
-	ibcfeetypes "github.com/okex/exchain/libs/ibc-go/modules/apps/29-fee/types"
+	ibcfeetypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 
-	ibctransfertypes "github.com/okex/exchain/libs/ibc-go/modules/apps/transfer/types"
-	connectiontypes "github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	ibctmtypes "github.com/okex/exchain/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	"github.com/okex/exchain/libs/ibc-go/testing/mock"
+	ibctransfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
 )
 
 const (

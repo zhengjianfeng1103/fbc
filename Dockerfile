@@ -1,7 +1,7 @@
 # Simple usage with a mounted data directory:
 # > docker build -t fbchain .
-# > docker run -it -p 36657:36657 -p 36656:36656 -v ~/.exchaind:/root/.exchaind -v ~/.exchaincli:/root/.exchaincli exchain exchaind init mynode
-# > docker run -it -p 36657:36657 -p 36656:36656 -v ~/.exchaind:/root/.exchaind -v ~/.exchaincli:/root/.exchaincli exchain exchaind start
+# > docker run -it -p 36657:36657 -p 36656:36656 -v ~/.fbchaind:/root/.fbchaind -v ~/.fbchaincli:/root/.fbchaincli fbc fbchaind init mynode
+# > docker run -it -p 36657:36657 -p 36656:36656 -v ~/.fbchaind:/root/.fbchaind -v ~/.fbchaincli:/root/.fbchaincli fbc fbchaind start
 FROM golang:1.17.2-alpine AS build-env
 
 # Install minimum necessary dependencies, remove packages
@@ -27,5 +27,5 @@ WORKDIR /root
 COPY --from=build-env /go/bin/fbchaind /usr/bin/fbchaind
 COPY --from=build-env /go/bin/fbchaincli /usr/bin/fbchaincli
 
-# Run exchaind by default, omit entrypoint to ease using container with exchaincli
-CMD ["exchaind"]
+# Run fbchaind by default, omit entrypoint to ease using container with fbchaincli
+CMD ["fbchaind"]

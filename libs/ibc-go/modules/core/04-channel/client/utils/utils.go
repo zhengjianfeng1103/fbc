@@ -4,14 +4,15 @@ package utils
 import (
 	"context"
 	"encoding/binary"
-	clictx "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/02-client/client/utils"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	ibcclient "github.com/okex/exchain/libs/ibc-go/modules/core/client"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
+
+	clictx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/client/utils"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	ibcclient "github.com/FiboChain/fbc/libs/ibc-go/modules/core/client"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // QueryChannel returns a channel end.

@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 )
 
 // NewBaseAccountWithAddress - returns a new base account with a given address
@@ -19,6 +19,7 @@ func NewBaseAccountWithAddress(addr sdk.AccAddress) *BaseAccount {
 }
 
 // NewBaseAccount creates a new BaseAccount object
+//
 //nolint:interfacer
 func NewBaseAccount(address sdk.AccAddress, pubKey cryptotypes.PubKey, accountNumber, sequence uint64) *BaseAccount {
 	acc := &BaseAccount{

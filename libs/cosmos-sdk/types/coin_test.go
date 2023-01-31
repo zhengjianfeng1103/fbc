@@ -763,7 +763,7 @@ func TestMarshalJSONCoins(t *testing.T) {
 	}
 }
 
-func TestConvertWei2OKT(t *testing.T) {
+func TestConvertWei2FIBO(t *testing.T) {
 	testCases := []struct {
 		name       string
 		input      CoinAdapter
@@ -772,7 +772,7 @@ func TestConvertWei2OKT(t *testing.T) {
 		cm40StrOut string
 	}{
 		{"invalid coin", NewCoinAdapter(DefaultBondDenom, NewInt(1)), false, "", ""},
-		{"valid coin with specific output", NewCoinAdapter(DefaultIbcWei, NewInt(1)), true, "0.000000000000000001okt", "1okt"},
+		{"valid coin with specific output", NewCoinAdapter(DefaultIbcWei, NewInt(1)), true, "0.000000000000000001fibo", "1fibo"},
 	}
 	for _, ca := range testCases {
 		t.Run(ca.name, func(t *testing.T) {

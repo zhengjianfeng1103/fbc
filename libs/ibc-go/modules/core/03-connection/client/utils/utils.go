@@ -3,17 +3,18 @@ package utils
 import (
 	"context"
 	"fmt"
-	clictx "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/02-client/client/utils"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	ibcclient "github.com/okex/exchain/libs/ibc-go/modules/core/client"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
 	"io/ioutil"
+
+	clictx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/client/utils"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	ibcclient "github.com/FiboChain/fbc/libs/ibc-go/modules/core/client"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
 
 	"github.com/pkg/errors"
 )

@@ -1,10 +1,10 @@
-//nolint
+// nolint
 package types
 
 import (
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/tendermint/global"
-	"github.com/okex/exchain/libs/tendermint/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/tendermint/global"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
 )
 
 // Verify interface at compile time

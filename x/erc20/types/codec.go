@@ -1,17 +1,17 @@
 package types
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
 )
 
 // ModuleCdc defines the erc20 module's codec
 var ModuleCdc = codec.New()
 
 const (
-	TokenMappingProposalName          = "okexchain/erc20/TokenMappingProposal"
-	ProxyContractRedirectProposalName = "okexchain/erc20/ProxyContractRedirectProposal"
-	ContractTemplateProposalName      = "okexchain/erc20/ContractTemplateProposal"
-	CompiledContractProposalName      = "okexchain/erc20/Contract"
+	TokenMappingProposalName          = "fbexchain/erc20/TokenMappingProposal"
+	ProxyContractRedirectProposalName = "fbexchain/erc20/ProxyContractRedirectProposal"
+	ContractTemplateProposalName      = "fbexchain/erc20/ContractTemplateProposal"
+	CompiledContractProposalName      = "fbexchain/erc20/Contract"
 )
 
 // RegisterCodec registers all the necessary types and interfaces for the

@@ -6,46 +6,46 @@ import (
 	"testing"
 	"time"
 
-	"github.com/okex/exchain/libs/tendermint/crypto"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/client"
-	types2 "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	ibcmsg "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	ibc_tx "github.com/okex/exchain/libs/cosmos-sdk/x/auth/ibc-tx"
-	"github.com/okex/exchain/libs/tendermint/crypto/secp256k1"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	ibcmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	ibc_tx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	//cryptotypes "github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth/exported"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	//cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
 
-	//banktypes "github.com/okex/exchain/libs/cosmos-sdk/x/bank/types"
-	capabilitykeeper "github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
+	//banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/types"
+	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
 
-	stakingtypes "github.com/okex/exchain/libs/cosmos-sdk/x/staking/types"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	tmproto "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/crypto/tmhash"
-	tmprototypes "github.com/okex/exchain/libs/tendermint/proto/types"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
-	tmprotoversion "github.com/okex/exchain/libs/tendermint/version"
-	tmversion "github.com/okex/exchain/libs/tendermint/version"
+	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	tmproto "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
+	tmprototypes "github.com/FiboChain/fbc/libs/tendermint/proto/types"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	tmprotoversion "github.com/FiboChain/fbc/libs/tendermint/version"
+	tmversion "github.com/FiboChain/fbc/libs/tendermint/version"
 	"github.com/stretchr/testify/require"
 
-	"github.com/okex/exchain/app/crypto/ethsecp256k1"
-	apptypes "github.com/okex/exchain/app/types"
-	okcapptypes "github.com/okex/exchain/app/types"
-	clienttypes "github.com/okex/exchain/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/exported"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/types"
-	ibctmtypes "github.com/okex/exchain/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	"github.com/okex/exchain/libs/ibc-go/testing/mock"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp"
+	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	apptypes "github.com/FiboChain/fbc/app/types"
+	okcapptypes "github.com/FiboChain/fbc/app/types"
+	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
+	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
 )
 
 type TestChainI interface {
@@ -195,7 +195,7 @@ func NewTestChain(t *testing.T, coord *Coordinator, chainID string) TestChainI {
 
 	//fromBalance := suite.App().AccountKeeper.GetAccount(suite.ctx, cmFrom).GetCoins()
 	//var account *apptypes.EthAccount
-	//balance = sdk.NewCoins(okexchaintypes.NewPhotonCoin(amount))
+	//balance = sdk.NewCoins(fbexchaintypes.NewPhotonCoin(amount))
 	//addr := sdk.AccAddress(pubKey.Address())
 	//baseAcc := auth.NewBaseAccount(addr, balance, pubKey, 10, 50)
 	//account = &apptypes.EthAccount{
@@ -761,10 +761,10 @@ func (chain *TestChain) GetContextPointer() *sdk.Context {
 	return &chain.context
 }
 
-//func (chain *TestChain) QueryProof(key []byte) ([]byte, clienttypes.Height)  {}
-//func (chain *TestChain) GetConsensusState(clientID string, height exported.Height) (exported.ConsensusState, bool) {
-//}
-//func (chain *TestChain) GetPrefix() commitmenttypes.MerklePrefix   {}
+// func (chain *TestChain) QueryProof(key []byte) ([]byte, clienttypes.Height)  {}
+// func (chain *TestChain) GetConsensusState(clientID string, height exported.Height) (exported.ConsensusState, bool) {
+// }
+// func (chain *TestChain) GetPrefix() commitmenttypes.MerklePrefix   {}
 func (chain *TestChain) LastHeader() *ibctmtypes.Header {
 	return chain.lastHeader
 }
@@ -794,7 +794,7 @@ func (chain *TestChain) SenderAccountPVBZ() []byte {
 	return chain.privKeyBz
 }
 
-//func (chain *TestChain) CurrentTMClientHeader() *ibctmtypes.Header {}
+// func (chain *TestChain) CurrentTMClientHeader() *ibctmtypes.Header {}
 func (chain *TestChain) CurrentHeader() tmproto.Header {
 	return chain.currentHeader
 }
@@ -802,10 +802,10 @@ func (chain *TestChain) SetCurrentHeader(h tmproto.Header) {
 	chain.currentHeader = h
 }
 
-//func (chain *TestChain) NextBlock()                                {}
+// func (chain *TestChain) NextBlock()                                {}
 //
-//func CreateTMClientHeader(chainID string, blockHeight int64, trustedHeight clienttypes.Height, timestamp time.Time, tmValSet, tmTrustedVals *tmtypes.ValidatorSet, signers []tmtypes.PrivValidator) *ibctmtypes.Header {
-//}
+// func CreateTMClientHeader(chainID string, blockHeight int64, trustedHeight clienttypes.Height, timestamp time.Time, tmValSet, tmTrustedVals *tmtypes.ValidatorSet, signers []tmtypes.PrivValidator) *ibctmtypes.Header {
+// }
 func (chain *TestChain) Vals() *tmtypes.ValidatorSet {
 	return chain.vals
 }
@@ -814,12 +814,11 @@ func (chain *TestChain) Signers() []tmtypes.PrivValidator {
 	return chain.signers
 }
 
-//func GetSimApp() *simapp.SimApp                                                                    {}
-//func GetChannelCapability(portID, channelID string) *capabilitytypes.Capability                    {}
-//func CreateChannelCapability(scopedKeeper capabilitykeeper.ScopedKeeper, portID, channelID string) {}
-//func SendMsgs(msgs ...sdk.Msg) (*sdk.Result, error)                                                {}
-//func QueryUpgradeProof(key []byte, height uint64) ([]byte, clienttypes.Height)                     {}
-//
+// func GetSimApp() *simapp.SimApp                                                                    {}
+// func GetChannelCapability(portID, channelID string) *capabilitytypes.Capability                    {}
+// func CreateChannelCapability(scopedKeeper capabilitykeeper.ScopedKeeper, portID, channelID string) {}
+// func SendMsgs(msgs ...sdk.Msg) (*sdk.Result, error)                                                {}
+// func QueryUpgradeProof(key []byte, height uint64) ([]byte, clienttypes.Height)                     {}
 func (chain *TestChain) Coordinator() *Coordinator {
 	return chain.coordinator
 }

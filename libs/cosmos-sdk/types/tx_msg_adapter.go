@@ -1,8 +1,8 @@
 package types
 
 import (
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
 	"github.com/gogo/protobuf/proto"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
 )
 
 const (

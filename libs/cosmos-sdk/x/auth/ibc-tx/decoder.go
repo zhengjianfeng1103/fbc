@@ -3,20 +3,20 @@ package ibc_tx
 import (
 	"fmt"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec/unknownproto"
-	"github.com/okex/exchain/libs/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	ibctx "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/tx/signing"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth/ibc-tx/internal/adapter"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/unknownproto"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/adapter"
 	"google.golang.org/protobuf/encoding/protowire"
 
-	//"github.com/okex/exchain/libs/cosmos-sdk/codec/unknownproto"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+	//"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/unknownproto"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 
-	tx "github.com/okex/exchain/libs/cosmos-sdk/types/tx"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth/types"
+	tx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 func CM40TxDecoder(cdc codec.ProtoCodecMarshaler) func(txBytes []byte) (ibctx.Tx, error) {
@@ -80,7 +80,7 @@ func CM40TxDecoder(cdc codec.ProtoCodecMarshaler) func(txBytes []byte) (ibctx.Tx
 }
 
 // DefaultTxDecoder returns a default protobuf TxDecoder using the provided Marshaler.
-//func IbcTxDecoder(cdc codec.ProtoCodecMarshaler) ibcadapter.TxDecoder {
+// func IbcTxDecoder(cdc codec.ProtoCodecMarshaler) ibcadapter.TxDecoder {
 func IbcTxDecoder(cdc codec.ProtoCodecMarshaler) ibctx.IbcTxDecoder {
 	return func(txBytes []byte) (*authtypes.IbcTx, error) {
 		// Make sure txBytes follow ADR-027.

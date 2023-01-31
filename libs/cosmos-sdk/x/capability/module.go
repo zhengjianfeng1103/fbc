@@ -2,23 +2,24 @@ package capability
 
 import (
 	"encoding/json"
+	"math/rand"
+
+	clientCtx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/simulation"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	simulation2 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/base"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	clientCtx "github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	types2 "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/upgrade"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/simulation"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	simulation2 "github.com/okex/exchain/libs/cosmos-sdk/x/simulation"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/base"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
 	"github.com/spf13/cobra"
-	"math/rand"
 )
 
 var (

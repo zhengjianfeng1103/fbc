@@ -2,8 +2,9 @@ package types
 
 import (
 	"crypto/sha256"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/errors"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 )
 
 // Module is a specialized version of a composed address for modules. Each module account

@@ -2,8 +2,9 @@ package types
 
 import (
 	"encoding/json"
-	"github.com/ethereum/go-ethereum/common/hexutil"
 	"testing"
+
+	"github.com/ethereum/go-ethereum/common/hexutil"
 
 	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
@@ -11,7 +12,7 @@ import (
 
 const (
 	addr           = "fb1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc"
-	addr1          = "0x83D83497431C2D3FEab296a9fba4e5FaDD2f7eD0"
+	addr1          = "0x4492830839558AF3F1AE2D9c71242Dc6b596e017"
 	expectedOutput = `Address List:
 fb1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc
 fb1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc`

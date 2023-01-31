@@ -1,6 +1,6 @@
 package types
 
-import sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
+import sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 
 type TransferHooks interface {
 	AfterSendTransfer(

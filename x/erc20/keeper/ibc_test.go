@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math/big"
 
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	erc20Keeper "github.com/FiboChain/fbc/x/erc20/keeper"
+	"github.com/FiboChain/fbc/x/erc20/types"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	erc20Keeper "github.com/okex/exchain/x/erc20/keeper"
-	"github.com/okex/exchain/x/erc20/types"
-	evmtypes "github.com/okex/exchain/x/evm/types"
 )
 
 const (

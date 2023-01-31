@@ -2,17 +2,18 @@ package simulation_test
 
 import (
 	"fmt"
-	tmkv "github.com/okex/exchain/libs/tendermint/libs/kv"
 	"testing"
+
+	tmkv "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/kv"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/simulation"
-	"github.com/okex/exchain/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/okex/exchain/libs/ibc-go/modules/core/24-host"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/kv"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/simulation"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
 )
 
 func TestDecodeStore(t *testing.T) {

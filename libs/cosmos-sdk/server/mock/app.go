@@ -55,7 +55,7 @@ func NewApp(rootDir string, logger log.Logger) (abci.Application, error) {
 
 func updateGPOHandler(gpo *gasprice.Oracle) sdk.UpdateGPOHandler {
 	return func(dynamicGpInfos []sdk.DynamicGasInfo) {
-		if appconfig.GetOecConfig().GetDynamicGpMode() != apptypes.MinimalGpMode {
+		if appconfig.GetFecConfig().GetDynamicGpMode() != apptypes.MinimalGpMode {
 			for _, dgi := range dynamicGpInfos {
 				gpo.CurrentBlockGPs.Update(dgi.GetGP(), dgi.GetGU())
 			}
@@ -120,7 +120,7 @@ func InitChainer(key sdk.StoreKey) func(sdk.Context, abci.RequestInitChain) abci
 // AppGenState can be passed into InitCmd, returns a static string of a few
 // key-values that can be parsed by InitChainer
 func AppGenState(_ *codec.Codec, _ types.GenesisDoc, _ []json.RawMessage) (appState json.
-RawMessage, err error) {
+	RawMessage, err error) {
 	appState = json.RawMessage(`{
   "values": [
     {

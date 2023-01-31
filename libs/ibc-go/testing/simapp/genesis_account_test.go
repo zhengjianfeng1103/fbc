@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
-	//"github.com/okex/exchain/libs/cosmos-sdk/crypto/keys/secp256k1"
+	//"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/secp256k1"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	authtypes "github.com/okex/exchain/libs/cosmos-sdk/x/auth"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
 
-	"github.com/okex/exchain/libs/tendermint/crypto"
-	"github.com/okex/exchain/libs/tendermint/crypto/secp256k1"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
 )
 

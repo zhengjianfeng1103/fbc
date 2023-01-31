@@ -6,24 +6,25 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
-	wasmvm "github.com/CosmWasm/wasmvm"
-	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	"github.com/gogo/protobuf/proto"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	"github.com/okex/exchain/libs/cosmos-sdk/store/prefix"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/innertx"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth/exported"
-	"github.com/okex/exchain/libs/tendermint/libs/log"
-	paramtypes "github.com/okex/exchain/x/params"
-	"github.com/okex/exchain/x/wasm/ioutils"
-	"github.com/okex/exchain/x/wasm/types"
-	"github.com/okex/exchain/x/wasm/watcher"
 	"math"
 	"path/filepath"
 	"strconv"
 	"strings"
+
+	wasmvm "github.com/CosmWasm/wasmvm"
+	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/innertx"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	paramtypes "github.com/FiboChain/fbc/x/params"
+	"github.com/FiboChain/fbc/x/wasm/ioutils"
+	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/FiboChain/fbc/x/wasm/watcher"
+	"github.com/gogo/protobuf/proto"
 )
 
 // contractMemoryLimit is the memory limit of each contract execution (in MiB)
@@ -1220,7 +1221,7 @@ func (k Keeper) QueryGasLimit() sdk.Gas {
 }
 
 // BankCoinTransferrer replicates the cosmos-sdk behaviour as in
-// https://github.com/okex/exchain/libs/cosmos-sdk/blob/v0.41.4/x/bank/keeper/msg_server.go#L26
+// https://github.com/FiboChain/fbc/libs/cosmos-sdk/blob/v0.41.4/x/bank/keeper/msg_server.go#L26
 type BankCoinTransferrer struct {
 	keeper types.BankKeeper
 }

@@ -9,15 +9,15 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/stretchr/testify/suite"
 
-	appconfig "github.com/okex/exchain/app/config"
-	"github.com/okex/exchain/app/crypto/ethsecp256k1"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	cosmossdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	authclient "github.com/okex/exchain/libs/cosmos-sdk/x/auth/client/utils"
-	abcitypes "github.com/okex/exchain/libs/tendermint/abci/types"
-	"github.com/okex/exchain/libs/tendermint/global"
-	tendertypes "github.com/okex/exchain/libs/tendermint/types"
-	evmtypes "github.com/okex/exchain/x/evm/types"
+	appconfig "github.com/FiboChain/fbc/app/config"
+	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	cosmossdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	authclient "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	abcitypes "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/FiboChain/fbc/libs/tendermint/global"
+	tendertypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 )
 
 var (
@@ -27,7 +27,7 @@ var (
 
 type FakeBlockRecommendGPTestSuite struct {
 	suite.Suite
-	app   *OKExChainApp
+	app   *FBChainApp
 	codec *codec.Codec
 
 	evmSenderPrivKey   ethsecp256k1.PrivKey
@@ -295,14 +295,14 @@ func (suite *FakeBlockRecommendGPTestSuite) TestRecommendGP() {
 		},
 	}
 
-	appconfig.GetOecConfig().SetDynamicGpWeight(80)
-	appconfig.GetOecConfig().SetDynamicGpCheckBlocks(5)
+	appconfig.GetFecConfig().SetDynamicGpWeight(80)
+	appconfig.GetFecConfig().SetDynamicGpCheckBlocks(5)
 	suite.SetupTest()
 	for _, tc := range testCases {
 
-		appconfig.GetOecConfig().SetDynamicGpMaxTxNum(tc.gpMaxTxNum)
-		appconfig.GetOecConfig().SetDynamicGpMaxGasUsed(tc.gpMaxGasUsed)
-		appconfig.GetOecConfig().SetDynamicGpMode(tc.gpMode)
+		appconfig.GetFecConfig().SetDynamicGpMaxTxNum(tc.gpMaxTxNum)
+		appconfig.GetFecConfig().SetDynamicGpMaxGasUsed(tc.gpMaxGasUsed)
+		appconfig.GetFecConfig().SetDynamicGpMode(tc.gpMode)
 
 		// tx serial
 		gpOffset := int64(200000)

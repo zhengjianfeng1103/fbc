@@ -15,8 +15,8 @@ const (
   "title": "default title",
   "description": "default description",
   "distributor_addresses": [
-    "ex1cftp8q8g4aa65nw9s5trwexe77d9t6cr8ndu02",
-    "ex1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc"
+    "fb1suh2tdzzphg7x7c9hvadntqc00ar9xgjpj9snw",
+    "fb1lz3l5hnchv4wrl759kjvl33dpfr66f7x5fp68c"
   ],
   "is_added": true,
   "deposit": [
@@ -30,8 +30,8 @@ const (
   "title": "default title",
   "description": "default description",
   "contract_addresses": [
-    "ex1cftp8q8g4aa65nw9s5trwexe77d9t6cr8ndu02",
-    "ex1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc"
+    "fb1suh2tdzzphg7x7c9hvadntqc00ar9xgjpj9snw",
+    "fb1lz3l5hnchv4wrl759kjvl33dpfr66f7x5fp68c"
   ],
   "is_added": true,
   "deposit": [
@@ -46,7 +46,7 @@ const (
   "description": "default description",
   "contract_addresses":[
         {
-            "address": "ex1cftp8q8g4aa65nw9s5trwexe77d9t6cr8ndu02",
+            "address": "fb1suh2tdzzphg7x7c9hvadntqc00ar9xgjpj9snw",
             "block_methods": [
                 {
                     "sign": "0x371303c0",
@@ -59,7 +59,7 @@ const (
             ]
         },
 		{
-            "address": "ex1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc",
+            "address": "fb1lz3l5hnchv4wrl759kjvl33dpfr66f7x5fp68c",
             "block_methods": [
                 {
                     "sign": "0x371303c0",
@@ -83,8 +83,8 @@ const (
 	fileName                 = "./proposal.json"
 	expectedTitle            = "default title"
 	expectedDescription      = "default description"
-	expectedDistributorAddr1 = "ex1cftp8q8g4aa65nw9s5trwexe77d9t6cr8ndu02"
-	expectedDistributorAddr2 = "ex1k0wwsg7xf9tjt3rvxdewz42e74sp286agrf9qc"
+	expectedDistributorAddr1 = "fb1suh2tdzzphg7x7c9hvadntqc00ar9xgjpj9snw"
+	expectedDistributorAddr2 = "fb1lz3l5hnchv4wrl759kjvl33dpfr66f7x5fp68c"
 	expectedMethodSign1      = "0x371303c0"
 	expectedMethodExtra1     = "inc()"
 	expectedMethodSign2      = "0x579be378"
@@ -192,7 +192,7 @@ func TestParseManageSysContractAddressProposalJSON(t *testing.T) {
   "is_added":true,
   "deposit": [
     {
-      "denom": "okt",
+      "denom": "fibo",
       "amount": "100.000000000000000000"
     }
   ]

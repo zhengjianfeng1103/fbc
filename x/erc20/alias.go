@@ -1,8 +1,8 @@
 package erc20
 
 import (
-	"github.com/okex/exchain/x/erc20/keeper"
-	"github.com/okex/exchain/x/erc20/types"
+	"github.com/FiboChain/fbc/x/erc20/keeper"
+	"github.com/FiboChain/fbc/x/erc20/types"
 )
 
 // nolint
@@ -22,7 +22,7 @@ var (
 	NewSendNative20ToIbcEventHandler = keeper.NewSendNative20ToIbcEventHandler
 )
 
-//nolint
+// nolint
 type (
 	Keeper       = keeper.Keeper
 	GenesisState = types.GenesisState

@@ -6,8 +6,8 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/okex/exchain/libs/cosmos-sdk/client/context"
-	"github.com/okex/exchain/x/staking/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/FiboChain/fbc/x/staking/types"
 )
 
 func RegisterOriginRPCRoutersForGRPC(cliCtx context.CLIContext, r *mux.Router) {

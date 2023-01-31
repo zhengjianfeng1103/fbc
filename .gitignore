@@ -16,8 +16,8 @@ mpt.db
 /rocksdb/
 dump.rdb
 # Build
-.exchaind
-.exchaincli
+.fbchaind
+.fbchaincli
 vendor*
 build
 tools/
@@ -32,16 +32,16 @@ doc
 # Data - ideally these don't exist
 baseapp/data/*
 client/lcd/keys/*
-cmd/exchaincli/statik/statik.go
+cmd/fbchaincli/statik/statik.go
 mytestnet
 doc/statik/statik.go
 dev/cache
 cmd/launch/launch
-cmd/exchaincli/exchaincli
-cmd/exchaind/exchaind
+cmd/fbchaincli/fbchaincli
+cmd/fbchaind/fbchaind
 cmd/exchaintool/exchaintool
 cmd/tiger/tiger
-cmd/exchaind/testnet_okchain.go
+cmd/fbchaind/testnet_okchain.go
 dev/testnet/cache
 testnet_exchain.go
 tools

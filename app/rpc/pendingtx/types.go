@@ -1,8 +1,8 @@
 package pendingtx
 
 import (
-	"github.com/okex/exchain/libs/tendermint/types"
-	"github.com/okex/exchain/x/evm/watcher"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/FiboChain/fbc/x/evm/watcher"
 )
 
 type PendingMsg struct {

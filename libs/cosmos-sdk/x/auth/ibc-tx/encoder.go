@@ -2,13 +2,14 @@ package ibc_tx
 
 import (
 	"fmt"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	"github.com/gogo/protobuf/proto"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	codectypes "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	sdkerrors "github.com/okex/exchain/libs/cosmos-sdk/types/errors"
-	ibctx "github.com/okex/exchain/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/auth/types"
 )
 
 const MaxGasWanted = uint64((1 << 63) - 1)
@@ -240,7 +241,7 @@ func (t *TxAdapter) GetSigners() []sdk.AccAddress {
 //	return unpacker.UnpackAny(m.PublicKey, new(cryptotypes.PubKey))
 //}
 
-//TODO add call RegisterInterfaces
+// TODO add call RegisterInterfaces
 // RegisterInterfaces registers the sdk.Tx interface.
 func RegisterInterfaces(registry codectypes.InterfaceRegistry) {
 	registry.RegisterInterface("cosmos.tx.v1beta1.Tx", (*sdk.Tx)(nil))

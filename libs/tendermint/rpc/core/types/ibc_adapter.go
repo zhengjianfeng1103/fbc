@@ -1,8 +1,8 @@
 package coretypes
 
 import (
-	"github.com/okex/exchain/libs/tendermint/types"
-	"github.com/okex/exchain/libs/tendermint/version"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/FiboChain/fbc/libs/tendermint/version"
 )
 
 type CM40ResultBlock struct {

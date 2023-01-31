@@ -1,11 +1,12 @@
 package types
 
 import (
-	"github.com/okex/exchain/libs/cosmos-sdk/x/upgrade"
 	"time"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	stakingtypes "github.com/okex/exchain/libs/cosmos-sdk/x/staking/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade"
+
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 // StakingKeeper expected staking keeper

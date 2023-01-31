@@ -3,14 +3,15 @@ package consensus
 import (
 	"bytes"
 	"fmt"
-	cfg "github.com/okex/exchain/libs/tendermint/config"
-	cstypes "github.com/okex/exchain/libs/tendermint/consensus/types"
-	"github.com/okex/exchain/libs/tendermint/libs/fail"
-	"github.com/okex/exchain/libs/tendermint/types"
-	tmtime "github.com/okex/exchain/libs/tendermint/types/time"
 	"reflect"
 	"runtime/debug"
 	"time"
+
+	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
+	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
+	"github.com/FiboChain/fbc/libs/tendermint/libs/fail"
+	"github.com/FiboChain/fbc/libs/tendermint/types"
+	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
 )
 
 //-----------------------------------------

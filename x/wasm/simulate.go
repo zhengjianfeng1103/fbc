@@ -1,15 +1,15 @@
 package wasm
 
 import (
-	"github.com/okex/exchain/app/rpc/simulator"
-	"github.com/okex/exchain/libs/cosmos-sdk/baseapp"
-	"github.com/okex/exchain/libs/cosmos-sdk/codec"
-	types2 "github.com/okex/exchain/libs/cosmos-sdk/codec/types"
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/bank"
-	"github.com/okex/exchain/x/wasm/keeper"
-	"github.com/okex/exchain/x/wasm/proxy"
-	"github.com/okex/exchain/x/wasm/types"
+	"github.com/FiboChain/fbc/app/rpc/simulator"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
+	"github.com/FiboChain/fbc/x/wasm/keeper"
+	"github.com/FiboChain/fbc/x/wasm/proxy"
+	"github.com/FiboChain/fbc/x/wasm/types"
 )
 
 type Simulator struct {

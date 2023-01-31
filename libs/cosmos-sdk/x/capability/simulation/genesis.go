@@ -3,13 +3,13 @@ package simulation
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/okex/exchain/libs/cosmos-sdk/types/module"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
 	"math/rand"
+
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
 )
 
 // DONTCOVER
-
 
 // Simulation parameter constants
 const index = "index"

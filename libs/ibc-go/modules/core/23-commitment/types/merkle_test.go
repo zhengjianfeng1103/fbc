@@ -2,13 +2,14 @@ package types_test
 
 import (
 	"fmt"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
 	"testing"
+
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 
 	"github.com/stretchr/testify/require"
 	// abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/okex/exchain/libs/ibc-go/modules/core/23-commitment/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestVerifyMembership() {

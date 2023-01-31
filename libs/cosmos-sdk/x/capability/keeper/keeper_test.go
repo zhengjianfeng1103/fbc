@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"testing"
 
-	okexchaincodec "github.com/okex/exchain/app/codec"
-	abci "github.com/okex/exchain/libs/tendermint/abci/types"
-	tmtypes "github.com/okex/exchain/libs/tendermint/types"
+	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
+	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 
-	sdk "github.com/okex/exchain/libs/cosmos-sdk/types"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/keeper"
-	"github.com/okex/exchain/libs/cosmos-sdk/x/capability/types"
-	stakingtypes "github.com/okex/exchain/libs/cosmos-sdk/x/staking/types"
-	"github.com/okex/exchain/libs/ibc-go/testing/simapp"
+	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
+	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -28,7 +28,7 @@ func (suite *KeeperTestSuite) SetupTest() {
 	checkTx := false
 	app := simapp.Setup(checkTx)
 	//cdc := app.Codec()
-	codecProxy, _ := okexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
+	codecProxy, _ := fbexchaincodec.MakeCodecSuit(simapp.ModuleBasics)
 	// create new keeper so we can define custom scoping before init and seal
 	keeper := keeper.NewKeeper(codecProxy, app.GetKey(types.StoreKey), app.GetMemKey(types.MemStoreKey))
 

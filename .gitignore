@@ -20,6 +20,8 @@ dump.rdb
 .fbchaincli
 vendor*
 build
+build/fbchaincli
+build/fbchaind
 tools/
 tools/bin/*
 examples/build/*

@@ -24,7 +24,6 @@ import (
 )
 
 var (
-	//signer = "cosmos1ckgw5d7jfj7wwxjzs9fdrdev9vc8dzcw3n2lht"
 	signer = "fb1e34x06m7hqwt4n98yuaxuxljr0juumktxdav63"
 
 	emptyPrefix = commitmenttypes.MerklePrefix{}

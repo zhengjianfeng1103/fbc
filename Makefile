@@ -107,7 +107,7 @@ ifeq ($(WITH_ROCKSDB),true)
 endif
 
 ifeq ($(MAKECMDGOALS),testnet)
-  ldflags += -X github.com/FiboChain/fbc/libs/cosmos-sdk/server.ChainID=fbc-65
+  ldflags += -X github.com/FiboChain/fbc/libs/cosmos-sdk/server.ChainID=fbc-3021
 endif
 
 ifeq ($(LINK_STATICALLY),true)

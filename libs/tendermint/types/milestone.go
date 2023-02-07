@@ -92,6 +92,27 @@ func string2number(input string) int64 {
 	return res
 }
 
+/*
+*
+GenesisHeight=0
+MercuryHeight=1
+VenusHeight=1
+Venus1Height=1
+Venus2Height=0
+Venus3Height=1
+Venus4Height=0
+EarthHeight=0
+MarsHeight=0
+*
+*/
+func SetupFbMainNetEnvironment(pruneH int64) {
+	milestoneVenusHeight = 1
+	milestoneMercuryHeight = 1
+	genesisHeight = 0
+	nodePruneHeight = pruneH
+	milestoneVenus1Height = 1
+}
+
 func SetupMainNetEnvironment(pruneH int64) {
 	milestoneVenusHeight = MainNetVeneusHeight
 	milestoneMercuryHeight = MainNetMercuyHeight
@@ -108,7 +129,7 @@ func SetupTestNetEnvironment(pruneH int64) {
 	milestoneVenus1Height = TestNetVeneus1Height
 }
 
-//depracate homstead signer support
+// depracate homstead signer support
 func HigherThanMercury(height int64) bool {
 	if milestoneMercuryHeight == 0 {
 		// milestoneMercuryHeight not enabled
@@ -124,7 +145,7 @@ func HigherThanVenus(height int64) bool {
 	return height >= milestoneVenusHeight
 }
 
-//use MPT storage model to replace IAVL storage model
+// use MPT storage model to replace IAVL storage model
 func HigherThanMars(height int64) bool {
 	if milestoneMarsHeight == 0 {
 		return false

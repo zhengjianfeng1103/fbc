@@ -1,6 +1,6 @@
 package store
 
-import "github.com/FiboChain/fbc/libs/tendermint/types"
+import "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
 // Store is anything that can persistenly store headers.
 type Store interface {

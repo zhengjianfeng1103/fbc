@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"strconv"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
 )
 
 // GetCmdParams returns the command handler for the host submodule parameter querying.

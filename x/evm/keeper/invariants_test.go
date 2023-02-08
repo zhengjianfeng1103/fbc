@@ -3,11 +3,11 @@ package keeper_test
 import (
 	"math/big"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	ethermint "github.com/FiboChain/fbc/app/types"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
 
 	ethcmn "github.com/ethereum/go-ethereum/common"
 )

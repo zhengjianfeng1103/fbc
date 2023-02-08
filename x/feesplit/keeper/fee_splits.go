@@ -3,11 +3,11 @@ package keeper
 import (
 	"math/big"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/x/feesplit/types"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/prefix"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
 )
 
 // GetFeeSplits returns all registered FeeSplits.

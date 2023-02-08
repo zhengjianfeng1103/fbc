@@ -7,12 +7,12 @@ import (
 
 	"github.com/tendermint/go-amino"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/pkg/errors"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 const (

@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"math/big"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/x/vmbridge/keeper"
-	"github.com/FiboChain/fbc/x/vmbridge/types"
-	wasmtypes "github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/ethereum/go-ethereum/common"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/x/vmbridge/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/vmbridge/types"
+	wasmtypes "github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func (suite *KeeperTestSuite) TestKeeper_SendToWasm() {

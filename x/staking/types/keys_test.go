@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/assert"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var (

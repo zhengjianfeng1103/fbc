@@ -4,7 +4,7 @@
 package secp256k1
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 // Sign creates an ECDSA signature on curve Secp256k1, using SHA256 on the msg.

@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Export returns the exported format of validator in genesis export

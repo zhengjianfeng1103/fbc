@@ -10,7 +10,7 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/clients"
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 // StartNacosClient start nacos client and register rest service in nacos

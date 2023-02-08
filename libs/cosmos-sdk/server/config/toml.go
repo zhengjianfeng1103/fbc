@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"text/template"
 
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
 	"github.com/spf13/viper"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
 )
 
 const defaultConfigTemplate = `# This is a TOML config file.

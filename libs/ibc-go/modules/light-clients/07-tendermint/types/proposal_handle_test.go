@@ -3,12 +3,12 @@ package types_test
 import (
 	"time"
 
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 var (

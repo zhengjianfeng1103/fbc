@@ -1,8 +1,8 @@
 package types
 
 import (
-	tmcrypto "github.com/FiboChain/fbc/libs/tendermint/crypto"
 	proto "github.com/gogo/protobuf/proto"
+	tmcrypto "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 // PubKey defines a public key and extends proto.Message.

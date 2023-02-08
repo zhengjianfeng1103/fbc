@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
 )
 
 // Import cosmos-sdk/types/store.go for convenience.

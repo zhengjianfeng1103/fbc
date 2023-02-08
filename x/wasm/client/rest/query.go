@@ -10,15 +10,15 @@ import (
 	"strconv"
 	"strings"
 
-	clientCtx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	clientCtx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
 
 	"github.com/gorilla/mux"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
 
-	"github.com/FiboChain/fbc/x/wasm/keeper"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func registerQueryRoutes(cliCtx clientCtx.CLIContext, r *mux.Router) {

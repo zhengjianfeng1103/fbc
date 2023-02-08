@@ -1,10 +1,11 @@
 package utils
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
 	"io/ioutil"
+
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
 )
 
 // ManageTreasuresProposalJSON defines a ManageTreasureProposal with a deposit used to parse

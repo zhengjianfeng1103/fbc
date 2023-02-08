@@ -1,9 +1,9 @@
 package lite
 
 import (
-	log "github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	lerr "github.com/FiboChain/fbc/libs/tendermint/lite/errors"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	log "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	lerr "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var _ PersistentProvider = (*multiProvider)(nil)

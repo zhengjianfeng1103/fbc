@@ -5,20 +5,20 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	clicontext "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	"github.com/FiboChain/fbc/x/icamauth/types"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	clicontext "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/x/icamauth/types"
 )
 
 // GetTxCmd creates and returns the icamauth tx command

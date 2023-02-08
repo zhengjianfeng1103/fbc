@@ -8,11 +8,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
 
-	ethermint "github.com/FiboChain/fbc/app/types"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
 )
 
 // InitConfig adds the chain-id, encoding and output flags to the persistent flag set.

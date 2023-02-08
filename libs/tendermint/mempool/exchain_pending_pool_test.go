@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/assert"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 func TestAddtx(t *testing.T) {

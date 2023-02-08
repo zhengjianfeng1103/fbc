@@ -1,10 +1,10 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	supplyexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
-	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	supplyexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
+	stakingexported "github.com/zhengjianfeng1103/fbc/x/staking/exported"
 )
 
 // StakingKeeper expected staking keeper (noalias)

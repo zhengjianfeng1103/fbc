@@ -3,8 +3,8 @@ package abcicli
 import (
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
 )
 
 var _ Client = (*localClient)(nil)

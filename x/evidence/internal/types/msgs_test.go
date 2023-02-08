@@ -3,12 +3,12 @@ package types_test
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/evidence/exported"
-	"github.com/FiboChain/fbc/x/evidence/internal/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/exported"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/internal/types"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 )
 
 func TestMsgSubmitEvidence(t *testing.T) {

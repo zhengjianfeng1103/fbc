@@ -2,7 +2,7 @@ package keys
 
 import (
 	ethcmn "github.com/ethereum/go-ethereum/common"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // KeyOutput defines a structure wrapping around an Info object used for output

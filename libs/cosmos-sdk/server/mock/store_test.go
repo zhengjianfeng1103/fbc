@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func TestStore(t *testing.T) {

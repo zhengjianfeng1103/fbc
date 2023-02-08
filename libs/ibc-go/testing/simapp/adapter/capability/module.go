@@ -3,13 +3,13 @@ package capability
 import (
 	"encoding/json"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	capabilityModule "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/adapter"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	capabilityModule "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/keeper"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp/adapter"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 type CapabilityModuleAdapter struct {

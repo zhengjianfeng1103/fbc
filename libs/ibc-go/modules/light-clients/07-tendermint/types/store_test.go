@@ -4,13 +4,13 @@ import (
 	"math"
 	"time"
 
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	solomachinetypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	solomachinetypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 func (suite *TendermintTestSuite) TestGetConsensusState() {

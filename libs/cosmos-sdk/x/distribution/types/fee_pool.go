@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // global fee pool for distribution

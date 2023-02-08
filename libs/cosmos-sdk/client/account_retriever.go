@@ -1,9 +1,9 @@
 package client
 
 import (
-	clictx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	clictx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 // Account defines a read-only version of the auth module's AccountI.

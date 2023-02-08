@@ -1,12 +1,12 @@
 package v018
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil"
-	v016evm "github.com/FiboChain/fbc/x/evm/legacy/v0_16"
-	v018evm "github.com/FiboChain/fbc/x/evm/legacy/v0_18"
-	v011staking "github.com/FiboChain/fbc/x/staking/legacy/v0_11"
-	v018staking "github.com/FiboChain/fbc/x/staking/legacy/v0_18"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil"
+	v016evm "github.com/zhengjianfeng1103/fbc/x/evm/legacy/v0_16"
+	v018evm "github.com/zhengjianfeng1103/fbc/x/evm/legacy/v0_18"
+	v011staking "github.com/zhengjianfeng1103/fbc/x/staking/legacy/v0_11"
+	v018staking "github.com/zhengjianfeng1103/fbc/x/staking/legacy/v0_18"
 )
 
 // Migrate migrates exported state from v0.16 to a v0.17 genesis state.

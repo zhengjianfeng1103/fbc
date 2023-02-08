@@ -1,4 +1,4 @@
-module github.com/FiboChain/fbc/dev/client
+module github.com/zhengjianfeng1103/fbc/dev/client
 
 go 1.17
 

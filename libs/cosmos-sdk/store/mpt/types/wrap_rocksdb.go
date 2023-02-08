@@ -4,10 +4,10 @@
 package types
 
 import (
-	tmdb "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/cosmos/gorocksdb"
 	"github.com/ethereum/go-ethereum/ethdb"
 	"github.com/pkg/errors"
+	tmdb "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 // ------------------------------------------

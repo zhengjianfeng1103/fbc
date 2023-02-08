@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	paramtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	paramtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 )
 
 // DefaultIbcEnabled enabled

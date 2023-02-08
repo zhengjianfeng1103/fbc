@@ -3,10 +3,10 @@ package store
 // TODO: make it independent from list
 /*
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/list"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/list"
 )
 
 // Key for the top element position in the queue

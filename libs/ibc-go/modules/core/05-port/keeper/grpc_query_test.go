@@ -3,13 +3,13 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 	//	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/mock"
 )
 
 func (suite *KeeperTestSuite) TestAppVersion() {

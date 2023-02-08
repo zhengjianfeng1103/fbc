@@ -3,12 +3,12 @@ package keeper_test
 import (
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/evidence/internal/types"
-	"github.com/FiboChain/fbc/x/staking"
-	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/internal/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/x/staking/types"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 const EPOCH = 252

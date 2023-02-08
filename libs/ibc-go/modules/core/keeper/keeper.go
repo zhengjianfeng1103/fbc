@@ -1,20 +1,20 @@
 package keeper
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	paramtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	clientkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/keeper"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	connectionkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/keeper"
-	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	channelkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/keeper"
-	portkeeper "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/keeper"
-	porttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	capabilitykeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	paramtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	clientkeeper "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/keeper"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	connectionkeeper "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/keeper"
+	connectiontypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channelkeeper "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/keeper"
+	portkeeper "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/keeper"
+	porttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/types"
 )
 
 var _ types.QueryServer = (*Keeper)(nil)

@@ -4,7 +4,7 @@
 package params
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 )
 
 // MakeTestEncodingConfig creates an EncodingConfig for a non-amino based test configuration.

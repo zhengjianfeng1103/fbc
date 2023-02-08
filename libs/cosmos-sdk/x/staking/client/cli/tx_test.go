@@ -3,15 +3,15 @@ package cli
 import (
 	"testing"
 
-	tcmd "github.com/FiboChain/fbc/libs/tendermint/cmd/tendermint/commands"
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
+	tcmd "github.com/zhengjianfeng1103/fbc/libs/tendermint/cmd/tendermint/commands"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func TestPrepareFlagsForTxCreateValidator(t *testing.T) {

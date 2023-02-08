@@ -3,13 +3,13 @@ package token
 import (
 	"encoding/json"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	authTypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	authTypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/x/common/version"
-	tokenTypes "github.com/FiboChain/fbc/x/token/types"
+	"github.com/zhengjianfeng1103/fbc/x/common/version"
+	tokenTypes "github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 var (

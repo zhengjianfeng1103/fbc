@@ -3,14 +3,14 @@ package cli
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/types"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/types"
 )
 
 // GetCmdParams returns the command handler for the controller submodule parameter querying.

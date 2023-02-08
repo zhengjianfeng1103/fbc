@@ -3,9 +3,9 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	icatypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
-	"github.com/FiboChain/fbc/x/icamauth/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	icatypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	"github.com/zhengjianfeng1103/fbc/x/icamauth/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

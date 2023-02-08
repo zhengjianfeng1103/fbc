@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/exported"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
 	"gopkg.in/yaml.v2"
 )
 

@@ -1,8 +1,8 @@
 package signing
 
 import (
-	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	ibctx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
 )
 
 // SignModeHandler defines a interface to be implemented by types which will handle

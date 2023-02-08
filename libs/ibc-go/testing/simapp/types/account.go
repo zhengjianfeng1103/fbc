@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 type AccountI interface {

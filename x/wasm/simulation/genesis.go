@@ -1,9 +1,9 @@
 package simulation
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 // RandomizeGenState generates a random GenesisState for wasm

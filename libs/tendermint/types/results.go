@@ -3,11 +3,11 @@ package types
 import (
 	gobytes "bytes"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
 	"github.com/tendermint/go-amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
 )
 
 //-----------------------------------------------------------------------------

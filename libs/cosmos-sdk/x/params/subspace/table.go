@@ -3,7 +3,7 @@ package subspace
 import (
 	"reflect"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 type attribute struct {

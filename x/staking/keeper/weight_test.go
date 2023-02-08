@@ -1,13 +1,13 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 	//"github.com/stretchr/testify/require"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 func TestDecay(t *testing.T) {

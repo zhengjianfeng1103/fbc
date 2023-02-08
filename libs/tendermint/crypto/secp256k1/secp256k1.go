@@ -13,10 +13,10 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
-//-------------------------------------
+// -------------------------------------
 const (
 	PrivKeyAminoName = "tendermint/PrivKeySecp256k1"
 	PubKeyAminoName  = "tendermint/PubKeySecp256k1"

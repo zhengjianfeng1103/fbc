@@ -3,9 +3,9 @@ package codec
 import (
 	"bytes"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 )
 
 // ProtoMarshalJSON provides an auxiliary function to return Proto3 JSON encoded

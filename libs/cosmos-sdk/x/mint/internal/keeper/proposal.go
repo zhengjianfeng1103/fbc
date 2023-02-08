@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
 
-	sdkGov "github.com/FiboChain/fbc/x/gov"
-	govKeeper "github.com/FiboChain/fbc/x/gov/keeper"
-	govTypes "github.com/FiboChain/fbc/x/gov/types"
+	sdkGov "github.com/zhengjianfeng1103/fbc/x/gov"
+	govKeeper "github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	govTypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 var _ govKeeper.ProposalHandler = (*Keeper)(nil)

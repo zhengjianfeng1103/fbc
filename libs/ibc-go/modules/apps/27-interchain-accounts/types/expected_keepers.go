@@ -1,12 +1,12 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	supplyexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	ibcexported "github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	supplyexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibcexported "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // AccountKeeper defines the expected account keeper

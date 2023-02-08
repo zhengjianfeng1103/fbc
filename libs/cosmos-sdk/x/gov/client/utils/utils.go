@@ -1,6 +1,6 @@
 package utils
 
-import "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
+import "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
 
 // NormalizeVoteOption - normalize user specified vote option
 func NormalizeVoteOption(option string) string {
@@ -22,7 +22,7 @@ func NormalizeVoteOption(option string) string {
 	}
 }
 
-//NormalizeProposalType - normalize user specified proposal type
+// NormalizeProposalType - normalize user specified proposal type
 func NormalizeProposalType(proposalType string) string {
 	switch proposalType {
 	case "Text", "text":
@@ -33,7 +33,7 @@ func NormalizeProposalType(proposalType string) string {
 	}
 }
 
-//NormalizeProposalStatus - normalize user specified proposal status
+// NormalizeProposalStatus - normalize user specified proposal status
 func NormalizeProposalStatus(status string) string {
 	switch status {
 	case "DepositPeriod", "deposit_period":

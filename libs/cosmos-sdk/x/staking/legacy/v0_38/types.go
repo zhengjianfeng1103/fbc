@@ -5,12 +5,12 @@ package v0_38
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	v034staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_34"
-	v036staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	v034staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_34"
+	v036staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
 )
 
 const (

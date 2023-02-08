@@ -3,13 +3,13 @@ package gov
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli/flags"
-	"github.com/FiboChain/fbc/x/staking"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli/flags"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
 
-	"github.com/FiboChain/fbc/x/gov/keeper"
-	"github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 func TestNewHandler(t *testing.T) {

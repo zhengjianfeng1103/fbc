@@ -9,10 +9,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 const (

@@ -7,11 +7,11 @@ import (
 	"runtime/debug"
 	"time"
 
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/fail"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	cstypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/fail"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 //-----------------------------------------

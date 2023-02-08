@@ -4,14 +4,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli/flags"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli/flags"
 
-	"github.com/FiboChain/fbc/x/gov/types"
-	"github.com/FiboChain/fbc/x/staking"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
 )
 
 const custom = "custom"

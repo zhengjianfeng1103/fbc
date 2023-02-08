@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 type mockValidator struct {

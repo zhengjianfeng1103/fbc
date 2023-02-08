@@ -13,19 +13,19 @@ import (
 
 	wasmvm "github.com/CosmWasm/wasmvm"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/x/wasm/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper"
 
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	clientCtx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	clientCtx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 // NewQueryCmd returns the query commands for wasm

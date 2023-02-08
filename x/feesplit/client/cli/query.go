@@ -3,14 +3,14 @@ package cli
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	"github.com/FiboChain/fbc/x/feesplit/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/gov/keeper"
-	"github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // GenesisState - all staking state that must be provided at genesis

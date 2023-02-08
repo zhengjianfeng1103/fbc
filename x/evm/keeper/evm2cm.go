@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	ethermint "github.com/FiboChain/fbc/app/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/evm/types"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 // SetSysContractAddress set system contract address to store

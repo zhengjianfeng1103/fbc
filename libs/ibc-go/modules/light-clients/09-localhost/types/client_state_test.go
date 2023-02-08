@@ -1,15 +1,15 @@
 package types_test
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/09-localhost/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	connectiontypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	ibctmtypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/09-localhost/types"
 )
 
 const (

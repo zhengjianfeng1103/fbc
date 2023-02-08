@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"strconv"
 
-	clientCtx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	govcli "github.com/FiboChain/fbc/x/gov/client/cli"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
-	"github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/spf13/cobra"
+	clientCtx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	govcli "github.com/zhengjianfeng1103/fbc/x/gov/client/cli"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 //func ProposalStoreCodeCmd() *cobra.Command {

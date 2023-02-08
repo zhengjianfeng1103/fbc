@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/config"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
 )
 
 // FuzzedConnection wraps any net.Conn and depending on the mode either delays

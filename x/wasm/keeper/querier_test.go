@@ -13,15 +13,15 @@ import (
 
 	wasmvm "github.com/CosmWasm/wasmvm"
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkErrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkErrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 
-	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/wasmtesting"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func TestQueryAllContractState(t *testing.T) {

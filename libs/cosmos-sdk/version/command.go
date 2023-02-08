@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/viper"
 	"gopkg.in/yaml.v2"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
 )
 
 const flagLong = "long"

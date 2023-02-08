@@ -6,10 +6,10 @@ import (
 	"sync"
 
 	lru "github.com/hashicorp/golang-lru"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	db "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 const (

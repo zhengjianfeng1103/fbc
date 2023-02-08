@@ -3,11 +3,11 @@ package types_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/internal/types"
 )
 
 func TestDefaultGenesisState(t *testing.T) {

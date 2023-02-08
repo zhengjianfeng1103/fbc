@@ -1,12 +1,12 @@
 package keeper
 
 import (
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 // NewQuerier creates a querier for auth REST endpoints

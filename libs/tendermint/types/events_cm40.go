@@ -1,7 +1,7 @@
 package types
 
 import (
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 type CM40EventDataNewBlock struct {

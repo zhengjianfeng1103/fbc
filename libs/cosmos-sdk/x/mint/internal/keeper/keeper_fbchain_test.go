@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/app"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	evm_types "github.com/FiboChain/fbc/x/evm/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/app"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	evm_types "github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 type TreasuresTestSuite struct {

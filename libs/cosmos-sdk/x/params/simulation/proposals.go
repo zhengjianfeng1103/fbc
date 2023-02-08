@@ -1,8 +1,8 @@
 package simulation
 
 import (
-	simappparams "github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/params"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	simappparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp/params"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 )
 
 // OpWeightSubmitParamChangeProposal app params key for param change proposal

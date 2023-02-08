@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // MustUnmarshalClientState attempts to decode and return an ClientState object from

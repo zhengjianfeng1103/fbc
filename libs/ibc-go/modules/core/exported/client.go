@@ -1,10 +1,10 @@
 package exported
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	ics23 "github.com/confio/ics23/go"
 	proto "github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // Status represents the status of a client

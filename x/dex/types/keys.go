@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 const (
@@ -96,7 +96,7 @@ func GetWithdrawTimeAddressKey(completeTime time.Time, addr sdk.AccAddress) []by
 	return append(GetWithdrawTimeKey(completeTime), addr.Bytes()...)
 }
 
-//SplitWithdrawTimeKey splits the key and returns the complete time and address
+// SplitWithdrawTimeKey splits the key and returns the complete time and address
 func SplitWithdrawTimeKey(key []byte) (time.Time, sdk.AccAddress) {
 	if len(key[1:]) != lenTime+sdk.AddrLen {
 		panic(fmt.Sprintf("unexpected key length (%d ≠ %d)", len(key[1:]), lenTime+sdk.AddrLen))

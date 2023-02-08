@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/FiboChain/fbc/libs/tendermint/p2p/upnp"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/upnp"
 )
 
 // ProbeUpnpCmd adds capabilities to test the UPnP functionality.

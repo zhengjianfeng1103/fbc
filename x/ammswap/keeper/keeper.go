@@ -3,14 +3,14 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/ammswap/types"
-	tokentypes "github.com/FiboChain/fbc/x/token/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
+	tokentypes "github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 // Keeper of the swap store
@@ -174,7 +174,7 @@ func (k Keeper) GetRedeemableAssets(ctx sdk.Context, baseAmountName, quoteAmount
 	return baseAmount, quoteAmount, nil
 }
 
-//CalculateTokenToBuy calculates the amount to buy
+// CalculateTokenToBuy calculates the amount to buy
 func CalculateTokenToBuy(swapTokenPair types.SwapTokenPair, sellToken sdk.SysCoin, buyTokenDenom string, params types.Params) sdk.SysCoin {
 	var inputReserve, outputReserve sdk.Dec
 	if buyTokenDenom < sellToken.Denom {

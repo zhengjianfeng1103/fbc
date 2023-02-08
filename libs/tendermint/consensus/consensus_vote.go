@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	cstypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 // Attempt to add the vote. if its a duplicate signature, dupeout the validator

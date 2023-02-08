@@ -1,12 +1,12 @@
 package proxy
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	lrpc "github.com/FiboChain/fbc/libs/tendermint/lite2/rpc"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpcserver "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/server"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	lrpc "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/rpc"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpcserver "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/server"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func RPCRoutes(c *lrpc.Client) map[string]*rpcserver.RPCFunc {

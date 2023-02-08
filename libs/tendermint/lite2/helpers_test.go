@@ -3,12 +3,12 @@ package lite_test
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 // privKeys is a helper type for testing.

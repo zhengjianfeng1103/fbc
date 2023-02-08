@@ -48,9 +48,9 @@ func trimInternal(st errors.StackTrace) errors.StackTrace {
 	// manual error creation, or runtime for caught panics
 	for matchesFunc(st[0],
 		// where we create errors
-		"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors.Wrap",
-		"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors.Wrapf",
-		"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors.WithType",
+		"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors.Wrap",
+		"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors.Wrapf",
+		"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors.WithType",
 		// runtime are added on panics
 		"runtime.",
 		// _test is defined in coverage tests, causing failure
@@ -80,7 +80,8 @@ func writeSimpleFrame(s io.Writer, f errors.Frame) {
 // %s is just the error message
 // %+v is the full stack trace
 // %v appends a compressed [filename:line] where the error
-//    was created
+//
+//	was created
 //
 // Inspired by https://github.com/pkg/errors/blob/v0.8.1/errors.go#L162-L176
 func (e *wrappedError) Format(s fmt.State, verb rune) {

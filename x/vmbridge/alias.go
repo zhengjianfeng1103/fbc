@@ -1,8 +1,8 @@
 package vmbridge
 
 import (
-	"github.com/FiboChain/fbc/x/vmbridge/keeper"
-	"github.com/FiboChain/fbc/x/vmbridge/types"
+	"github.com/zhengjianfeng1103/fbc/x/vmbridge/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/vmbridge/types"
 )
 
 var (

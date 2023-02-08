@@ -3,9 +3,9 @@ package dex
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/dex/types"
-	ordertypes "github.com/FiboChain/fbc/x/order/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/dex/types"
+	ordertypes "github.com/zhengjianfeng1103/fbc/x/order/types"
 )
 
 // GenesisState - all dex state that must be provided at genesis

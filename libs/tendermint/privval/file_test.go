@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 func TestGenLoadValidator(t *testing.T) {

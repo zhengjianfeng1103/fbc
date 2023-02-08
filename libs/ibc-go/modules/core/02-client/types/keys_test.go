@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
 )
 
 // tests ParseClientIdentifier and IsValidClientID

@@ -1,8 +1,8 @@
 package feesplit
 
 import (
-	"github.com/FiboChain/fbc/x/feesplit/keeper"
-	"github.com/FiboChain/fbc/x/feesplit/types"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
 )
 
 const (

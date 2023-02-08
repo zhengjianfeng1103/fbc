@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
 )
 
 // GenNodeKeyCmd allows the generation of a node key. It prints node's ID to

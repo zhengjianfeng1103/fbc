@@ -3,10 +3,10 @@ package bank
 // nolint
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/keeperadapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/typesadapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/keeperadapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/typesadapter"
 )
 
 const (
@@ -74,7 +74,7 @@ type (
 	SupplyKeeper       = keeperadapter.SupplyKeeper
 )
 
-//adapter
+// adapter
 type (
 	MsgMultiSendAdapter                = typesadapter.MsgMultiSend
 	MsgSendAdapter                     = typesadapter.MsgSend

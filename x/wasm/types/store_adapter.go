@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	dbm "github.com/tendermint/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 type StoreAdapter struct {

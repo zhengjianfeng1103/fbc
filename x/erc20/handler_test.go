@@ -4,12 +4,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/app"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/erc20"
-	"github.com/FiboChain/fbc/x/erc20/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/app"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/erc20"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/types"
 )
 
 type Erc20TestSuite struct {

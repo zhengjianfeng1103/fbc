@@ -7,16 +7,16 @@ import (
 	"strconv"
 	"testing"
 
-	ibcadapter "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/x/wasm/keeper/testdata"
+	ibcadapter "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/testdata"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 
 	"github.com/stretchr/testify/assert"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // test handing of submessages, very closely related to the reflect_test

@@ -3,15 +3,16 @@ package cli
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	"github.com/FiboChain/fbc/x/ammswap/types"
-	"github.com/spf13/cobra"
 	"strings"
+
+	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module
@@ -38,7 +39,7 @@ func GetQueryCmd(queryRoute string, cdc *codec.Codec) *cobra.Command {
 	return swapQueryCmd
 }
 
-//GetCmdSwapTokenPair query exchange with token name
+// GetCmdSwapTokenPair query exchange with token name
 func GetCmdSwapTokenPair(queryRoute string, cdc *codec.Codec) *cobra.Command {
 	return &cobra.Command{
 		Use:   "pool [base-token] [quote-token]",
@@ -139,7 +140,7 @@ $ %s query swap params
 	}
 }
 
-//GetCmdAllSwapTokenPairs lists all info of pools
+// GetCmdAllSwapTokenPairs lists all info of pools
 func GetCmdAllSwapTokenPairs(queryRoute string, cdc *codec.Codec) *cobra.Command {
 	return &cobra.Command{
 		Use:   "pools",
@@ -169,7 +170,7 @@ $ fbchaincli query swap pools
 	}
 }
 
-//GetCmdRedeemableAssets query redeemable assets by specifying the number of lpt
+// GetCmdRedeemableAssets query redeemable assets by specifying the number of lpt
 func GetCmdRedeemableAssets(queryRoute string, cdc *codec.Codec) *cobra.Command {
 	return &cobra.Command{
 		Use:   "redeemable-assets [base-token] [quote-token] [pool-token-amount]",

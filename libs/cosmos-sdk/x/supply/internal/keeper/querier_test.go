@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/types"
 )
 
 func TestNewQuerier(t *testing.T) {

@@ -4,18 +4,18 @@ import (
 	"testing"
 	"time"
 
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/stretchr/testify/suite"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
-	ibctestingmock "github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	ibctmtypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
+	ibctestingmock "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/mock"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp"
 )
 
 const (

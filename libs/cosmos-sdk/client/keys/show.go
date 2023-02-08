@@ -7,14 +7,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	tmcrypto "github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
+	tmcrypto "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 const (

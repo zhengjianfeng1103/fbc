@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/x/distribution/types"
-	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 // Hooks is struct of keepers from other module

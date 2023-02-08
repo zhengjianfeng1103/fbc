@@ -5,18 +5,18 @@ import (
 	"math"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 var (

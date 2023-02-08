@@ -4,16 +4,16 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/client/utils"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
 )
 
 const (

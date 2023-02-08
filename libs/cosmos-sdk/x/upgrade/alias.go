@@ -3,8 +3,8 @@ package upgrade
 // nolint
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/upgrade/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/upgrade/internal/types"
 )
 
 const (

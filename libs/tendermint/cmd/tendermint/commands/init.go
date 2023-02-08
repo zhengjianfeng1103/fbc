@@ -6,13 +6,13 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/privval"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/privval"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 // InitFilesCmd initialises a fresh Tendermint Core instance.

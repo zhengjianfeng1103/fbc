@@ -3,11 +3,11 @@ package dbadapter
 import (
 	"io"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/cachekv"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/tracekv"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/cachekv"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/tracekv"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
 )
 
 // Wrapper type for dbm.Db with implementation of KVStore

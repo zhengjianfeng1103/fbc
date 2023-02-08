@@ -1,8 +1,8 @@
 package mock
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/rpc/client"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
 )
 
 // StatusMock returns the result specified by the Call

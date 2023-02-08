@@ -1,19 +1,19 @@
 package v036
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	v034auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_34"
-	v036auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_36"
-	v034distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
-	v036distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_36"
-	v034genAccounts "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_34"
-	v036genAccounts "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_36"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil"
-	v034gov "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/legacy/v0_34"
-	v036gov "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/legacy/v0_36"
-	v034staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_34"
-	v036staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
-	v036supply "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/legacy/v0_36"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	v034auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_34"
+	v036auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_36"
+	v034distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
+	v036distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_36"
+	v034genAccounts "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_34"
+	v036genAccounts "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_36"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil"
+	v034gov "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/legacy/v0_34"
+	v036gov "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/legacy/v0_36"
+	v034staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_34"
+	v036staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
+	v036supply "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/legacy/v0_36"
 )
 
 // Migrate migrates exported state from v0.34 to a v0.36 genesis state.

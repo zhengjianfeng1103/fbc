@@ -8,12 +8,12 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/behaviour"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	sm "github.com/FiboChain/fbc/libs/tendermint/state"
-	"github.com/FiboChain/fbc/libs/tendermint/store"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/behaviour"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	sm "github.com/zhengjianfeng1103/fbc/libs/tendermint/state"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/store"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 const (
@@ -486,8 +486,8 @@ func (bcR *BlockchainReactor) switchToConsensus() {
 // Called by FSM and pool:
 // - pool calls when it detects slow peer or when peer times out
 // - FSM calls when:
-//    - adding a block (addBlock) fails
-//    - reactor processing of a block reports failure and FSM sends back the peers of first and second blocks
+//   - adding a block (addBlock) fails
+//   - reactor processing of a block reports failure and FSM sends back the peers of first and second blocks
 func (bcR *BlockchainReactor) sendPeerError(err error, peerID p2p.ID) {
 	bcR.Logger.Info("sendPeerError:", "peer", peerID, "error", err)
 	msgData := bcFsmMessage{

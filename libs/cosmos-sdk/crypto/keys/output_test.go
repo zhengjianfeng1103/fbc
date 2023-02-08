@@ -4,12 +4,12 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func TestBech32KeysOutput(t *testing.T) {

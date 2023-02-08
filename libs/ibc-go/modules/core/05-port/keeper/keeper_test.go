@@ -3,15 +3,15 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/keeper"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp"
 )
 
 var (

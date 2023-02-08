@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"strings"
 
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 
-	"github.com/FiboChain/fbc/libs/tendermint/global"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/global"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	ce "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/proto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	ce "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
 )
 
 // Volatile state for each Validator

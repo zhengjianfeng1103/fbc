@@ -3,15 +3,15 @@ package types
 import (
 	"context"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
-	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	ibcexported "github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
+	connectiontypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibcexported "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // BankViewKeeper defines a subset of methods implemented by the cosmos-sdk bank keeper

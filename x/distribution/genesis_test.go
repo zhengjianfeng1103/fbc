@@ -3,10 +3,10 @@ package distribution
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/distribution/keeper"
-	"github.com/FiboChain/fbc/x/distribution/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 type testParam struct {

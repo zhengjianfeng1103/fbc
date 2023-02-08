@@ -5,20 +5,20 @@ import (
 	"os"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/x/staking/keeper"
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	cliLcd "github.com/FiboChain/fbc/libs/cosmos-sdk/client/lcd"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mock"
+	cliLcd "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/lcd"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mock"
 )
 
 // getMockApp returns an initialized mock application for this module.

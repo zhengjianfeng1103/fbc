@@ -1,10 +1,10 @@
 package v039
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	v038auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_38"
-	v039auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_39"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	v038auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_38"
+	v039auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_39"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
 )
 
 // Migrate migrates exported state from v0.38 to a v0.39 genesis state.

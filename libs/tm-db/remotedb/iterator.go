@@ -3,8 +3,8 @@ package remotedb
 import (
 	"fmt"
 
-	db "github.com/FiboChain/fbc/libs/tm-db"
-	protodb "github.com/FiboChain/fbc/libs/tm-db/remotedb/proto"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+	protodb "github.com/zhengjianfeng1103/fbc/libs/tm-db/remotedb/proto"
 )
 
 func makeIterator(dic protodb.DB_IteratorClient) db.Iterator {

@@ -3,8 +3,8 @@ package lite
 import (
 	"time"
 
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func IBCVerify(

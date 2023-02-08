@@ -9,8 +9,8 @@ import (
 	math "math"
 	math_bits "math/bits"
 
-	github_com_cosmos_cosmos_sdk_types "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	types1 "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
 
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"

@@ -3,13 +3,13 @@ package ibc_tx
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	"github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	ibctx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 const MaxGasWanted = uint64((1 << 63) - 1)

@@ -1,8 +1,8 @@
 package staking
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // BeginBlocker will persist the current header and validator set as a historical entry

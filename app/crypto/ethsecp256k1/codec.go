@@ -1,10 +1,10 @@
 package ethsecp256k1
 
 import (
-	cryptoamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
+	cryptoamino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
 )
 
 // CryptoCodec is the default amino codec used by ethermint

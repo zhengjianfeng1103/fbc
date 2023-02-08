@@ -6,14 +6,14 @@ import (
 
 	"github.com/tendermint/crypto/bcrypt"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/armor"
-	cryptoAmino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/xsalsa20symmetric"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/armor"
+	cryptoAmino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/xsalsa20symmetric"
 
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/keyerror"
 )
 
 const (

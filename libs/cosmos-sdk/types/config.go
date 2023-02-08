@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
 )
 
 // DefaultKeyringServiceName defines a default service name for the keyring.
@@ -84,7 +84,8 @@ func (config *Config) SetBech32PrefixForAccount(addressPrefix, pubKeyPrefix stri
 }
 
 // SetBech32PrefixForValidator builds the Config with Bech32 addressPrefix and publKeyPrefix for validators
-//  and returns the config instance
+//
+//	and returns the config instance
 func (config *Config) SetBech32PrefixForValidator(addressPrefix, pubKeyPrefix string) {
 	config.assertNotSealed()
 	config.bech32AddressPrefix["validator_addr"] = addressPrefix

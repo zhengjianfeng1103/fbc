@@ -5,8 +5,8 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
 )
 
 // Merkle tree from a map.

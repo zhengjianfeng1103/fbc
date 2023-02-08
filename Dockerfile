@@ -8,7 +8,7 @@ FROM golang:1.17.2-alpine AS build-env
 RUN apk add --no-cache curl make git libc-dev bash gcc linux-headers eudev-dev
 
 # Set working directory for the build
-WORKDIR /go/src/github.com/FiboChain/fbc
+WORKDIR /go/src/github.com/zhengjianfeng1103/fbc
 
 # Add source files
 COPY . .

@@ -6,9 +6,9 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	simtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	simtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
 )
 
 // Simulation parameter constants

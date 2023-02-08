@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"errors"
 
-	erc20Keeper "github.com/FiboChain/fbc/x/erc20/keeper"
-	"github.com/FiboChain/fbc/x/erc20/types"
+	erc20Keeper "github.com/zhengjianfeng1103/fbc/x/erc20/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/types"
 )
 
 func (suite *KeeperTestSuite) TestGetSourceChannelID() {

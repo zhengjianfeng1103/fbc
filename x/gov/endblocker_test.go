@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/x/gov/keeper"
-	"github.com/FiboChain/fbc/x/gov/types"
-	"github.com/FiboChain/fbc/x/params"
-	paramsTypes "github.com/FiboChain/fbc/x/params/types"
-	"github.com/FiboChain/fbc/x/staking"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/params"
+	paramsTypes "github.com/zhengjianfeng1103/fbc/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func newTextProposal(t *testing.T, ctx sdk.Context, initialDeposit sdk.SysCoins, govHandler sdk.Handler) *sdk.Result {

@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	ethereumTx "github.com/FiboChain/fbc/app/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/evm/types"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	ethereumTx "github.com/zhengjianfeng1103/fbc/app/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 func Test_getSender(t *testing.T) {

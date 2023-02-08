@@ -6,9 +6,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmnet "github.com/FiboChain/fbc/libs/tendermint/libs/net"
-	p2pconn "github.com/FiboChain/fbc/libs/tendermint/p2p/conn"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmnet "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/net"
+	p2pconn "github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/conn"
 )
 
 // Socket errors.

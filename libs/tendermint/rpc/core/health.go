@@ -1,8 +1,8 @@
 package core
 
 import (
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
 )
 
 // Health gets node health. Returns empty result (200 OK) on success, no

@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // test compate 0x address to send and query

@@ -1,10 +1,10 @@
 package watcher
 
 import (
-	cryptocodec "github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	app "github.com/FiboChain/fbc/app/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
+	cryptocodec "github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	app "github.com/zhengjianfeng1103/fbc/app/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
 )
 
 var WatchCdc *codec.Codec

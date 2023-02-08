@@ -1,9 +1,9 @@
 package client
 
 import (
-	"github.com/FiboChain/fbc/x/dex/client/cli"
-	"github.com/FiboChain/fbc/x/dex/client/rest"
-	govclient "github.com/FiboChain/fbc/x/gov/client"
+	"github.com/zhengjianfeng1103/fbc/x/dex/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/dex/client/rest"
+	govclient "github.com/zhengjianfeng1103/fbc/x/gov/client"
 )
 
 // param change proposal handler

@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/iavl"
-	tmdb "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
+	tmdb "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 // stores is the list of stores in the CosmosHub database

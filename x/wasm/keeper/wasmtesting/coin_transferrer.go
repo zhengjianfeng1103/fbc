@@ -1,6 +1,6 @@
 package wasmtesting
 
-import sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+import sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 type MockCoinTransferrer struct {
 	TransferCoinsFn func(ctx sdk.Context, fromAddr sdk.AccAddress, toAddr sdk.AccAddress, amt sdk.Coins) error

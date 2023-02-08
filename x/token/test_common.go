@@ -3,19 +3,19 @@ package token
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/mpt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
-	"github.com/FiboChain/fbc/x/params"
-	"github.com/FiboChain/fbc/x/token/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 // CreateParam create fbchainparm for test

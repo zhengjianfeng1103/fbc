@@ -6,9 +6,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	cmn "github.com/FiboChain/fbc/libs/iavl/common"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
 	amino "github.com/tendermint/go-amino"
+	cmn "github.com/zhengjianfeng1103/fbc/libs/iavl/common"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
 )
 
 var (

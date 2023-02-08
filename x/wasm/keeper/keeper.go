@@ -13,18 +13,18 @@ import (
 
 	wasmvm "github.com/CosmWasm/wasmvm"
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/innertx"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	paramtypes "github.com/FiboChain/fbc/x/params"
-	"github.com/FiboChain/fbc/x/wasm/ioutils"
-	"github.com/FiboChain/fbc/x/wasm/types"
-	"github.com/FiboChain/fbc/x/wasm/watcher"
 	"github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/prefix"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/innertx"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	paramtypes "github.com/zhengjianfeng1103/fbc/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/ioutils"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/watcher"
 )
 
 // contractMemoryLimit is the memory limit of each contract execution (in MiB)
@@ -1221,7 +1221,7 @@ func (k Keeper) QueryGasLimit() sdk.Gas {
 }
 
 // BankCoinTransferrer replicates the cosmos-sdk behaviour as in
-// https://github.com/FiboChain/fbc/libs/cosmos-sdk/blob/v0.41.4/x/bank/keeper/msg_server.go#L26
+// https://github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/blob/v0.41.4/x/bank/keeper/msg_server.go#L26
 type BankCoinTransferrer struct {
 	keeper types.BankKeeper
 }

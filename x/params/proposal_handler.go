@@ -5,13 +5,13 @@ import (
 	"math"
 	"time"
 
-	"github.com/FiboChain/fbc/x/common"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
-	"github.com/FiboChain/fbc/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/params/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	sdkparams "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	sdkparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 )
 
 // NewParamChangeProposalHandler returns the rollback function of the param proposal handler

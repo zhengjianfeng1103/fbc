@@ -1,7 +1,7 @@
 package cli
 
 import (
-	genutilcli "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/client/cli"
+	genutilcli "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/client/cli"
 )
 
 type (

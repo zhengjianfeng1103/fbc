@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/erc20/types"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 func (suite *KeeperTestSuite) TestProposal_TokenMappingProposal() {

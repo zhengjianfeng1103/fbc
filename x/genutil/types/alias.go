@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdkgenutiltypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
+	sdkgenutiltypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
 )
 
 // const

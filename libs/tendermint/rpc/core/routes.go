@@ -1,7 +1,7 @@
 package core
 
 import (
-	rpc "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/server"
+	rpc "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/server"
 )
 
 // TODO: better system than "unsafe" prefix

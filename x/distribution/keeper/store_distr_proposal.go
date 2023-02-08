@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/distribution/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 // CheckInitExistedValidatorFlag check init existed validator for distribution proposal flag

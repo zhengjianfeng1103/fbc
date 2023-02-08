@@ -1,6 +1,6 @@
 package types
 
-import "github.com/FiboChain/fbc/x/params"
+import "github.com/zhengjianfeng1103/fbc/x/params"
 
 var (
 	_ params.ParamSet = KeyHistoricalEntriesParamsSet{}

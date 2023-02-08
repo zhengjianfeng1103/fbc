@@ -5,12 +5,12 @@ package ammswap
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/ammswap/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
 )
 
 func TestValidateGenesis(t *testing.T) {

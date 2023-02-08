@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	simtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	simtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 
 	"github.com/stretchr/testify/require"
 
@@ -15,9 +15,9 @@ import (
 	// codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	// "github.com/cosmos/cosmos-sdk/types/module"
 	// simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/simulation"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/simulation"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

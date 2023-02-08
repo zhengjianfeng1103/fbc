@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
 )
 
 // SubmitProposal create new proposal given a content

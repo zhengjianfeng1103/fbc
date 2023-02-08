@@ -3,27 +3,28 @@ package types
 import (
 	"encoding/json"
 	"fmt"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	"math/big"
 	"testing"
 
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	tmcrypto "github.com/FiboChain/fbc/libs/tendermint/crypto"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	tmcrypto "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
 	"github.com/stretchr/testify/suite"
 
-	tmamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	tmamino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/sr25519"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/sr25519"
 )
 
 func init() {

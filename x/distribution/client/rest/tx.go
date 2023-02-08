@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"net/http"
 
-	comm "github.com/FiboChain/fbc/x/common"
+	comm "github.com/zhengjianfeng1103/fbc/x/common"
 
 	"github.com/gorilla/mux"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
 
-	"github.com/FiboChain/fbc/x/distribution/client/common"
-	"github.com/FiboChain/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/client/common"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 func registerTxRoutes(cliCtx context.CLIContext, r *mux.Router, _ string) {

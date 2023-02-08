@@ -1,8 +1,8 @@
 package v0_11
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/order/legacy/v0_10"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/order/legacy/v0_10"
 )
 
 const (

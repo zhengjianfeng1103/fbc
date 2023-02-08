@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
 )
 
 func createTestGroupWithHeadSizeLimit(t *testing.T, headSizeLimit int64) *Group {

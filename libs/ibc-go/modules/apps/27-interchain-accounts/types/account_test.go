@@ -3,9 +3,9 @@ package types_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 var (

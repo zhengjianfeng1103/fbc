@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
 )
 
 const (

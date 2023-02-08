@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	abcicli "github.com/FiboChain/fbc/libs/tendermint/abci/client"
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abcicli "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/client"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 //----------------------------------------

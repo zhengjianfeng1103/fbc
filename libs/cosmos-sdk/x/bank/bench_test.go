@@ -3,14 +3,14 @@ package bank_test
 import (
 	"testing"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
 )
 
 var moduleAccAddr = supply.NewModuleAddress(staking.BondedPoolName)

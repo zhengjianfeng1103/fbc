@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/app/logevents"
-	"github.com/FiboChain/fbc/libs/system"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/app/logevents"
+	"github.com/zhengjianfeng1103/fbc/libs/system"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 )
 
 func subscribeCmd(cdc *codec.Codec) *cobra.Command {

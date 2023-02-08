@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
 )
 
 // DefaultDirPerm is the default permissions used when creating directories.

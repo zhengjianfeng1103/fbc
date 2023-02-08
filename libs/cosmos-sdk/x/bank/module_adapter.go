@@ -1,8 +1,8 @@
 package bank
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/keeperadapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/keeperadapter"
 )
 
 var (

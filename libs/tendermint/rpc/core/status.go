@@ -3,12 +3,12 @@ package core
 import (
 	"time"
 
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
-	sm "github.com/FiboChain/fbc/libs/tendermint/state"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
+	sm "github.com/zhengjianfeng1103/fbc/libs/tendermint/state"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Status returns Tendermint status including node info, pubkey, latest block

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	cryptoamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	amino "github.com/tendermint/go-amino"
+	cryptoamino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // amino codec to marshal/unmarshal

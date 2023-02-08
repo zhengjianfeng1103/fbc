@@ -3,11 +3,11 @@ package distribution
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/distribution/keeper"
-	"github.com/FiboChain/fbc/x/distribution/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 func TestAppModule(t *testing.T) {

@@ -1,9 +1,9 @@
 package farm
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/farm/keeper"
-	"github.com/FiboChain/fbc/x/farm/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/farm/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/farm/types"
 )
 
 func handleMsgLock(ctx sdk.Context, k keeper.Keeper, msg types.MsgLock) (*sdk.Result, error) {

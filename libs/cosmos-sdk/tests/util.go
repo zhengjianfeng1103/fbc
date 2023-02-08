@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	rpchttp "github.com/FiboChain/fbc/libs/tendermint/rpc/client/http"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	tmjsonrpc "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/client"
 	"github.com/stretchr/testify/require"
+	rpchttp "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/http"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	tmjsonrpc "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/client"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 )
 
 // Wait for the next tendermint block from the Tendermint RPC

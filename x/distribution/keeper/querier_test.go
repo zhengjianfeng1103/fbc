@@ -3,11 +3,11 @@ package keeper
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/distribution/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/go-amino"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 func TestQueryParams(t *testing.T) {

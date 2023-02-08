@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func TestValidatorSMCreateValidator(t *testing.T) {

@@ -3,13 +3,13 @@ package keeper
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/x/distribution/types"
-	"github.com/FiboChain/fbc/x/staking"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/go-amino"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
 )
 
 func DoCreateValidator(t *testing.T, ctx sdk.Context, sk staking.Keeper, valAddr sdk.ValAddress, valConsPk crypto.PubKey) {

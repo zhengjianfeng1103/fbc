@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/provider"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 type mock struct {

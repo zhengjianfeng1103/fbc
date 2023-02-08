@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 //-----------------------------------------------------

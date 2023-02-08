@@ -1,10 +1,10 @@
 package farm
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/farm/types"
-	govTypes "github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/farm/types"
+	govTypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // NewManageWhiteListProposalHandler handles "gov" type message in "farm"

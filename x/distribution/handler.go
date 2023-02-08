@@ -1,12 +1,12 @@
 package distribution
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/x/distribution/keeper"
-	"github.com/FiboChain/fbc/x/distribution/types"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // NewHandler manages all distribution tx

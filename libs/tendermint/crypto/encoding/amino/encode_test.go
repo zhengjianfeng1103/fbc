@@ -10,11 +10,11 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/sr25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/sr25519"
 )
 
 type byter interface {
@@ -53,6 +53,7 @@ func checkAminoJSON(t *testing.T, src interface{}, dst interface{}, isNil bool) 
 }
 
 // ExamplePrintRegisteredTypes refers to unknown identifier: PrintRegisteredTypes
+//
 //nolint:govet
 func ExamplePrintRegisteredTypes() {
 	cdc.PrintTypes(os.Stdout)

@@ -3,7 +3,7 @@ package fuzz_test
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
 )
 
 func Fuzz(data []byte) int {

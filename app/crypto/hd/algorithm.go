@@ -10,11 +10,11 @@ import (
 	ethaccounts "github.com/ethereum/go-ethereum/accounts"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 
-	tmcrypto "github.com/FiboChain/fbc/libs/tendermint/crypto"
+	tmcrypto "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
 )
 
 const (
@@ -23,8 +23,8 @@ const (
 )
 
 // SupportedAlgorithms defines the list of signing algorithms used on Ethermint:
-//  - eth_secp256k1 (Ethereum)
-//  - secp256k1 (Tendermint)
+//   - eth_secp256k1 (Ethereum)
+//   - secp256k1 (Tendermint)
 var SupportedAlgorithms = []keys.SigningAlgo{EthSecp256k1, keys.Secp256k1}
 
 // EthSecp256k1Options defines a keys options for the ethereum Secp256k1 curve.

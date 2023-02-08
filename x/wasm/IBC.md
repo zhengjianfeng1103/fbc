@@ -54,7 +54,7 @@ as how contracts can properly identify their counterparty.
 
 Establishing *Clients* and *Connections* is out of the scope of this
 module and must be created by the same means as for `ibc-transfer`
-(via the [go cli](https://github.com/FiboChain/fbc/libs/relayer) or better [ts-relayer](https://github.com/confio/ts-relayer)).
+(via the [go cli](https://github.com/zhengjianfeng1103/fbc/libs/relayer) or better [ts-relayer](https://github.com/confio/ts-relayer)).
 `x/wasm` will bind a unique *Port* for each "IBC Enabled" contract.
 
 For mocks, all the Packet Handling and Channel Lifecycle Hooks are routed 

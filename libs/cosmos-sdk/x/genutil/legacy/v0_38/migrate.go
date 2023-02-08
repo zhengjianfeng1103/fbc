@@ -1,15 +1,15 @@
 package v038
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	v036auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_36"
-	v038auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_38"
-	v036distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_36"
-	v038distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_38"
-	v036genaccounts "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_36"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
-	v036staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
-	v038staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_38"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	v036auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_36"
+	v038auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_38"
+	v036distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_36"
+	v038distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_38"
+	v036genaccounts "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_36"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
+	v036staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
+	v038staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_38"
 )
 
 // Migrate migrates exported state from v0.36/v0.37 to a v0.38 genesis state.

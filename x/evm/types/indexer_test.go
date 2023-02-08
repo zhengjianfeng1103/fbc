@@ -6,11 +6,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 func TestIndexer_ProcessSection(t *testing.T) {

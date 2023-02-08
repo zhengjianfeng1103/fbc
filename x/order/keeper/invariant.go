@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/order/types"
-	"github.com/FiboChain/fbc/x/token"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/order/types"
+	"github.com/zhengjianfeng1103/fbc/x/token"
 )
 
 // RegisterInvariants registers all order invariants

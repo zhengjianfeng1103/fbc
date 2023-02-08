@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/client/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/client/cli"
 
 	"github.com/spf13/cobra"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov"
-	upgrade "github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov"
+	upgrade "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/upgrade/internal/types"
 )
 
 const (

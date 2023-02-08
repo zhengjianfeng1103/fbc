@@ -1,12 +1,13 @@
 package v0_18
 
 import (
-	"github.com/FiboChain/fbc/x/staking/legacy/v0_11"
 	"time"
 
-	"github.com/FiboChain/fbc/x/staking/legacy/v0_10"
+	"github.com/zhengjianfeng1103/fbc/x/staking/legacy/v0_11"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/legacy/v0_10"
+
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var DefaultMinSelfDelegation = sdk.NewDec(10000)

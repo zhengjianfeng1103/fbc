@@ -1,12 +1,12 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/msgservice"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/msgservice"
 
-	txmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	txmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
 )
 
 // RegisterLegacyAminoCodec registers the necessary x/ibc transfer interfaces and concrete types

@@ -1,8 +1,8 @@
 package erc20
 
 import (
-	"github.com/FiboChain/fbc/x/erc20/keeper"
-	"github.com/FiboChain/fbc/x/erc20/types"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/types"
 )
 
 // nolint

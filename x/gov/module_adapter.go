@@ -1,17 +1,17 @@
 package gov
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
 
-	"github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 
-	anytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	GovCli "github.com/FiboChain/fbc/x/gov/client/cli"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
+	anytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	GovCli "github.com/zhengjianfeng1103/fbc/x/gov/client/cli"
 )
 
 var (

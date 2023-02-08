@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/crisis/internal/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/crisis/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 )
 
 // Keeper - crisis keeper

@@ -1,16 +1,16 @@
 package ibc_tx
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	ibcmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
-	sigtx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibcsigning"
 	"github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	ibcmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
+	sigtx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibcsigning"
 )
 
 // wrapper is a wrapper around the tx.Tx proto.Message which retain the raw

@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/x/staking/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/x/staking/exported"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/params"
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 // Implements ValidatorSet interface

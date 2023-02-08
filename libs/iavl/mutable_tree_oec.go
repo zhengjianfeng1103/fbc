@@ -6,10 +6,10 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/iavl/config"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl/config"
 
-	"github.com/FiboChain/fbc/libs/system/trace"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/system/trace"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 const (

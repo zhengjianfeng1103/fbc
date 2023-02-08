@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ante"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ante"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 func TestSetPubKey(t *testing.T) {

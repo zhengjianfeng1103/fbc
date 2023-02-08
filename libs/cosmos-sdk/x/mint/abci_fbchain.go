@@ -3,9 +3,9 @@ package mint
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func disableMining(minter *types.Minter) {

@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	types "github.com/FiboChain/fbc/libs/tendermint/proto/types"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
 	math "math"
 )
 

@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	evmtypes "github.com/FiboChain/fbc/x/evm/types"
-	wasmtypes "github.com/FiboChain/fbc/x/wasm/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	evmtypes "github.com/zhengjianfeng1103/fbc/x/evm/types"
+	wasmtypes "github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 type EVMKeeper interface {

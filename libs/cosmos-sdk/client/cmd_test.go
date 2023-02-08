@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
 )
 
 func TestValidateCmd(t *testing.T) {

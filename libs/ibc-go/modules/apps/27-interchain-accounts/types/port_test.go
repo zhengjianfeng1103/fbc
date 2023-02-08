@@ -3,9 +3,9 @@ package types_test
 import (
 	"fmt"
 
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
 )
 
 func (suite *TypesTestSuite) TestNewControllerPortID() {

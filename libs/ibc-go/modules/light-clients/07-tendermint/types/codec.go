@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // RegisterInterfaces registers the tendermint concrete client-related

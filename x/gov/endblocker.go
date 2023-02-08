@@ -3,12 +3,12 @@ package gov
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 
-	"github.com/FiboChain/fbc/x/common/perf"
-	"github.com/FiboChain/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/common/perf"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
 )
 
 // EndBlocker called every block, process inflation, update validator set.

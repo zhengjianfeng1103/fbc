@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
 	"github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
 )
 
 type IbcTx struct {

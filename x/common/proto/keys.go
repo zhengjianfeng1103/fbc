@@ -1,7 +1,7 @@
 package proto
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 )
 
 // keys

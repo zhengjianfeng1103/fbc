@@ -3,11 +3,11 @@ package client
 import (
 	"fmt"
 
-	clictx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	clictx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 // QueryTendermintProof performs an ABCI query with the given key and returns

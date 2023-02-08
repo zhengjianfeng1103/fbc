@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	supplyexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
-	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
+	supplyexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
+	stakingexported "github.com/zhengjianfeng1103/fbc/x/staking/exported"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // BankKeeper defines expected bank keeper

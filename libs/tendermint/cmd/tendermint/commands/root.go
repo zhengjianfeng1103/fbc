@@ -7,10 +7,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
-	tmflags "github.com/FiboChain/fbc/libs/tendermint/libs/cli/flags"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
+	tmflags "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 var (

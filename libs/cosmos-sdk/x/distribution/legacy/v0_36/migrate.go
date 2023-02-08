@@ -1,7 +1,7 @@
 package v0_36
 
 import (
-	v034distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
+	v034distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
 )
 
 // Migrate accepts exported genesis state from v0.34 and migrates it to v0.36

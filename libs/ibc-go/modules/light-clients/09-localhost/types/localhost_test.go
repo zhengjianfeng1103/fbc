@@ -3,14 +3,14 @@ package types_test
 import (
 	"testing"
 
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/suite"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp"
 )
 
 const (

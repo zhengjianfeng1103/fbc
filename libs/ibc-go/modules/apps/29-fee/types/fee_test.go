@@ -3,11 +3,11 @@ package types_test
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/29-fee/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 )
 
 var (

@@ -3,13 +3,13 @@ package ethkeystore
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	"github.com/FiboChain/fbc/app/crypto/hd"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/tests"
-	tmamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/hd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/tests"
+	tmamino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
 )
 
 func TestGetEthKey(t *testing.T) { testGetEthKey(t) }

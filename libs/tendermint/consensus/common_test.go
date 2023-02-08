@@ -17,25 +17,25 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	abcicli "github.com/FiboChain/fbc/libs/tendermint/abci/client"
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/counter"
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	tmpubsub "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub"
-	mempl "github.com/FiboChain/fbc/libs/tendermint/mempool"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/privval"
-	sm "github.com/FiboChain/fbc/libs/tendermint/state"
-	"github.com/FiboChain/fbc/libs/tendermint/store"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	abcicli "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/client"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/counter"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	cstypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus/types"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	tmpubsub "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub"
+	mempl "github.com/zhengjianfeng1103/fbc/libs/tendermint/mempool"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/privval"
+	sm "github.com/zhengjianfeng1103/fbc/libs/tendermint/state"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/store"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 const (
@@ -193,7 +193,7 @@ func (vss ValidatorStubsByAddress) Swap(i, j int) {
 	vss[j].Index = j
 }
 
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Functions for transitioning the consensus state
 // timeoutRoutine: receive requests for timeouts on tickChan and fire timeouts on tockChan
 // receiveRoutine: serializes processing of proposoals, block parts, votes; coordinates state transitions
@@ -839,8 +839,8 @@ func (m *mockTicker) Stop() error {
 	return nil
 }
 
-//add noop Reset function for TimeoutTicker interface
-//need to implement when used
+// add noop Reset function for TimeoutTicker interface
+// need to implement when used
 func (m *mockTicker) Reset() error {
 	return nil
 }

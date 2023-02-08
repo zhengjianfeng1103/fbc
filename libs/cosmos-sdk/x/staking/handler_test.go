@@ -8,13 +8,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 func TestValidatorByPowerIndex(t *testing.T) {

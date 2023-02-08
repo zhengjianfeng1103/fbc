@@ -7,9 +7,9 @@
 package auth
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ante"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ante"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 const (

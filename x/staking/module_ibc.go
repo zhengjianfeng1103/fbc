@@ -3,25 +3,25 @@ package staking
 import (
 	"context"
 
-	"github.com/FiboChain/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/staking/keeper"
 
-	cosmost "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	"github.com/FiboChain/fbc/x/staking/typesadapter"
+	cosmost "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/typesadapter"
 
-	clictx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	anytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
+	clictx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	anytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
-	params2 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	"github.com/FiboChain/fbc/x/params"
-	"github.com/FiboChain/fbc/x/staking/client/rest"
-	"github.com/FiboChain/fbc/x/staking/types"
-	_ "github.com/FiboChain/fbc/x/staking/typesadapter"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/upgrade"
+	params2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/staking/client/rest"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
+	_ "github.com/zhengjianfeng1103/fbc/x/staking/typesadapter"
 )
 
 var (

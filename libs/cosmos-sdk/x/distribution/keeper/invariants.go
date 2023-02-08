@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/exported"
 )
 
 // register all distribution invariants

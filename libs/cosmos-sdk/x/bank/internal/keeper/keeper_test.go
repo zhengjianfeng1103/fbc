@@ -4,18 +4,18 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmkv "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
 	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmkv "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/vesting"
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/vesting"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
 )
 
 const (

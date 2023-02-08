@@ -5,13 +5,13 @@ package v0_36
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	v034distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
-	v034accounts "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_34"
-	v034gov "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/legacy/v0_34"
-	v034staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_34"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	v034distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
+	v034accounts "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genaccounts/legacy/v0_34"
+	v034gov "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/legacy/v0_34"
+	v034staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_34"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 const (

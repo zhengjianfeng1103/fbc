@@ -1,9 +1,9 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // ExportMetadata exports all the consensus metadata in the client store so they can be included in clients genesis

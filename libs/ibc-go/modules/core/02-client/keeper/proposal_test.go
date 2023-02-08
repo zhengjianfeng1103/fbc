@@ -1,14 +1,14 @@
 package keeper_test
 
 import (
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 
 	// govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	// upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	ibctmtypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 func (suite *KeeperTestSuite) TestClientUpdateProposal() {

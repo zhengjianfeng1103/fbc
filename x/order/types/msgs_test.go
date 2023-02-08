@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
 	"github.com/stretchr/testify/require"
 )

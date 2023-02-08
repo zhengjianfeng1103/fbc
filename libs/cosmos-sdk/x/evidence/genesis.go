@@ -3,7 +3,7 @@ package evidence
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // InitGenesis initializes the evidence module's state from a provided genesis

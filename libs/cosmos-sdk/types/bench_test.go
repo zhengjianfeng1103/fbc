@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var coinStrs = []string{

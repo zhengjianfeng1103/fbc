@@ -1,11 +1,11 @@
 package mock
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	capabilitykeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	capabilitykeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // MockIBCApp contains IBC application module callbacks as defined in 05-port.

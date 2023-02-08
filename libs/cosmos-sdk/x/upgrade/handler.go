@@ -1,9 +1,9 @@
 package upgrade
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	govtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	govtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
 )
 
 // NewSoftwareUpgradeProposalHandler creates a governance handler to manage new proposal types.

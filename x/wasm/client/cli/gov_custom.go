@@ -6,17 +6,17 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	"github.com/FiboChain/fbc/x/gov"
-	govcli "github.com/FiboChain/fbc/x/gov/client/cli"
-	"github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/x/gov"
+	govcli "github.com/zhengjianfeng1103/fbc/x/gov/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func ProposalUpdateDeploymentWhitelistCmd(cdcP *codec.CodecProxy, reg interfacetypes.InterfaceRegistry) *cobra.Command {

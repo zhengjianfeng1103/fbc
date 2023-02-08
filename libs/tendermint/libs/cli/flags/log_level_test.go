@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	tmflags "github.com/FiboChain/fbc/libs/tendermint/libs/cli/flags"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	tmflags "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 const (

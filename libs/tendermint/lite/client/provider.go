@@ -8,13 +8,13 @@ package client
 import (
 	"fmt"
 
-	log "github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/libs/tendermint/lite"
-	lerr "github.com/FiboChain/fbc/libs/tendermint/lite/errors"
-	rpcclient "github.com/FiboChain/fbc/libs/tendermint/rpc/client"
-	rpchttp "github.com/FiboChain/fbc/libs/tendermint/rpc/client/http"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	log "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite"
+	lerr "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite/errors"
+	rpcclient "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client"
+	rpchttp "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/http"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // SignStatusClient combines a SignClient and StatusClient.

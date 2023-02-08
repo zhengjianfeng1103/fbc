@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/global"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/global"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
-	exgovtypes "github.com/FiboChain/fbc/x/gov/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
+	exgovtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 type ProposalSuite struct {

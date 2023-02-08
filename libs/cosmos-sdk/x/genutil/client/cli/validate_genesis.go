@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/spf13/cobra"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
 )
 
 // Validate genesis command takes

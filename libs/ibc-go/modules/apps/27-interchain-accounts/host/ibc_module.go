@@ -1,15 +1,15 @@
 package host
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/keeper"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	ibcporttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
-	ibcexported "github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibcporttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/types"
+	ibcexported "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 var (

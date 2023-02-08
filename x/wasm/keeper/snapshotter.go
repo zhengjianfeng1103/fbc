@@ -6,14 +6,14 @@ package keeper
 //	"io"
 //
 //	protoio "github.com/gogo/protobuf/io"
-//	snapshot "github.com/FiboChain/fbc/libs/cosmos-sdk/snapshots/types"
-//	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-//	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+//	snapshot "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/snapshots/types"
+//	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+//	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 //	"github.com/tendermint/tendermint/libs/log"
 //	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 //
-//	"github.com/FiboChain/fbc/x/wasm/ioutils"
-//	"github.com/FiboChain/fbc/x/wasm/types"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/ioutils"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 //)
 //
 //var _ snapshot.ExtensionSnapshotter = &WasmSnapshotter{}

@@ -1,8 +1,8 @@
 package evidence
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/internal/types"
 )
 
 // nolint

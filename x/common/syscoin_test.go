@@ -1,11 +1,12 @@
 package common
 
 import (
-	"github.com/stretchr/testify/require"
 	"strings"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/stretchr/testify/require"
+
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // ----------------------------------------------------------------------------

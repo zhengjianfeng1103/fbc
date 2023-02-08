@@ -3,12 +3,12 @@ package simulation
 import (
 	"math/rand"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	simappparams "github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/params"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
-	"github.com/FiboChain/fbc/x/slashing/internal/keeper"
-	"github.com/FiboChain/fbc/x/slashing/internal/types"
-	stakingkeeper "github.com/FiboChain/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	simappparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp/params"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/x/slashing/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/slashing/internal/types"
+	stakingkeeper "github.com/zhengjianfeng1103/fbc/x/staking/keeper"
 )
 
 // Simulation operation weights constants

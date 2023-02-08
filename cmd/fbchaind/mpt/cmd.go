@@ -1,11 +1,11 @@
 package mpt
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/mpt/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func MptCmd(ctx *server.Context) *cobra.Command {

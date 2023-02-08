@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 type scTestParams struct {

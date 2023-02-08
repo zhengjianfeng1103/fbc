@@ -6,14 +6,14 @@ import (
 
 	"github.com/gorilla/mux"
 
-	govrest "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/client/rest"
+	govrest "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/client/rest"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/upgrade/internal/types"
 )
 
 func registerTxRoutes(cliCtx context.CLIContext, r *mux.Router) {

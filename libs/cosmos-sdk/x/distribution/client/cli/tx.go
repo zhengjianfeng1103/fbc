@@ -9,18 +9,18 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/client/common"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/client/common"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
 )
 
 var (

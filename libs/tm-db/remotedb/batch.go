@@ -3,8 +3,8 @@ package remotedb
 import (
 	"github.com/pkg/errors"
 
-	db "github.com/FiboChain/fbc/libs/tm-db"
-	protodb "github.com/FiboChain/fbc/libs/tm-db/remotedb/proto"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+	protodb "github.com/zhengjianfeng1103/fbc/libs/tm-db/remotedb/proto"
 )
 
 type batch struct {

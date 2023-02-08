@@ -5,12 +5,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	ethermint "github.com/FiboChain/fbc/app/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/x/feesplit/types"
-	"github.com/FiboChain/fbc/x/params"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
+	"github.com/zhengjianfeng1103/fbc/x/params"
 )
 
 // Keeper of this module maintains collections of fee splits for contracts

@@ -4,18 +4,18 @@ import (
 	"math"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func TestValidatorTestEquivalent(t *testing.T) {

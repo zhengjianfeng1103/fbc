@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 // Messenger is an extension point for custom wasmd message handling

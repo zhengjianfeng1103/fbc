@@ -5,12 +5,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmnet "github.com/FiboChain/fbc/libs/tendermint/libs/net"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmnet "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/net"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
 
-	"github.com/FiboChain/fbc/libs/tendermint/privval"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/privval"
 )
 
 func main() {

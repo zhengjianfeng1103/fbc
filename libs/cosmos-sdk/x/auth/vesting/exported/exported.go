@@ -3,8 +3,8 @@ package exported
 import (
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
 )
 
 // VestingAccount defines an account type that vests coins via a vesting schedule.

@@ -3,10 +3,10 @@ package multisig
 import (
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/sr25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/sr25519"
 )
 
 // TODO: Figure out API for others to either add their own pubkey types, or

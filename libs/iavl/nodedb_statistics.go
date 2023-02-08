@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/FiboChain/fbc/libs/system/trace"
+	"github.com/zhengjianfeng1103/fbc/libs/system/trace"
 )
 
 type RuntimeState struct {

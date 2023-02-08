@@ -1,8 +1,8 @@
 package rootmulti
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/mpt"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/mpt"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 const (

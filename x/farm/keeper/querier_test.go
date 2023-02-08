@@ -7,13 +7,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/x/farm/types"
+	"github.com/zhengjianfeng1103/fbc/x/farm/types"
 )
 
 const custom = "custom"

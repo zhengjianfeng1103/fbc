@@ -3,11 +3,11 @@ package mock
 import (
 	"io"
 
-	store "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/iavl"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	store "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 var _ sdk.MultiStore = multiStore{}

@@ -3,12 +3,12 @@ package simulation
 import (
 	"math/rand"
 
-	simappparams "github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/params"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
-	govtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	simappparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp/params"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 )
 
 // OpWeightSubmitCommunitySpendProposal app params key for community spend proposal

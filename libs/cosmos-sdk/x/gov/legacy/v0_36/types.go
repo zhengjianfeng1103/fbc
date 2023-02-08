@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	v034gov "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/legacy/v0_34"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	v034gov "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/legacy/v0_34"
 )
 
 const (

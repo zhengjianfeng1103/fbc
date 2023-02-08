@@ -3,10 +3,10 @@ package keeperadapter
 import (
 	"context"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/typesadapter"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/typesadapter"
 )
 
 type msgServer struct {

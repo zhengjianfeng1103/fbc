@@ -8,9 +8,9 @@ import (
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/golang/protobuf/ptypes/timestamp"
-	types "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	types1 "github.com/FiboChain/fbc/libs/tendermint/proto/types"
-	version "github.com/FiboChain/fbc/libs/tendermint/proto/version"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
+	version "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/version"
 	math "math"
 	time "time"
 )

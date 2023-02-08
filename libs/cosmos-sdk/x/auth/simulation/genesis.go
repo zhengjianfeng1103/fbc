@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	vestingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/vesting/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	vestingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/vesting/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 )
 
 // Simulation parameter constants

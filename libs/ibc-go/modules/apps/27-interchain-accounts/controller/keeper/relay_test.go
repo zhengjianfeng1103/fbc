@@ -1,14 +1,14 @@
 package keeper_test
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	icatypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	banktypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	icatypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 // TODO,再加

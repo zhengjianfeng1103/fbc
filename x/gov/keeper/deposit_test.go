@@ -3,12 +3,12 @@ package keeper
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/x/gov/types"
-	"github.com/FiboChain/fbc/x/params"
-	paramsTypes "github.com/FiboChain/fbc/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/params"
+	paramsTypes "github.com/zhengjianfeng1103/fbc/x/params/types"
 )
 
 func TestKeeper_AddDeposit(t *testing.T) {

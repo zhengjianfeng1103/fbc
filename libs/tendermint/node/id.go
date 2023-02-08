@@ -3,7 +3,7 @@ package node
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 type ID struct {

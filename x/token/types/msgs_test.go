@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
-	"github.com/FiboChain/fbc/x/common"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 )
 
 func TestNewMsgTokenIssue(t *testing.T) {
@@ -100,7 +100,7 @@ func TestNewMsgTokenBurn(t *testing.T) {
 	require.NoError(t, err)
 }
 
-//tokenMintMsg := NewMsgTokenMint("btc", mintNum, testAccounts[0].baseAccount.Address)
+// tokenMintMsg := NewMsgTokenMint("btc", mintNum, testAccounts[0].baseAccount.Address)
 func TestNewMsgTokenMint(t *testing.T) {
 	priKey := secp256k1.GenPrivKey()
 	pubKey := priKey.PubKey()

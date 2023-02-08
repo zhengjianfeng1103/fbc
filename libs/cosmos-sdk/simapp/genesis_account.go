@@ -3,10 +3,10 @@ package simapp
 import (
 	"errors"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
 )
 
 var _ authexported.GenesisAccount = (*SimGenesisAccount)(nil)

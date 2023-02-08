@@ -4,15 +4,15 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/x/distribution/keeper"
-	"github.com/FiboChain/fbc/x/distribution/types"
-	"github.com/FiboChain/fbc/x/staking"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
 )
 
 var (

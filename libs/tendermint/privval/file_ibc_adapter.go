@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/protoio"
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/proto/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
 	"github.com/gogo/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/protoio"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 func ibcCheckVotesOnlyDifferByTimestamp(lastSignBytes, newSignBytes []byte) (time.Time, bool) {

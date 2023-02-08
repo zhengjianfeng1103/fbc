@@ -8,22 +8,22 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	authvesting "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/vesting"
-	"github.com/FiboChain/fbc/x/genutil"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	authvesting "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/vesting"
+	"github.com/zhengjianfeng1103/fbc/x/genutil"
 
-	"github.com/FiboChain/fbc/app/crypto/hd"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/hd"
 
-	fbchain "github.com/FiboChain/fbc/app/types"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
+	fbchain "github.com/zhengjianfeng1103/fbc/app/types"
 )
 
 const (

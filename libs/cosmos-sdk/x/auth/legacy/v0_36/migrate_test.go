@@ -3,8 +3,8 @@ package v0_36
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	v034auth "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/legacy/v0_34"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	v034auth "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/legacy/v0_34"
 
 	"github.com/stretchr/testify/require"
 )

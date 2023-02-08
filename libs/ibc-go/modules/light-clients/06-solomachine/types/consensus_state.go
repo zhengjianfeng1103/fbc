@@ -3,10 +3,10 @@ package types
 import (
 	"strings"
 
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 var _ exported.ConsensusState = &ConsensusState{}

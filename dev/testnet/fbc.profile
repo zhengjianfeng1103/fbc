@@ -1,5 +1,5 @@
 BIN_NAME=fbchaind
-FBCHAIN_TOP=${GOPATH}/src/github.com/FiboChain/fbc
+FBCHAIN_TOP=${GOPATH}/src/github.com/zhengjianfeng1103/fbc
 FBCHAIN_BIN=${FBCHAIN_TOP}/build
 FBCHAIN_BIN=${GOPATH}/bin
 FBCHAIN_NET_TOP=`pwd`

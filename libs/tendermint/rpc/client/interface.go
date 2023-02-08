@@ -24,10 +24,10 @@ import (
 	"context"
 	"crypto/sha256"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Client wraps most important rpc calls a client would make if you want to

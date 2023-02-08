@@ -1,7 +1,7 @@
 package typesadapter
 
 import (
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 func (p *Params) From(pp types.Params) {

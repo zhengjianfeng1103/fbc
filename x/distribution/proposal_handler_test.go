@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 
-	"github.com/FiboChain/fbc/x/distribution/keeper"
-	"github.com/FiboChain/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 var (

@@ -1,7 +1,7 @@
 package check
 
 import (
-	"github.com/FiboChain/fbc/x/evm/txs/base"
+	"github.com/zhengjianfeng1103/fbc/x/evm/txs/base"
 )
 
 type Tx struct {

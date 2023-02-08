@@ -1,16 +1,16 @@
 package codec
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	cosmoscryptocodec "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/vesting"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	cosmoscryptocodec "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/vesting"
 
-	cryptocodec "github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	ethermint "github.com/FiboChain/fbc/app/types"
+	cryptocodec "github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
 )
 
 // MakeCodec registers the necessary types and interfaces for an sdk.App. This

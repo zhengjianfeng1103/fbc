@@ -4,13 +4,13 @@ import (
 	fmt "fmt"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/common"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/common"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 	proto "github.com/gogo/protobuf/proto"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 var (

@@ -3,9 +3,9 @@ package v0_11
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/x/dex/legacy/v0_10"
+	"github.com/zhengjianfeng1103/fbc/x/dex/legacy/v0_10"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 const (

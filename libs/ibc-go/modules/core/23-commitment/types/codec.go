@@ -1,8 +1,8 @@
 package types
 
 import (
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // RegisterInterfaces registers the commitment interfaces to protobuf Any.

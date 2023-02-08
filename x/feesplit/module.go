@@ -6,17 +6,17 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/base"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/x/feesplit/client/cli"
-	"github.com/FiboChain/fbc/x/feesplit/keeper"
-	"github.com/FiboChain/fbc/x/feesplit/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/upgrade"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/base"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
 )
 
 // type check to ensure the interface is properly implemented

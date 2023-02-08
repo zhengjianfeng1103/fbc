@@ -1,14 +1,14 @@
 package types_test
 
 import (
-	govtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
 	// "github.com/cosmos/cosmos-sdk/codec"
 	// codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	// govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	// upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 func (suite *TypesTestSuite) testValidateBasic() {

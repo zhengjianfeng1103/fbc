@@ -3,7 +3,7 @@
 package v0_38
 
 import (
-	v036staking "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
+	v036staking "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/legacy/v0_36"
 )
 
 // Migrate accepts exported genesis state from v0.36 or v0.37 and migrates it to

@@ -3,7 +3,7 @@ package commands
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/FiboChain/fbc/libs/tendermint/consensus"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus"
 )
 
 // ReplayCmd allows replaying of messages from the WAL.

@@ -8,11 +8,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	mempl "github.com/FiboChain/fbc/libs/tendermint/mempool"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	mempl "github.com/zhengjianfeng1103/fbc/libs/tendermint/mempool"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

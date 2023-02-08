@@ -5,13 +5,13 @@ package dex
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/dex/types"
-	govTypes "github.com/FiboChain/fbc/x/gov/types"
-	ordertypes "github.com/FiboChain/fbc/x/order/types"
 	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/dex/types"
+	govTypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
+	ordertypes "github.com/zhengjianfeng1103/fbc/x/order/types"
 )
 
 func TestProposal_NewProposalHandler(t *testing.T) {

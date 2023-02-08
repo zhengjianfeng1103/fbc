@@ -3,12 +3,12 @@ package simapp
 import (
 	"encoding/json"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	//"github.com/FiboChain/fbc/libs/cosmos-sdk/server/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
+	//"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
 )
 
 // App implements the common methods for a Cosmos SDK-based application

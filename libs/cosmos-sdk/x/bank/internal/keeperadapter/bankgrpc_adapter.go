@@ -6,10 +6,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/typesadapter"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/typesadapter"
 )
 
 type BankQueryServer struct {

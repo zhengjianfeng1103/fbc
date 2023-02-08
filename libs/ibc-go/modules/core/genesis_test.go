@@ -3,23 +3,23 @@ package ibc_test
 import (
 	"testing"
 
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	// tmproto "github.com/FiboChain/fbc/libs/tendermint/proto/tendermint/types"
+	// tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
 
-	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
-	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	localhosttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	ibc "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	connectiontypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/types"
+	ibctmtypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	localhosttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp"
 )
 
 const (

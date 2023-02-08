@@ -11,10 +11,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	db "github.com/FiboChain/fbc/libs/tm-db"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 /*

@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	db "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 func TestProofForgery(t *testing.T) {

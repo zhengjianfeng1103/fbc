@@ -6,8 +6,8 @@ package testdata
 import (
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	tx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	tx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"

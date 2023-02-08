@@ -1,11 +1,11 @@
 package distribution
 
 import (
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/distribution/keeper"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/keeper"
 )
 
 // BeginBlocker set the proposer for determining distribution during endblock

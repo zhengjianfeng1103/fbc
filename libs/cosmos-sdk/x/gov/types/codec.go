@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 )
 
 var ModuleCdc = codec.New()

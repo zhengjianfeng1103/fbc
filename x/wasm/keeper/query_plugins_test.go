@@ -4,18 +4,18 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
 
-	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/wasmtesting"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func TestIBCQuerier(t *testing.T) {

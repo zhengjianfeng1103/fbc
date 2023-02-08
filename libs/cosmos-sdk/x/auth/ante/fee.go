@@ -3,12 +3,12 @@ package ante
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 var (

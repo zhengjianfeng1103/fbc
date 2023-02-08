@@ -1,7 +1,7 @@
 package keys
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 )
 
 // KeysCdc defines codec to be used with key operations

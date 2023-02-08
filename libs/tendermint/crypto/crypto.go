@@ -1,8 +1,8 @@
 package crypto
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
 )
 
 const (

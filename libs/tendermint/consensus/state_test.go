@@ -10,12 +10,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmpubsub "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	p2pmock "github.com/FiboChain/fbc/libs/tendermint/p2p/mock"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	cstypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmpubsub "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	p2pmock "github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/mock"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 /*

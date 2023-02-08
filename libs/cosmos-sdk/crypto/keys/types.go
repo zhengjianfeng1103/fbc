@@ -3,11 +3,11 @@ package keys
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/multisig"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/multisig"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/hd"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/hd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // Keybase exposes operations on a generic keystore

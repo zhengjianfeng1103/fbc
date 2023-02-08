@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	tendermintTypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	tendermintTypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var (

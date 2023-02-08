@@ -1,8 +1,8 @@
 package exported
 
 import (
-	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	storetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var kvGasConfig storetypes.GasConfig

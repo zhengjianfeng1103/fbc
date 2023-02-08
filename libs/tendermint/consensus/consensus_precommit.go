@@ -3,9 +3,9 @@ package consensus
 import (
 	"fmt"
 
-	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/automation"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	cstypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/automation"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Enter: `timeoutPrevote` after any +2/3 prevotes.

@@ -14,14 +14,14 @@ import (
 	"github.com/99designs/keyring"
 	"github.com/pkg/errors"
 
-	tmcrypto "github.com/FiboChain/fbc/libs/tendermint/crypto"
-	cryptoAmino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
 	"github.com/tendermint/crypto/bcrypt"
+	tmcrypto "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	cryptoAmino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/input"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/keyerror"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/mintkey"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/input"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/mintkey"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 const (
@@ -497,7 +497,7 @@ func (kb keyringKeybase) writeInfo(name string, info Info) {
 	}
 }
 
-//FileDir show keyringKeybase absolute position
+// FileDir show keyringKeybase absolute position
 func (kb keyringKeybase) FileDir() (string, error) {
 	return resolvePath(kb.fileDir)
 }

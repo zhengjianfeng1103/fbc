@@ -4,16 +4,16 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/distribution/types"
-	"github.com/FiboChain/fbc/x/staking"
-	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
-	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
+	stakingexported "github.com/zhengjianfeng1103/fbc/x/staking/exported"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/x/staking/types"
 
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/stretchr/testify/require"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func TestCalculateRewardsBasic(t *testing.T) {

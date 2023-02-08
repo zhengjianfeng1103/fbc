@@ -6,8 +6,8 @@
 package supply
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/types"
 )
 
 const (

@@ -1,10 +1,10 @@
 package signing
 
 import (
-	types3 "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	txmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	signing2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	types3 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	txmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	signing2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
 )
 
 // SigVerifiableTx defines a transaction interface for all signature verification

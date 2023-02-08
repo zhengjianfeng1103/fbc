@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	paramtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	paramtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 )
 
 // DefaultTimePerBlock is the default value for maximum expected time per block (in nanoseconds).

@@ -3,8 +3,8 @@ package watcher
 import (
 	"log"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/golang/protobuf/proto"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 var (

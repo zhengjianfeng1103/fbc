@@ -1,9 +1,9 @@
 package simapp
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	ibc_tx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
-	simappparams "github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/params"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	ibc_tx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	simappparams "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp/params"
 )
 
 // MakeTestEncodingConfig creates an EncodingConfig for testing. This function

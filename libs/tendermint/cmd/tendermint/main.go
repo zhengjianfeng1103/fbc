@@ -4,11 +4,11 @@ import (
 	"os"
 	"path/filepath"
 
-	cmd "github.com/FiboChain/fbc/libs/tendermint/cmd/tendermint/commands"
-	"github.com/FiboChain/fbc/libs/tendermint/cmd/tendermint/commands/debug"
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
-	nm "github.com/FiboChain/fbc/libs/tendermint/node"
+	cmd "github.com/zhengjianfeng1103/fbc/libs/tendermint/cmd/tendermint/commands"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/cmd/tendermint/commands/debug"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
+	nm "github.com/zhengjianfeng1103/fbc/libs/tendermint/node"
 )
 
 func main() {

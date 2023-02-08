@@ -1,11 +1,11 @@
 package mint
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
-	"github.com/FiboChain/fbc/x/common"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	govTypes "github.com/FiboChain/fbc/x/gov/types"
+	govTypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // NewManageTreasuresProposalHandler handles "gov" type message in "mint"

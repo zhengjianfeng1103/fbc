@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
 	// "github.com/tendermint/tendermint/crypto"
 
 	// sdk "github.com/cosmos/cosmos-sdk/types"
 	// sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 type TlaBalance struct {

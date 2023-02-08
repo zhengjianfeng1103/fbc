@@ -3,12 +3,12 @@ package types
 import (
 	"time"
 
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // SentinelRoot is used as a stand-in root value for the consensus state set at the upgrade height

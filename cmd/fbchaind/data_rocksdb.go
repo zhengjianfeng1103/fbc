@@ -6,8 +6,8 @@ package main
 import (
 	"log"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/cosmos/gorocksdb"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 func init() {

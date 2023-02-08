@@ -1,16 +1,17 @@
 package token
 
 import (
-	"github.com/FiboChain/fbc/x/common"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	cliLcd "github.com/FiboChain/fbc/libs/cosmos-sdk/client/lcd"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/common/version"
-	"github.com/FiboChain/fbc/x/token/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+
 	"github.com/stretchr/testify/require"
+	cliLcd "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/lcd"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/common/version"
+	"github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 func TestAppModule_InitGenesis(t *testing.T) {
@@ -41,7 +42,7 @@ func TestAppModule_InitGenesis(t *testing.T) {
 	module.GetQueryCmd(app.Cdc.GetCdc())
 	module.GetTxCmd(app.Cdc.GetCdc())
 	module.NewQuerierHandler()
-	rs := cliLcd.NewRestServer(app.Cdc, nil,nil)
+	rs := cliLcd.NewRestServer(app.Cdc, nil, nil)
 	module.RegisterRESTRoutes(rs.CliCtx, rs.Mux)
 	module.BeginBlock(ctx, abci.RequestBeginBlock{})
 	module.EndBlock(ctx, abci.RequestEndBlock{})

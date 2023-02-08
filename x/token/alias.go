@@ -1,6 +1,6 @@
 package token
 
-import "github.com/FiboChain/fbc/x/token/types"
+import "github.com/zhengjianfeng1103/fbc/x/token/types"
 
 const (
 	// ModuleName is the module name constant used in many places

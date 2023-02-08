@@ -5,14 +5,14 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/x/distribution/types"
-	"github.com/FiboChain/fbc/x/staking"
-	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/go-amino"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
+	stakingexported "github.com/zhengjianfeng1103/fbc/x/staking/exported"
 )
 
 func getQueriedValidatorOutstandingRewards(t *testing.T, ctx sdk.Context, querier sdk.Querier,

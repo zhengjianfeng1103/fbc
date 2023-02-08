@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/global"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	keep "github.com/FiboChain/fbc/x/staking/keeper"
-	"github.com/FiboChain/fbc/x/staking/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/global"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	keep "github.com/zhengjianfeng1103/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 type HandlerSuite struct {

@@ -6,7 +6,7 @@ package testdata
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
 	grpc "google.golang.org/grpc"

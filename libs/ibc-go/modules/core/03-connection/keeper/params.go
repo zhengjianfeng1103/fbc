@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
 )
 
 // GetMaxExpectedTimePerBlock retrieves the maximum expected time per block from the paramstore

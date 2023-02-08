@@ -1,11 +1,12 @@
 package redis_cgi
 
 import (
-	"github.com/alicebob/miniredis/v2"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
+
+	"github.com/alicebob/miniredis/v2"
+	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 const (

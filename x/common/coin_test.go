@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
-//------------------
+// ------------------
 // test sdk.SysCoin
 func TestParseDecCoinByDecimal(t *testing.T) {
 
@@ -221,7 +221,7 @@ func TestParseDecCoinByInteger(t *testing.T) {
 	require.Equal(t, "\"1000.000000000000000000\"", string(decCoinAmountJSON))
 }
 
-//--------------
+// --------------
 // test sdk.Coin
 func TestParseIntCoinByDecimal(t *testing.T) {
 	ret, err := sdk.ParseCoin("1000.1" + NativeToken)
@@ -229,7 +229,7 @@ func TestParseIntCoinByDecimal(t *testing.T) {
 	fmt.Println(ret.String())
 }
 
-//--------------------
+// --------------------
 // test sdk.NewCoin. Dangerous!
 func TestSdkNewCoin(t *testing.T) {
 	// dangerous to use!!!
@@ -237,7 +237,7 @@ func TestSdkNewCoin(t *testing.T) {
 	require.Equal(t, "1000.000000000000000000"+NativeToken, intCoin.String())
 }
 
-//--------------------
+// --------------------
 // test sdk.NewDecCoin
 func TestSdkNewDecCoin(t *testing.T) {
 	// safe to use

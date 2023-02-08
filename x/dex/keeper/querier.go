@@ -6,12 +6,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/FiboChain/fbc/x/dex/types"
+	"github.com/zhengjianfeng1103/fbc/x/dex/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 )
 
 // NewQuerier is the module level router for state queries
@@ -218,7 +218,7 @@ func queryParams(ctx sdk.Context, _ abci.RequestQuery, keeper IKeeper) (res []by
 	return res, nil
 }
 
-//queryProductsDelisting query the tokenpair name under dex delisting
+// queryProductsDelisting query the tokenpair name under dex delisting
 func queryProductsDelisting(ctx sdk.Context, keeper IKeeper) (res []byte, err sdk.Error) {
 	var tokenPairNames []string
 	tokenPairs := keeper.GetTokenPairs(ctx)

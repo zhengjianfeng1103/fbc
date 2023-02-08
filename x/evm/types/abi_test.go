@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/rand"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
 )
 
 func TestNewABI(t *testing.T) {

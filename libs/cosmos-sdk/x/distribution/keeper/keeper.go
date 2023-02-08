@@ -3,13 +3,13 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 // Keeper of the distribution store

@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
-	lite "github.com/FiboChain/fbc/libs/tendermint/lite2"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
+	lite "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 const (

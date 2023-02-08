@@ -3,10 +3,10 @@ package mock
 import (
 	"net"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p/conn"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/conn"
 )
 
 type Peer struct {

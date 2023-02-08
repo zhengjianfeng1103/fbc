@@ -3,12 +3,12 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
-	transfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/29-fee/types"
+	transfertypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/mock"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 )
 
 func (suite *KeeperTestSuite) TestDistributeFee() {

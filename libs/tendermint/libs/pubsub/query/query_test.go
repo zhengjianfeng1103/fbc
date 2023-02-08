@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
 )
 
 func TestMatches(t *testing.T) {

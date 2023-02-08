@@ -1,10 +1,10 @@
 package cli
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/internal/types"
 
 	"github.com/spf13/cobra"
 )

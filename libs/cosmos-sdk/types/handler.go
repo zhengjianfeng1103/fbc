@@ -3,7 +3,7 @@ package types
 import (
 	"github.com/ethereum/go-ethereum/common"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 // Handler defines the core of the state transition function of an application.
@@ -72,21 +72,22 @@ func ChainAnteDecorators(chain ...AnteDecorator) AnteHandler {
 
 // Terminator AnteDecorator will get added to the chain to simplify decorator code
 // Don't need to check if next == nil further up the chain
-//                        ______
-//                     <((((((\\\
-//                     /      . }\
-//                     ;--..--._|}
-//  (\                 '--/\--'  )
-//   \\                | '-'  :'|
-//    \\               . -==- .-|
-//     \\               \.__.'   \--._
-//     [\\          __.--|       //  _/'--.
-//     \ \\       .'-._ ('-----'/ __/      \
-//      \ \\     /   __>|      | '--.       |
-//       \ \\   |   \   |     /    /       /
-//        \ '\ /     \  |     |  _/       /
-//         \  \       \ |     | /        /
-//   snd    \  \      \        /
+//
+//	                      ______
+//	                   <((((((\\\
+//	                   /      . }\
+//	                   ;--..--._|}
+//	(\                 '--/\--'  )
+//	 \\                | '-'  :'|
+//	  \\               . -==- .-|
+//	   \\               \.__.'   \--._
+//	   [\\          __.--|       //  _/'--.
+//	   \ \\       .'-._ ('-----'/ __/      \
+//	    \ \\     /   __>|      | '--.       |
+//	     \ \\   |   \   |     /    /       /
+//	      \ '\ /     \  |     |  _/       /
+//	       \  \       \ |     | /        /
+//	 snd    \  \      \        /
 type Terminator struct{}
 
 const AnteTerminatorTag = "ante-terminator"

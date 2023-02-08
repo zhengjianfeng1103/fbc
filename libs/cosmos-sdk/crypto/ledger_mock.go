@@ -9,15 +9,15 @@ import (
 	"github.com/btcsuite/btcd/btcec"
 	"github.com/pkg/errors"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmsecp256k1 "github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	secp256k1 "github.com/tendermint/btcd/btcec"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmsecp256k1 "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 
 	bip39 "github.com/cosmos/go-bip39"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/hd"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/tests"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/hd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/tests"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // If ledger support (build tag) has been enabled, which implies a CGO dependency,

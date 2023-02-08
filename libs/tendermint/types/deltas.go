@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/compress"
 	"github.com/tendermint/go-amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/compress"
 )
 
 const (

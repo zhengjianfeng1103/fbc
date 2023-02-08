@@ -1,11 +1,11 @@
 package transient
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	"github.com/FiboChain/fbc/libs/iavl"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/dbadapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/dbadapter"
 )
 
 var _ types.Committer = (*Store)(nil)

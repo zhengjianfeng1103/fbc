@@ -3,9 +3,9 @@ package keeper
 import (
 	"testing"
 
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/staking/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/go-amino"

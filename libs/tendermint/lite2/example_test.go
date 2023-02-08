@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	lite "github.com/FiboChain/fbc/libs/tendermint/lite2"
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/provider"
-	httpp "github.com/FiboChain/fbc/libs/tendermint/lite2/provider/http"
-	dbs "github.com/FiboChain/fbc/libs/tendermint/lite2/store/db"
-	rpctest "github.com/FiboChain/fbc/libs/tendermint/rpc/test"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	lite "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider"
+	httpp "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider/http"
+	dbs "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/store/db"
+	rpctest "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/test"
 )
 
 // Automatically getting new headers and verifying them.

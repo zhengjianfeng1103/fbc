@@ -9,7 +9,7 @@ import (
 	math "math"
 	math_bits "math/bits"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"

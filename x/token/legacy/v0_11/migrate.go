@@ -1,6 +1,6 @@
 package v0_11
 
-import "github.com/FiboChain/fbc/x/token/legacy/v0_10"
+import "github.com/zhengjianfeng1103/fbc/x/token/legacy/v0_10"
 
 func Migrate(oldGenState v0_10.GenesisState) GenesisState {
 	tokens := make([]Token, len(oldGenState.Tokens))

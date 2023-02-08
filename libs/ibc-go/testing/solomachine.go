@@ -3,18 +3,18 @@ package ibctesting
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
-	ibc_tx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	solomachinetypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
+	ibc_tx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	solomachinetypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 )
 
 // import (
@@ -29,11 +29,11 @@ import (
 // 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 // 	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
 // 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-// 	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-// 	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-// 	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-// 	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-// 	solomachinetypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
+// 	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+// 	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+// 	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+// 	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+// 	solomachinetypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
 // )
 
 // Solomachine is a testing helper used to simulate a counterparty

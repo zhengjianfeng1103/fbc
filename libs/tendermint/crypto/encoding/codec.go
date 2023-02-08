@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
-	pc "github.com/FiboChain/fbc/libs/tendermint/proto/crypto/keys"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
+	pc "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/crypto/keys"
 )
 
 type PubKeyType uint8

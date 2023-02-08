@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p/conn"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/conn"
 )
 
 var defaultNodeName = "host_peer"

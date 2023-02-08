@@ -4,11 +4,11 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/FiboChain/fbc/app"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/app"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func exportAppCmd(ctx *server.Context) *cobra.Command {

@@ -1,10 +1,10 @@
 package mock
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 )
 
 var _ tmtypes.PrivValidator = PV{}

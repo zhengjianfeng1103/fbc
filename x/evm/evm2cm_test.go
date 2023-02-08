@@ -6,10 +6,10 @@ import (
 	"math/big"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	etypes "github.com/FiboChain/fbc/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	etypes "github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 type testMsg struct {

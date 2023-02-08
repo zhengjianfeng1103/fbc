@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	core_grpc "github.com/FiboChain/fbc/libs/tendermint/rpc/grpc"
-	rpctest "github.com/FiboChain/fbc/libs/tendermint/rpc/test"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	core_grpc "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/grpc"
+	rpctest "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/test"
 )
 
 func TestMain(m *testing.M) {

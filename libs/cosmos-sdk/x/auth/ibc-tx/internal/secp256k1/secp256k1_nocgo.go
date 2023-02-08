@@ -6,8 +6,8 @@ package secp256k1
 import (
 	"math/big"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
 	secp256k1 "github.com/btcsuite/btcd/btcec"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 // used to reject malleable signatures

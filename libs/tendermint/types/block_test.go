@@ -17,14 +17,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bits"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
-	"github.com/FiboChain/fbc/libs/tendermint/version"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bits"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/version"
 )
 
 func TestMain(m *testing.M) {

@@ -10,19 +10,19 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 
 	"github.com/fortytw2/leaktest"
 	"github.com/go-kit/kit/log/term"
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p/mock"
-	"github.com/FiboChain/fbc/libs/tendermint/proxy"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/mock"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/proxy"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 type peerState struct {

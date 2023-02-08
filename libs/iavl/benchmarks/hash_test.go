@@ -7,7 +7,7 @@ import (
 	"hash"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/iavl"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
 
 	_ "crypto/sha256"
 

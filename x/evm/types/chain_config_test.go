@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 	"github.com/ethereum/go-ethereum/common"
 )

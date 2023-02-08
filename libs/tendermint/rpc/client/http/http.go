@@ -12,14 +12,14 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmpubsub "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	rpcclient "github.com/FiboChain/fbc/libs/tendermint/rpc/client"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	jsonrpcclient "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/client"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmpubsub "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	rpcclient "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	jsonrpcclient "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/client"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 /*
@@ -42,24 +42,24 @@ the example for more details.
 
 Example:
 
-		c, err := New("http://192.168.1.10:26657", "/websocket")
-		if err != nil {
-			// handle error
-		}
+	c, err := New("http://192.168.1.10:26657", "/websocket")
+	if err != nil {
+		// handle error
+	}
 
-		// call Start/Stop if you're subscribing to events
-		err = c.Start()
-		if err != nil {
-			// handle error
-		}
-		defer c.Stop()
+	// call Start/Stop if you're subscribing to events
+	err = c.Start()
+	if err != nil {
+		// handle error
+	}
+	defer c.Stop()
 
-		res, err := c.Status()
-		if err != nil {
-			// handle error
-		}
+	res, err := c.Status()
+	if err != nil {
+		// handle error
+	}
 
-		// handle result
+	// handle result
 */
 type HTTP struct {
 	remote string

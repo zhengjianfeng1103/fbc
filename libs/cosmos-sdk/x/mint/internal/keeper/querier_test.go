@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 func TestNewQuerier(t *testing.T) {

@@ -1,9 +1,9 @@
 package rootmulti
 
 import (
-	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	storetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 func queryIbcProof(res *abci.ResponseQuery, info *commitInfo, storeName string) {

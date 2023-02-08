@@ -1,9 +1,9 @@
 package client
 
 import (
-	"github.com/FiboChain/fbc/x/farm/client/cli"
-	"github.com/FiboChain/fbc/x/farm/client/rest"
-	govcli "github.com/FiboChain/fbc/x/gov/client"
+	"github.com/zhengjianfeng1103/fbc/x/farm/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/farm/client/rest"
+	govcli "github.com/zhengjianfeng1103/fbc/x/gov/client"
 )
 
 var (

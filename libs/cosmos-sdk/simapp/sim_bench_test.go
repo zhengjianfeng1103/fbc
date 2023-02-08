@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 )
 
 // Profile with:

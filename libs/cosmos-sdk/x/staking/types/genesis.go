@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // GenesisState - all staking state that must be provided at genesis

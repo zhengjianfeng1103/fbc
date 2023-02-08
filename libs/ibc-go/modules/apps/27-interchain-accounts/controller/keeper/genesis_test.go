@@ -1,10 +1,10 @@
 package keeper_test
 
 import (
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/types"
-	icatypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/types"
+	icatypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 func (suite *KeeperTestSuite) TestInitGenesis() {

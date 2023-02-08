@@ -1,10 +1,10 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	cdctypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	txmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/msgservice"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	cdctypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	txmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/msgservice"
 )
 
 var (

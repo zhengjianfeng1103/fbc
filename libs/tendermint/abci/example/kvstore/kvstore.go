@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"math/big"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/code"
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/kv"
-	"github.com/FiboChain/fbc/libs/tendermint/version"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/code"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/version"
 )
 
 var (

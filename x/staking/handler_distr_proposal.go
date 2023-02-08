@@ -1,9 +1,9 @@
 package staking
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/staking/keeper"
-	"github.com/FiboChain/fbc/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 func handleMsgEditValidatorCommissionRate(ctx sdk.Context, msg types.MsgEditValidatorCommissionRate, k keeper.Keeper) (*sdk.Result, error) {

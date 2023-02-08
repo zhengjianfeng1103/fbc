@@ -1,9 +1,9 @@
 package connection
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/keeper"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
 )
 
 // InitGenesis initializes the ibc connection submodule's state from a provided genesis

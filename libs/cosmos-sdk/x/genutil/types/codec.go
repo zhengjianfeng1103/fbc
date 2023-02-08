@@ -1,10 +1,10 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 // ModuleCdc defines a generic sealed codec to be used throughout this module

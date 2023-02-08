@@ -3,13 +3,13 @@ package evidence_test
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/evidence"
-	"github.com/FiboChain/fbc/x/evidence/internal/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/evidence"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/internal/types"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
 	"github.com/stretchr/testify/suite"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 )
 
 type HandlerTestSuite struct {

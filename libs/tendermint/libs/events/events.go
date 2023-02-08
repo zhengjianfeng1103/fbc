@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
 )
 
 // ErrListenerWasRemoved is returned by AddEvent if the listener was removed.

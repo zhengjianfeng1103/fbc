@@ -12,12 +12,12 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	auto "github.com/FiboChain/fbc/libs/tendermint/libs/autofile"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	auto "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/autofile"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 const (

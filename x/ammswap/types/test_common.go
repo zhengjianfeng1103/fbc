@@ -3,11 +3,11 @@ package types
 import (
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply"
-	"github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/token"
-	tokentypes "github.com/FiboChain/fbc/x/token/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply"
+	"github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/token"
+	tokentypes "github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 // nolint

@@ -9,17 +9,17 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/tendermint/go-amino"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	lite "github.com/FiboChain/fbc/libs/tendermint/lite2"
-	lproxy "github.com/FiboChain/fbc/libs/tendermint/lite2/proxy"
-	lrpc "github.com/FiboChain/fbc/libs/tendermint/lite2/rpc"
-	dbs "github.com/FiboChain/fbc/libs/tendermint/lite2/store/db"
-	rpchttp "github.com/FiboChain/fbc/libs/tendermint/rpc/client/http"
-	rpcserver "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/server"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	lite "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2"
+	lproxy "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/proxy"
+	lrpc "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/rpc"
+	dbs "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/store/db"
+	rpchttp "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/http"
+	rpcserver "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/server"
 )
 
 // LiteCmd represents the base command when called without any subcommands

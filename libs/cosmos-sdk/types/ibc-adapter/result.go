@@ -6,13 +6,13 @@ import (
 	"math"
 	"strings"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
 	"github.com/gogo/protobuf/proto"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	costypes "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	costypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var cdc = codec.New()

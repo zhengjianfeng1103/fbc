@@ -1,8 +1,8 @@
 package wasmtesting
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/baseapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // MockMessageRouter mock for testing

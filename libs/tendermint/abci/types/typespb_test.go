@@ -17,8 +17,8 @@ import (
 	golang_proto "github.com/golang/protobuf/proto"
 	_ "github.com/golang/protobuf/ptypes/duration"
 	_ "github.com/golang/protobuf/ptypes/timestamp"
-	_ "github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
-	_ "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+	_ "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
+	_ "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

@@ -11,18 +11,18 @@ import (
 
 	"github.com/pkg/errors"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
-	tmstring "github.com/FiboChain/fbc/libs/tendermint/libs/strings"
-	"github.com/FiboChain/fbc/libs/tendermint/state/txindex"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
+	tmstring "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/strings"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/state/txindex"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 const (
 	tagKeySeparator = "/"
-	defaultTimeOut = 5 * time.Second
-	maxQueryRange = 256
+	defaultTimeOut  = 5 * time.Second
+	maxQueryRange   = 256
 )
 
 var _ txindex.TxIndexer = (*TxIndex)(nil)
@@ -585,7 +585,6 @@ LOOP:
 			// 		break
 			// 	}
 		}
-
 
 	}
 

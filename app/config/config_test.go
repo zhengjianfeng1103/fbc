@@ -3,14 +3,14 @@ package config
 import (
 	"testing"
 
-	iavlconfig "github.com/FiboChain/fbc/libs/iavl/config"
+	iavlconfig "github.com/zhengjianfeng1103/fbc/libs/iavl/config"
 
 	"github.com/spf13/viper"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	tm "github.com/FiboChain/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	tm "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
 )
 
 func TestConfig(t *testing.T) {

@@ -4,7 +4,7 @@ package ibctesting
 //	"bytes"
 //	"fmt"
 //
-//	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+//	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 //	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 //)
 //

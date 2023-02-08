@@ -3,10 +3,10 @@ package types
 import (
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	stakingexported "github.com/zhengjianfeng1103/fbc/x/staking/exported"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 type (

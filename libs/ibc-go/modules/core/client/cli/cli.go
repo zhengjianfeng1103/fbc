@@ -3,18 +3,18 @@ package cli
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	ibcclient "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client"
-	connection "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection"
-	channel "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	ibcclient "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client"
+	connection "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection"
+	channel "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/types"
 )
 
 // GetTxCmd returns the transaction commands for this module

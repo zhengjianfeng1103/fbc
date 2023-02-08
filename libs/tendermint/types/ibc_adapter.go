@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/version"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/version"
 
-	ce "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bits"
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmproto "github.com/FiboChain/fbc/libs/tendermint/proto/types"
-	tmversion "github.com/FiboChain/fbc/libs/tendermint/proto/version"
+	ce "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bits"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmproto "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
+	tmversion "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/version"
 )
 
 type CM40Block struct {

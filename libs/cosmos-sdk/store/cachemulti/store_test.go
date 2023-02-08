@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
 )
 
 func TestStoreGetKVStore(t *testing.T) {

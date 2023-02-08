@@ -3,7 +3,7 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 // DONTCOVER

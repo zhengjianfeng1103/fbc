@@ -1,10 +1,10 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	stakingexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/exported"
-	supplyexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	stakingexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/exported"
+	supplyexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
 )
 
 // DistributionKeeper expected distribution keeper (noalias)

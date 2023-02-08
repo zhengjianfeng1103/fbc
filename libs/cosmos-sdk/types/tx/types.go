@@ -3,13 +3,13 @@ package tx
 import (
 	"fmt"
 
-	ibcmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	ibcmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
 
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	ibckeys "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	ibckeys "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 // MaxGasWanted defines the max gas allowed.

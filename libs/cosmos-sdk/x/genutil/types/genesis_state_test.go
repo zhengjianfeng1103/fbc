@@ -3,12 +3,12 @@ package types
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 var (

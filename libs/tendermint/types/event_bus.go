@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmpubsub "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmpubsub "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
 )
 
 const defaultCapacity = 0
@@ -249,7 +249,7 @@ func (b *EventBus) PublishEventValidatorSetUpdates(data EventDataValidatorSetUpd
 	return b.Publish(EventValidatorSetUpdates, data)
 }
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 type NopEventBus struct{}
 
 func (NopEventBus) Subscribe(

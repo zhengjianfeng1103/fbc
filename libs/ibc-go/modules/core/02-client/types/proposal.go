@@ -3,12 +3,12 @@ package types
 import (
 	"fmt"
 
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	govtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade/typesadapter"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	exchaingov "github.com/FiboChain/fbc/x/gov/types"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	govtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/upgrade/typesadapter"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	exchaingov "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 const (

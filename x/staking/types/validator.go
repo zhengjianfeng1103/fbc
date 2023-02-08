@@ -9,18 +9,18 @@ import (
 	"strings"
 	"time"
 
-	cryptoamino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
+	cryptoamino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
 
 	"github.com/tendermint/go-amino"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 	"gopkg.in/yaml.v2"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/staking/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/exported"
 )
 
 // nolint

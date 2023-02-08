@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/prefix"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 func (k Keeper) GetUnbondingDelegation(ctx sdk.Context,

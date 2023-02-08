@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/system/trace"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/system/trace"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 
 	"github.com/spf13/viper"
 )

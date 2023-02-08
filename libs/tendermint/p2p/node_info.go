@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmstrings "github.com/FiboChain/fbc/libs/tendermint/libs/strings"
-	"github.com/FiboChain/fbc/libs/tendermint/version"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmstrings "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/strings"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/version"
 )
 
 const (

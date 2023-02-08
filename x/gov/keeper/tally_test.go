@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/x/gov/types"
-	"github.com/FiboChain/fbc/x/staking"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
 )
 
 func newTallyResult(t *testing.T, totalVoted, yes, abstain, no, veto, totalVoting string) types.TallyResult {

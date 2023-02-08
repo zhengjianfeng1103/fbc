@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/keeper"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp/adapter"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	ibc "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp/adapter"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 type CoreModule struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/evidence/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/evidence/exported"
 )
 
 // DONTCOVER

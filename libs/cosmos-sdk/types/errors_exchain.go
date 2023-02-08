@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 	"strings"
+
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 type Error = error

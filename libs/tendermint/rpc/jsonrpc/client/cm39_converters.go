@@ -1,11 +1,11 @@
 package client
 
 import (
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	merkle "github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	coretypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	merkle "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	coretypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 type CM39ResultBroadcastTxCommit struct {

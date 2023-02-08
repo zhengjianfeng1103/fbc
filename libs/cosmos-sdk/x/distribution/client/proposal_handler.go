@@ -1,9 +1,9 @@
 package client
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/client/cli"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/client/rest"
-	govclient "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/client/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/client/rest"
+	govclient "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/client"
 )
 
 // param change proposal handler

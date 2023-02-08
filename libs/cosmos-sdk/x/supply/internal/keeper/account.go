@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/types"
 )
 
 // GetModuleAddress returns an address based on the module name

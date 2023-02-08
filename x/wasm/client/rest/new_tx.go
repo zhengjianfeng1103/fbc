@@ -3,11 +3,11 @@ package rest
 import (
 	"net/http"
 
-	clientCtx "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	"github.com/FiboChain/fbc/x/wasm/client/utils"
-	"github.com/FiboChain/fbc/x/wasm/types"
 	"github.com/gorilla/mux"
+	clientCtx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/client/utils"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func registerNewTxRoutes(cliCtx clientCtx.CLIContext, r *mux.Router) {

@@ -1,6 +1,6 @@
 package keeper_test
 
-import "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/types"
+import "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/types"
 
 func (suite *KeeperTestSuite) TestParams() {
 	expParams := types.DefaultParams()

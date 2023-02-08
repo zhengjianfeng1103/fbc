@@ -3,24 +3,24 @@ package keeper
 import (
 	"testing"
 
-	ibcadapter "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	ibcadapter "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
 
 	"github.com/golang/protobuf/proto"
-	//ibctransfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
-	//clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	//channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	//ibctransfertypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
+	//clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	//channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
 	"github.com/stretchr/testify/assert"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	banktypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank"
 
-	//distributiontypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
-	//stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	//distributiontypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
+	//stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 
-	//"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	//"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/wasmtesting"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func TestEncoding(t *testing.T) {

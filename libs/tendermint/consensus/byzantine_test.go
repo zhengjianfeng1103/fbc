@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	sm "github.com/FiboChain/fbc/libs/tendermint/state"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	sm "github.com/zhengjianfeng1103/fbc/libs/tendermint/state"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 //----------------------------------------------

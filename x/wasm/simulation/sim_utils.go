@@ -1,10 +1,10 @@
 package simulation
 
 //import (
-//	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/helpers"
-//	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-//	simtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/types/simulation"
-//	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+//	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp/helpers"
+//	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+//	simtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/simulation"
+//	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 //)
 //
 //// GenAndDeliverTxWithRandFees generates a transaction with a random fee and delivers it.

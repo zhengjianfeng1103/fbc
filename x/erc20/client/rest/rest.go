@@ -6,11 +6,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	comm "github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/erc20/types"
-	govRest "github.com/FiboChain/fbc/x/gov/client/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	comm "github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/types"
+	govRest "github.com/zhengjianfeng1103/fbc/x/gov/client/rest"
 )
 
 // RegisterRoutes - Central function to define routes that get registered by the main application

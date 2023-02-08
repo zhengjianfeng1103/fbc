@@ -3,10 +3,10 @@ package types
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/upgrade"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/upgrade"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 // StakingKeeper expected staking keeper

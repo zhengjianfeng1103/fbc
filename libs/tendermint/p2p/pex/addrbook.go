@@ -15,11 +15,11 @@ import (
 	"time"
 
 	"github.com/minio/highwayhash"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
 )
 
 const (

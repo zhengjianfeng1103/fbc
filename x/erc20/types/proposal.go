@@ -6,8 +6,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 const (

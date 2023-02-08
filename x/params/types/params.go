@@ -2,13 +2,14 @@ package types
 
 import (
 	"fmt"
-	"github.com/FiboChain/fbc/x/common"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/subspace"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkparams "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/subspace"
+
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 )
 
 const (

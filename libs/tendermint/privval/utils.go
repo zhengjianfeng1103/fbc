@@ -6,9 +6,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmnet "github.com/FiboChain/fbc/libs/tendermint/libs/net"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmnet "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/net"
 )
 
 // IsConnTimeout returns a boolean indicating whether the error is known to

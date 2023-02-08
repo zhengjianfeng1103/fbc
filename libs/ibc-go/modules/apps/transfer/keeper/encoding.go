@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
 )
 
 // UnmarshalDenomTrace attempts to decode and return an DenomTrace object from

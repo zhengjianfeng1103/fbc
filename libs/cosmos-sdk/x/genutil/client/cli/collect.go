@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"path/filepath"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

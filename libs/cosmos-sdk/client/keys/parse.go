@@ -12,11 +12,11 @@ import (
 	"github.com/spf13/viper"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bech32"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bech32"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func bech32Prefixes(config *sdk.Config) []string {

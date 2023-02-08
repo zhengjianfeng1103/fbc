@@ -1,10 +1,10 @@
 package core
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/evidence"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/evidence"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // BroadcastEvidence broadcasts evidence of the misbehavior.

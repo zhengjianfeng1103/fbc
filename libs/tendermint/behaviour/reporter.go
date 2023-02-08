@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
 )
 
 // Reporter provides an interface for reactors to report the behaviour

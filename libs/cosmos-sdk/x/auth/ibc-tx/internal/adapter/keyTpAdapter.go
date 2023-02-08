@@ -3,12 +3,12 @@ package adapter
 import (
 	"errors"
 
-	ethsecp256k12 "github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/ethsecp256k1"
-	secp256k1 "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/secp256k1"
-	LagacyPubKey "github.com/FiboChain/fbc/libs/tendermint/crypto"
-	secp256k12 "github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	ethsecp256k12 "github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/ethsecp256k1"
+	secp256k1 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/secp256k1"
+	LagacyPubKey "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	secp256k12 "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 )
 
 func LagacyPubkey2ProtoBuffPubkey(pubKey LagacyPubKey.PubKey) types.PubKey {

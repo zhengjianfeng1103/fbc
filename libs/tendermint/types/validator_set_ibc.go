@@ -3,8 +3,8 @@ package types
 import (
 	"bytes"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
 )
 
 func (vals *ValidatorSet) IBCVerifyCommitLightTrusting(chainID string, blockID BlockID,

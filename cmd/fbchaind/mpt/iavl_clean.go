@@ -5,13 +5,13 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	iavlstore "github.com/FiboChain/fbc/libs/cosmos-sdk/store/iavl"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/rootmulti"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/iavl"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	iavlstore "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/iavl"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/rootmulti"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 func cleanIavlStoreCmd(ctx *server.Context) *cobra.Command {

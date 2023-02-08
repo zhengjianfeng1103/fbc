@@ -4,17 +4,17 @@ import (
 	"io/ioutil"
 	"testing"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/require"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 // BenchmarkVerification benchmarks secp256k1 verification which is 1000 gas based on cpu time.
 //
 // Just this function is copied from
-// https://github.com/FiboChain/fbc/libs/cosmos-sdk/blob/90e9370bd80d9a3d41f7203ddb71166865561569/crypto/keys/internal/benchmarking/bench.go#L48-L62
+// https://github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/blob/90e9370bd80d9a3d41f7203ddb71166865561569/crypto/keys/internal/benchmarking/bench.go#L48-L62
 // And thus under the GO license (BSD style)
 func BenchmarkGasNormalization(b *testing.B) {
 	priv := secp256k1.GenPrivKey()

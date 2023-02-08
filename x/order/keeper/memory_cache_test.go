@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/x/order/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/x/order/types"
 )
 
 func TestCache_GetCancelNum(t *testing.T) {

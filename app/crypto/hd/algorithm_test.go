@@ -11,12 +11,12 @@ import (
 
 	hdwallet "github.com/miguelmota/go-ethereum-hdwallet"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/hd"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/tests"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/hd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/tests"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	ethermint "github.com/FiboChain/fbc/app/types"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
 )
 
 func TestEthermintKeygenFunc(t *testing.T) {

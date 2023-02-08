@@ -15,11 +15,11 @@ import (
 	strings "strings"
 	time "time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	github_com_cosmos_cosmos_sdk_types "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	types1 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 
 	_ "github.com/cosmos/cosmos-proto"
 	_ "github.com/gogo/protobuf/gogoproto"

@@ -1,9 +1,9 @@
 package crisis
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/crisis/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/crisis/internal/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/crisis/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/crisis/internal/types"
 )
 
 // new crisis genesis

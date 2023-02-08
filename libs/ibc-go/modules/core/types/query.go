@@ -1,15 +1,15 @@
 package types
 
 import (
-	client "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	connection "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection"
-	connectiontypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	channel "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	port "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port"
-	porttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
 	"github.com/gogo/protobuf/grpc"
+	client "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	connection "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection"
+	connectiontypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	channel "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	port "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port"
+	porttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/types"
 )
 
 // QueryService defines the IBC interfaces that the gRPC query server must implement

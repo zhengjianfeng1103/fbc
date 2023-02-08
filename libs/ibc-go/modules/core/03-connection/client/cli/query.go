@@ -3,16 +3,16 @@ package cli
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/version"
-	utils "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/client/utils"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/version"
+	utils "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/client/utils"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
 )
 
 // GetCmdQueryConnections defines the command to query all the connection ends

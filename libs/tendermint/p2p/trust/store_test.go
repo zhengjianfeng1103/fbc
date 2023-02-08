@@ -9,10 +9,10 @@ import (
 	"os"
 	"testing"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/assert"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 func TestTrustMetricStoreSaveLoad(t *testing.T) {

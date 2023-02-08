@@ -5,13 +5,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	ibcadapter "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/x/vmbridge/types"
-	"github.com/FiboChain/fbc/x/wasm"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	ibcadapter "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/x/vmbridge/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm"
 )
 
 func (k Keeper) SendToWasm(ctx sdk.Context, caller sdk.AccAddress, wasmContractAddr, recipient string, amount sdk.Int) error {

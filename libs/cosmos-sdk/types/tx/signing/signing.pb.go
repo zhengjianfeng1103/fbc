@@ -5,8 +5,8 @@ package signing
 
 import (
 	fmt "fmt"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	types1 "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"
 	math "math"

@@ -6,10 +6,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	tmpubsub "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub"
-	tmquery "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
+	tmpubsub "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub"
+	tmquery "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
 )
 
 const (

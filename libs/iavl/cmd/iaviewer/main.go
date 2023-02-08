@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/iavl"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 // TODO: make this configurable?

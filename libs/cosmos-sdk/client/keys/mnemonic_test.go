@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/tests"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/tests"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -3,20 +3,20 @@ package ibc_tx
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/unknownproto"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/unknownproto"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	ibctx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx/internal/adapter"
 	"google.golang.org/protobuf/encoding/protowire"
 
-	//"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/unknownproto"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	//"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/unknownproto"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	tx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	tx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 func CM40TxDecoder(cdc codec.ProtoCodecMarshaler) func(txBytes []byte) (ibctx.Tx, error) {

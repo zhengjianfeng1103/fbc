@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 
 	"github.com/stretchr/testify/assert"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 func TestInitGenesis(t *testing.T) {

@@ -8,10 +8,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/spf13/viper"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 var (

@@ -1,12 +1,12 @@
 // nolint
 // aliases generated for the following subdirectories:
-// ALIASGEN: github.com/FiboChain/fbc/x/distribution/types
-// ALIASGEN: github.com/FiboChain/fbc/x/distribution/client
+// ALIASGEN: github.com/zhengjianfeng1103/fbc/x/distribution/types
+// ALIASGEN: github.com/zhengjianfeng1103/fbc/x/distribution/client
 package distribution
 
 import (
-	"github.com/FiboChain/fbc/x/distribution/client"
-	"github.com/FiboChain/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/client"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 var (

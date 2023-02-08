@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	types "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
 )
 
 func TestParseJSONMap(t *testing.T) {

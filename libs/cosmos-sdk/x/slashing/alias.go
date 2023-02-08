@@ -3,8 +3,8 @@ package slashing
 // nolint
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/slashing/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/slashing/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/slashing/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/slashing/internal/types"
 )
 
 const (

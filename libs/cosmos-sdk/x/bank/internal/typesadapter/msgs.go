@@ -1,11 +1,11 @@
 package typesadapter
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	txmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	okc_types "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	txmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	okc_types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/internal/types"
 )
 
 var (

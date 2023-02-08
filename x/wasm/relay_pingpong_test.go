@@ -10,17 +10,17 @@ package wasm_test
 //
 //	wasmvm "github.com/CosmWasm/wasmvm"
 //	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-//	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
-//	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+//	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/prefix"
+//	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 //	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
 //	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 //	"github.com/stretchr/testify/assert"
 //	"github.com/stretchr/testify/require"
 //
-//	wasmibctesting "github.com/FiboChain/fbc/x/wasm/ibctesting"
-//	wasmkeeper "github.com/FiboChain/fbc/x/wasm/keeper"
-//	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
-//	wasmtypes "github.com/FiboChain/fbc/x/wasm/types"
+//	wasmibctesting "github.com/zhengjianfeng1103/fbc/x/wasm/ibctesting"
+//	wasmkeeper "github.com/zhengjianfeng1103/fbc/x/wasm/keeper"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/wasmtesting"
+//	wasmtypes "github.com/zhengjianfeng1103/fbc/x/wasm/types"
 //)
 //
 //const (

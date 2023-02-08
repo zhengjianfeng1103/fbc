@@ -1,7 +1,7 @@
 package types
 
 import (
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
 )
 
 // DefaultTrustLevel is the tendermint light client default trust level

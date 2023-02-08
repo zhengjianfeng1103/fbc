@@ -83,31 +83,31 @@ endif
 build_tags += $(BUILD_TAGS)
 build_tags := $(strip $(build_tags))
 
-ldflags = -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Version=$(Version) \
-	-X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Name=$(Name) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.ServerName=$(ServerName) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.ClientName=$(ClientName) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Commit=$(COMMIT) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.CosmosSDK=$(CosmosSDK) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Tendermint=$(Tendermint) \
-  -X "$(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.BuildTags=$(build_tags)" \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_GENESIS_HEIGHT=$(GenesisHeight) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_MERCURY_HEIGHT=$(MercuryHeight) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_VENUS_HEIGHT=$(VenusHeight) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_VENUS1_HEIGHT=$(Venus1Height) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_VENUS2_HEIGHT=$(Venus2Height) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_VENUS3_HEIGHT=$(Venus3Height) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_VENUS4_HEIGHT=$(Venus4Height) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_EARTH_HEIGHT=$(EarthHeight) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_MARS_HEIGHT=$(MarsHeight)
+ldflags = -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Version=$(Version) \
+	-X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Name=$(Name) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.ServerName=$(ServerName) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.ClientName=$(ClientName) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Commit=$(COMMIT) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.CosmosSDK=$(CosmosSDK) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Tendermint=$(Tendermint) \
+  -X "$(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.BuildTags=$(build_tags)" \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_GENESIS_HEIGHT=$(GenesisHeight) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_MERCURY_HEIGHT=$(MercuryHeight) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_VENUS_HEIGHT=$(VenusHeight) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_VENUS1_HEIGHT=$(Venus1Height) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_VENUS2_HEIGHT=$(Venus2Height) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_VENUS3_HEIGHT=$(Venus3Height) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_VENUS4_HEIGHT=$(Venus4Height) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_EARTH_HEIGHT=$(EarthHeight) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_MARS_HEIGHT=$(MarsHeight)
 
 
 ifeq ($(WITH_ROCKSDB),true)
-  ldflags += -X github.com/FiboChain/fbc/libs/tendermint/types.DBBackend=rocksdb
+  ldflags += -X github.com/zhengjianfeng1103/fbc/libs/tendermint/types.DBBackend=rocksdb
 endif
 
 ifeq ($(MAKECMDGOALS),testnet)
-  ldflags += -X github.com/FiboChain/fbc/libs/cosmos-sdk/server.ChainID=fbc-3021
+  ldflags += -X github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server.ChainID=fbc-3021
 endif
 
 ifeq ($(LINK_STATICALLY),true)
@@ -135,20 +135,20 @@ else ifeq ($(MAKECMDGOALS),testnet)
    VenusHeight=8510000
 endif
 
-ldflags = -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Version=$(Version) \
-	-X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Name=$(Name) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.ServerName=$(ServerName) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.ClientName=$(ClientName) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Commit=$(COMMIT) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.CosmosSDK=$(CosmosSDK) \
-  -X $(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.Tendermint=$(Tendermint) \
-  -X "$(GithubTop)/FiboChain/fbc/libs/cosmos-sdk/version.BuildTags=$(build_tags)" \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_GENESIS_HEIGHT=$(GenesisHeight) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_MERCURY_HEIGHT=$(MercuryHeight) \
-  -X $(GithubTop)/FiboChain/fbc/libs/tendermint/types.MILESTONE_VENUS_HEIGHT=$(VenusHeight)
+ldflags = -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Version=$(Version) \
+	-X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Name=$(Name) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.ServerName=$(ServerName) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.ClientName=$(ClientName) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Commit=$(COMMIT) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.CosmosSDK=$(CosmosSDK) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.Tendermint=$(Tendermint) \
+  -X "$(GithubTop)/zhengjianfeng1103/fbc/libs/cosmos-sdk/version.BuildTags=$(build_tags)" \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_GENESIS_HEIGHT=$(GenesisHeight) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_MERCURY_HEIGHT=$(MercuryHeight) \
+  -X $(GithubTop)/zhengjianfeng1103/fbc/libs/tendermint/types.MILESTONE_VENUS_HEIGHT=$(VenusHeight)
 
 ifeq ($(WITH_ROCKSDB),true)
-  ldflags += -X github.com/FiboChain/fbc/libs/cosmos-sdk/types.DBBackend=rocksdb
+  ldflags += -X github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types.DBBackend=rocksdb
 endif
 
 BUILD_FLAGS := -ldflags '$(ldflags)'

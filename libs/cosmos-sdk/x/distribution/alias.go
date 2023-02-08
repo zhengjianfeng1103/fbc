@@ -1,9 +1,9 @@
 package distribution
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
 )
 
 // nolint

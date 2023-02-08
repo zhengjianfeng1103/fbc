@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/slashing"
-	"github.com/FiboChain/fbc/x/staking"
-	"github.com/FiboChain/fbc/x/staking/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/slashing"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
+	"github.com/zhengjianfeng1103/fbc/x/staking/exported"
 	//slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	//stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 )

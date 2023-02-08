@@ -6,8 +6,8 @@ package keeper
 import (
 	"testing"
 
-	swaptypes "github.com/FiboChain/fbc/x/ammswap/types"
 	"github.com/stretchr/testify/require"
+	swaptypes "github.com/zhengjianfeng1103/fbc/x/ammswap/types"
 )
 
 func TestInvariants(t *testing.T) {

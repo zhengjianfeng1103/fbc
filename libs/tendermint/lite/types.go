@@ -1,7 +1,7 @@
 package lite
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Verifier checks the votes to make sure the block really is signed properly.

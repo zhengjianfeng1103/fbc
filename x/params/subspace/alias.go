@@ -1,7 +1,7 @@
 package subspace
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/subspace"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/subspace"
 )
 
 type (

@@ -4,8 +4,8 @@ import (
 	"sync"
 	"testing"
 
-	bh "github.com/FiboChain/fbc/libs/tendermint/behaviour"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	bh "github.com/zhengjianfeng1103/fbc/libs/tendermint/behaviour"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
 )
 
 // TestMockReporter tests the MockReporter's ability to store reported

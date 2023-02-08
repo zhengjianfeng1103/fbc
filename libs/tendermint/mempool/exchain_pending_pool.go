@@ -3,7 +3,7 @@ package mempool
 import (
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 const (

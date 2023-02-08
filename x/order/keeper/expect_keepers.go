@@ -1,12 +1,12 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
 
-	dex "github.com/FiboChain/fbc/x/dex/types"
-	"github.com/FiboChain/fbc/x/order/types"
-	token "github.com/FiboChain/fbc/x/token/types"
+	dex "github.com/zhengjianfeng1103/fbc/x/dex/types"
+	"github.com/zhengjianfeng1103/fbc/x/order/types"
+	token "github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 // TokenKeeper : expected token keeper

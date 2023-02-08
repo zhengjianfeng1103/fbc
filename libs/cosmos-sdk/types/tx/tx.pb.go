@@ -5,12 +5,12 @@ package tx
 
 import (
 	fmt "fmt"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	types1 "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	//github_com_cosmos_cosmos_sdk_types "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter/types"
-	github_com_cosmos_cosmos_sdk_types "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	signing "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	//github_com_cosmos_cosmos_sdk_types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	signing "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"

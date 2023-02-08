@@ -6,10 +6,10 @@ package types
 import (
 	fmt "fmt"
 	_go "github.com/confio/ics23/go"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	types1 "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	types2 "github.com/FiboChain/fbc/libs/tendermint/proto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
 
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"

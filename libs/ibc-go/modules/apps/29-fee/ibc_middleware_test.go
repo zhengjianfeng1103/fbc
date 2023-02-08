@@ -3,18 +3,18 @@ package fee_test
 import (
 	"fmt"
 
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	transfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	transfertypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
 
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	fee "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	ibcmock "github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	fee "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/29-fee"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/29-fee/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	ibcmock "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/mock"
 )
 
 var (

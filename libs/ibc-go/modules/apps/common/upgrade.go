@@ -1,11 +1,11 @@
 package common
 
 import (
-	cosmost "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/base"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	cosmost "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/upgrade"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/base"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var (

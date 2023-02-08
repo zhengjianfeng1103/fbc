@@ -7,12 +7,12 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	gcutils "github.com/FiboChain/fbc/x/gov/client/utils"
-	"github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	gcutils "github.com/zhengjianfeng1103/fbc/x/gov/client/utils"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // REST Variable names

@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // verify interface at compile time
@@ -19,7 +19,7 @@ func NewMsgUnjail(validatorAddr sdk.ValAddress) MsgUnjail {
 	}
 }
 
-//nolint
+// nolint
 func (msg MsgUnjail) Route() string { return RouterKey }
 func (msg MsgUnjail) Type() string  { return "unjail" }
 func (msg MsgUnjail) GetSigners() []sdk.AccAddress {

@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/assert"
+	storetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func TestCompileCosts(t *testing.T) {

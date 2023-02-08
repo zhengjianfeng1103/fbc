@@ -8,19 +8,19 @@ package keeper
 //	"io/ioutil"
 //	"testing"
 //
-//	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/client/utils"
+//	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/client/utils"
 //
 //	wasmvm "github.com/CosmWasm/wasmvm"
 //
-//	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/wasmtesting"
 //
-//	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-//	govtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
-//	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/types/proposal"
+//	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+//	govtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
+//	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/types/proposal"
 //	"github.com/stretchr/testify/assert"
 //	"github.com/stretchr/testify/require"
 //
-//	"github.com/FiboChain/fbc/x/wasm/types"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 //)
 //
 //func TestStoreCodeProposal(t *testing.T) {

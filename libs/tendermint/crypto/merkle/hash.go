@@ -2,8 +2,9 @@ package merkle
 
 import (
 	"bytes"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
 	"sync"
+
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
 )
 
 // TODO: make these have a large predefined capacity

@@ -3,7 +3,7 @@ package simapp
 import (
 	"flag"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 )
 
 // List of available flags for the simulator

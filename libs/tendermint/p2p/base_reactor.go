@@ -1,8 +1,8 @@
 package p2p
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p/conn"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/conn"
 )
 
 // Reactor is responsible for handling incoming messages on one or more

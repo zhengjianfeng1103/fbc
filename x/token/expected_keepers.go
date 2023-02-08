@@ -1,8 +1,8 @@
 package token
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	supplyexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	supplyexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
 )
 
 // SupplyKeeper defines the expected supply Keeper (noalias)

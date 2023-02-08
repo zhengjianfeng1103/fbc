@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmn "github.com/FiboChain/fbc/libs/iavl/common"
 	amino "github.com/tendermint/go-amino"
+	cmn "github.com/zhengjianfeng1103/fbc/libs/iavl/common"
 )
 
 func TestTreeGetWithProof(t *testing.T) {

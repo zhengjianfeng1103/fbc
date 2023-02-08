@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
 )
 
 func (suite *KeeperTestSuite) TestParams() {

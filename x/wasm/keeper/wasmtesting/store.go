@@ -1,9 +1,9 @@
 package wasmtesting
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	storetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // MockCommitMultiStore mock with a CacheMultiStore to capture commits

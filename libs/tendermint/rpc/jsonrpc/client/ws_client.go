@@ -15,9 +15,9 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	types "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
 )
 
 const (

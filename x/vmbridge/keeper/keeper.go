@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	"github.com/FiboChain/fbc/x/vmbridge/types"
+	"github.com/zhengjianfeng1103/fbc/x/vmbridge/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
 )
 
 type Keeper struct {

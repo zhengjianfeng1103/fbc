@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/big"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/code"
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/code"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 type MockExTxInfo struct {

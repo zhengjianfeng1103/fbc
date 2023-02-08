@@ -1,12 +1,12 @@
 package fee_test
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	txmsg "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
-	transfertypes "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	txmsg "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/29-fee/types"
+	transfertypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 // Integration test to ensure ics29 works with ics20

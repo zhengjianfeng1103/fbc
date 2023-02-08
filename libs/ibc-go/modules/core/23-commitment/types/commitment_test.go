@@ -3,11 +3,11 @@ package types_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/iavl"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/rootmulti"
-	storetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/iavl"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/rootmulti"
+	storetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
 	"github.com/stretchr/testify/suite"
 	// "github.com/cosmos/cosmos-sdk/store/iavl"

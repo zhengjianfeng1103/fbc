@@ -10,8 +10,8 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	types "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
 )
 
 func TestWebsocketManagerHandler(t *testing.T) {

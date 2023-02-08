@@ -1,6 +1,6 @@
 package types
 
-import sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+import sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 // PoolHistoricalRewards records the reward ratio of one user in a pool
 type PoolHistoricalRewards struct {

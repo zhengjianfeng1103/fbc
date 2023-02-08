@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	nm "github.com/FiboChain/fbc/libs/tendermint/node"
-	rpctest "github.com/FiboChain/fbc/libs/tendermint/rpc/test"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	nm "github.com/zhengjianfeng1103/fbc/libs/tendermint/node"
+	rpctest "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/test"
 )
 
 var node *nm.Node

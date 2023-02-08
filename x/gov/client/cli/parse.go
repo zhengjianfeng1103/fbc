@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	govutils "github.com/FiboChain/fbc/x/gov/client/utils"
 	"github.com/spf13/viper"
+	govutils "github.com/zhengjianfeng1103/fbc/x/gov/client/utils"
 )
 
 func parseSubmitProposalFlags() (*proposal, error) {

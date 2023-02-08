@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	db "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 type testMsg struct {

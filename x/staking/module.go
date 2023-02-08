@@ -4,27 +4,27 @@ import (
 	"encoding/json"
 	"math/rand"
 
-	sim "github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
-	"github.com/FiboChain/fbc/x/staking/simulation"
+	sim "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
+	"github.com/zhengjianfeng1103/fbc/x/staking/simulation"
 
-	"github.com/FiboChain/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/staking/keeper"
 
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	"github.com/FiboChain/fbc/x/staking/client/cli"
-	"github.com/FiboChain/fbc/x/staking/client/rest"
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/staking/client/rest"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 var (

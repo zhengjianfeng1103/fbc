@@ -3,9 +3,9 @@ package lite
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/provider"
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/provider/http"
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/store"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider/http"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/store"
 )
 
 // NewHTTPClient initiates an instance of a lite client using HTTP addresses

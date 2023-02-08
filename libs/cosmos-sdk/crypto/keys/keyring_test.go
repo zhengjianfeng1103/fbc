@@ -4,14 +4,14 @@ package keys
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/hd"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/tests"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/hd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/tests"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func TestLazyKeyManagementKeyRing(t *testing.T) {

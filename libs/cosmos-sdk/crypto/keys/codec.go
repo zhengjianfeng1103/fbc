@@ -1,10 +1,10 @@
 package keys
 
 import (
-	cryptoAmino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
+	cryptoAmino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/hd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/hd"
 )
 
 // CryptoCdc defines the codec required for keys and info

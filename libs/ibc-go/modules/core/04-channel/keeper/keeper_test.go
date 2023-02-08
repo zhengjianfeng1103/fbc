@@ -3,12 +3,12 @@ package keeper_test
 import (
 	"testing"
 
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 // KeeperTestSuite is a testing suite to test keeper functions.

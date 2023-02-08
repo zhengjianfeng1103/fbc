@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	"github.com/FiboChain/fbc/libs/tendermint/privval"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/privval"
 )
 
 // ResetAllCmd removes the database of this Tendermint core

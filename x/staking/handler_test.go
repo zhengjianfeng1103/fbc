@@ -3,15 +3,15 @@ package staking
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	keep "github.com/FiboChain/fbc/x/staking/keeper"
-	"github.com/FiboChain/fbc/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	keep "github.com/zhengjianfeng1103/fbc/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 //______________________________________________________________________

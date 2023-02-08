@@ -1,11 +1,11 @@
 package channel
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/keeper"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
 )
 
 // HandleMsgChannelOpenInit defines the sdk.Handler for MsgChannelOpenInit

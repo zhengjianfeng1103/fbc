@@ -3,7 +3,7 @@ package types
 import (
 	"bytes"
 
-	tmkv "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+	tmkv "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
 )
 
 // Iterator over all the keys with a certain prefix in ascending order
@@ -86,7 +86,7 @@ func InclusiveEndBytes(inclusiveBytes []byte) []byte {
 	return append(inclusiveBytes, byte(0x00))
 }
 
-//----------------------------------------
+// ----------------------------------------
 func Cp(bz []byte) (ret []byte) {
 	if bz == nil {
 		return nil

@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
 	"github.com/stretchr/testify/suite"
 	// "github.com/tendermint/tendermint/crypto"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 type KeeperTestSuite struct {

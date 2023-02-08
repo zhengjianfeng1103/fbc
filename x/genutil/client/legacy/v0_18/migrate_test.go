@@ -1,12 +1,13 @@
 package v018
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil"
-	v018evm "github.com/FiboChain/fbc/x/evm/legacy/v0_18"
-	v018staking "github.com/FiboChain/fbc/x/staking/legacy/v0_18"
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil"
+	v018evm "github.com/zhengjianfeng1103/fbc/x/evm/legacy/v0_18"
+	v018staking "github.com/zhengjianfeng1103/fbc/x/staking/legacy/v0_18"
 )
 
 // TestMigrate tests v017

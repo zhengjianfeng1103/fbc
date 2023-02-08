@@ -6,8 +6,8 @@ import (
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
 )
 
 var address = ethcmn.BytesToAddress([]byte{1, 2, 3, 4, 5})

@@ -5,7 +5,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/FiboChain/fbc/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/params"
 )
 
 const (

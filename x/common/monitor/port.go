@@ -3,12 +3,13 @@ package monitor
 import (
 	"bytes"
 	"fmt"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	"github.com/spf13/viper"
 	"os/exec"
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
 )
 
 var (
@@ -137,7 +138,7 @@ func (pm *PortMonitor) GetResultString() string {
 	return buffer.String()
 }
 
-//GetConnectingMap gets connectingMap
+// GetConnectingMap gets connectingMap
 func (pm *PortMonitor) GetConnectingMap() map[uint64]int {
 	return pm.connectingMap
 }

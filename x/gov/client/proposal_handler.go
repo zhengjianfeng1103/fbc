@@ -1,12 +1,12 @@
 package client
 
 import (
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
 	"github.com/spf13/cobra"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/x/gov/client/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/x/gov/client/rest"
 )
 
 // function to create the rest handler

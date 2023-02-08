@@ -6,21 +6,21 @@ package keeper_test
 //	"testing"
 //	"time"
 //
-//	"github.com/FiboChain/fbc/x/wasm/types"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 //
 //	"github.com/stretchr/testify/assert"
 //
-//	cryptocodec "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/codec"
-//	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/ed25519"
-//	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-//	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-//	banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/types"
+//	cryptocodec "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/codec"
+//	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/ed25519"
+//	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+//	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+//	banktypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/types"
 //	"github.com/stretchr/testify/require"
 //	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 //	tmtypes "github.com/tendermint/tendermint/types"
 //
-//	"github.com/FiboChain/fbc/app"
-//	"github.com/FiboChain/fbc/x/wasm/keeper"
+//	"github.com/zhengjianfeng1103/fbc/app"
+//	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper"
 //)
 //
 //func TestSnapshotter(t *testing.T) {

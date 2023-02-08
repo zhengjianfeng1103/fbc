@@ -3,8 +3,8 @@ package indexer
 import (
 	"context"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // BlockIndexer defines an interface contract for indexing block events.

@@ -1,11 +1,12 @@
 package types
 
 import (
-	tmkv "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	tmkv "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
+
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
 )
 
 // nolint - reexport

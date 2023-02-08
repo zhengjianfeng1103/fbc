@@ -3,8 +3,8 @@ package baseapp
 import (
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/tendermint/go-amino"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 type blockDataCache struct {

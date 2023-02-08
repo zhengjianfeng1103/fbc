@@ -1,14 +1,14 @@
 package icamauth
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	capabilitytypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	porttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/05-port/types"
-	host "github.com/FiboChain/fbc/libs/ibc-go/modules/core/24-host"
-	ibcexported "github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	"github.com/FiboChain/fbc/x/icamauth/keeper"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	capabilitytypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	porttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/05-port/types"
+	host "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/24-host"
+	ibcexported "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	"github.com/zhengjianfeng1103/fbc/x/icamauth/keeper"
 )
 
 var _ porttypes.IBCModule = IBCModule{}

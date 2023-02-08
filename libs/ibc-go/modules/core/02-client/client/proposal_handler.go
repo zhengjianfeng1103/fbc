@@ -3,11 +3,11 @@ package client
 import (
 	"net/http"
 
-	cliContext "github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/client/cli"
-	govclient "github.com/FiboChain/fbc/x/gov/client"
-	govrest "github.com/FiboChain/fbc/x/gov/client/rest"
+	cliContext "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/client/cli"
+	govclient "github.com/zhengjianfeng1103/fbc/x/gov/client"
+	govrest "github.com/zhengjianfeng1103/fbc/x/gov/client/rest"
 )
 
 var (

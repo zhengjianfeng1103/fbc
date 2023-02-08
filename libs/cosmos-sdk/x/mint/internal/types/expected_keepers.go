@@ -1,9 +1,9 @@
 package types // noalias
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/exported"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/exported"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // StakingKeeper defines the expected staking keeper

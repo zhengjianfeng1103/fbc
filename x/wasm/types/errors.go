@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdkErrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	sdkErrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 // Codes for wasm contract errors

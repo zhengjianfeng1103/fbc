@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // historical rewards for a validator
@@ -15,9 +15,10 @@ import (
 // which might need to reference this historical entry
 // at any point.
 // ReferenceCount =
-//    number of outstanding delegations which ended the associated period (and might need to read that record)
-//  + number of slashes which ended the associated period (and might need to read that record)
-//  + one per validator for the zeroeth period, set on initialization
+//
+//	  number of outstanding delegations which ended the associated period (and might need to read that record)
+//	+ number of slashes which ended the associated period (and might need to read that record)
+//	+ one per validator for the zeroeth period, set on initialization
 type ValidatorHistoricalRewards struct {
 	CumulativeRewardRatio sdk.DecCoins `json:"cumulative_reward_ratio" yaml:"cumulative_reward_ratio"`
 	ReferenceCount        uint16       `json:"reference_count" yaml:"reference_count"`

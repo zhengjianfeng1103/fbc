@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
 )
 
 func TestValidateParams(t *testing.T) {

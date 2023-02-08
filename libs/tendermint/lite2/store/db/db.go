@@ -7,13 +7,13 @@ import (
 	"strconv"
 	"sync"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/pkg/errors"
 	"github.com/tendermint/go-amino"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	cryptoAmino "github.com/FiboChain/fbc/libs/tendermint/crypto/encoding/amino"
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/store"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	cryptoAmino "github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/encoding/amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/store"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var (

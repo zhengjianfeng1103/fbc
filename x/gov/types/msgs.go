@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // Governance message types and routes
@@ -26,7 +26,7 @@ func NewMsgSubmitProposal(content Content, initialDeposit sdk.SysCoins, proposer
 	return MsgSubmitProposal{content, initialDeposit, proposer}
 }
 
-//nolint
+// nolint
 func (msg MsgSubmitProposal) Route() string { return RouterKey }
 func (msg MsgSubmitProposal) Type() string  { return TypeMsgSubmitProposal }
 

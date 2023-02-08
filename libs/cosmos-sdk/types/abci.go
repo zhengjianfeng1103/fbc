@@ -1,6 +1,6 @@
 package types
 
-import abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+import abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
 // InitChainer initializes application state at genesis
 type InitChainer func(ctx Context, req abci.RequestInitChain) abci.ResponseInitChain

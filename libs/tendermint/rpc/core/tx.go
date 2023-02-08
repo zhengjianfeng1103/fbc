@@ -6,12 +6,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
-	tmquery "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
-	"github.com/FiboChain/fbc/libs/tendermint/state/txindex/null"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
+	tmquery "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/state/txindex/null"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Tx allows you to query the transaction results. `nil` could mean the

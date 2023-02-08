@@ -3,7 +3,7 @@ package infura
 import (
 	"encoding/json"
 
-	"github.com/FiboChain/fbc/x/infura/types"
+	"github.com/zhengjianfeng1103/fbc/x/infura/types"
 )
 
 type TaskConst int

@@ -10,11 +10,11 @@ import (
 
 	secp256k1 "github.com/btcsuite/btcd/btcec"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 	"golang.org/x/crypto/ripemd160" // nolint: staticcheck // necessary for Bitcoin address format
 
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 //var _ cryptotypes.PrivKey = &PrivKey{}

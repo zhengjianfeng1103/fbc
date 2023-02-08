@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/types"
 
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkparams "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
 )
 
 // Assert ParameterChangeProposal implements govtypes.Content at compile-time

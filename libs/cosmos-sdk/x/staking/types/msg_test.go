@@ -6,10 +6,10 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var (
@@ -158,7 +158,7 @@ func TestMsgUndelegate(t *testing.T) {
 	}
 }
 
-//test to validate if NewMsgCreateValidator implements yaml marshaller
+// test to validate if NewMsgCreateValidator implements yaml marshaller
 func TestMsgMarshalYAML(t *testing.T) {
 	commission1 := NewCommissionRates(sdk.ZeroDec(), sdk.ZeroDec(), sdk.ZeroDec())
 	tc := struct {

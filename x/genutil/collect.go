@@ -12,15 +12,15 @@ import (
 	"sort"
 	"strings"
 
-	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/x/staking/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authexported "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/exported"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authexported "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/exported"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // GenAppStateFromConfig gets the genesis app state from the config

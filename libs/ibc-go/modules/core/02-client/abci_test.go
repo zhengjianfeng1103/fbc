@@ -3,17 +3,17 @@ package client_test
 import (
 	"testing"
 
-	client "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client"
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+	client "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
 	"github.com/stretchr/testify/suite"
 	// abci "github.com/tendermint/tendermint/abci/types"
 	// tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
-	localhosttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
+	localhosttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 type ClientTestSuite struct {

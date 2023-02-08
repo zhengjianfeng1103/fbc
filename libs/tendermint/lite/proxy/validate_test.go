@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/FiboChain/fbc/libs/tendermint/lite/proxy"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite/proxy"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var (

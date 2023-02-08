@@ -4,7 +4,7 @@ import (
 	"github.com/go-kit/kit/metrics"
 	"github.com/go-kit/kit/metrics/discard"
 	"github.com/go-kit/kit/metrics/prometheus"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/fastmetrics"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/fastmetrics"
 
 	stdprometheus "github.com/prometheus/client_golang/prometheus"
 )

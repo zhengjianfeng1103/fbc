@@ -9,21 +9,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
 	wasmvm "github.com/CosmWasm/wasmvm"
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
 
-	stypes "github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	stypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 
-	"github.com/FiboChain/fbc/x/wasm/keeper/wasmtesting"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/wasmtesting"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 // When migrated to go 1.16, embed package should be used instead.

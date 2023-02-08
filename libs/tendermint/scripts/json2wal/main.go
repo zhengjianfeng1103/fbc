@@ -16,8 +16,8 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	cs "github.com/FiboChain/fbc/libs/tendermint/consensus"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	cs "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var cdc = amino.NewCodec()

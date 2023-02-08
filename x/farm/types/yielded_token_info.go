@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"strings"
+
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // YieldedTokenInfo is the token excluding native token which can be yielded by locking other tokens including LPT and

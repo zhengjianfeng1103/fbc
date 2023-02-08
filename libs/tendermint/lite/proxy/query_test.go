@@ -9,15 +9,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
-	"github.com/FiboChain/fbc/libs/tendermint/lite"
-	certclient "github.com/FiboChain/fbc/libs/tendermint/lite/client"
-	nm "github.com/FiboChain/fbc/libs/tendermint/node"
-	"github.com/FiboChain/fbc/libs/tendermint/rpc/client"
-	rpclocal "github.com/FiboChain/fbc/libs/tendermint/rpc/client/local"
-	rpctest "github.com/FiboChain/fbc/libs/tendermint/rpc/test"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite"
+	certclient "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite/client"
+	nm "github.com/zhengjianfeng1103/fbc/libs/tendermint/node"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client"
+	rpclocal "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/local"
+	rpctest "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/test"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var node *nm.Node
@@ -43,6 +43,7 @@ func kvstoreTx(k, v []byte) []byte {
 
 // TODO: enable it after general proof format has been adapted
 // in abci/examples/kvstore.go
+//
 //nolint:unused,deadcode
 func _TestAppProofs(t *testing.T) {
 	assert, require := assert.New(t), require.New(t)

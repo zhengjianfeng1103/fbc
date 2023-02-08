@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 // Canonical* wraps the structs in types for amino encoding them for use in SignBytes / the Signable interface.
@@ -50,7 +50,6 @@ func CanonicalizeBlockID(blockID BlockID) CanonicalBlockID {
 		PartsHeader: CanonicalizePartSetHeader(blockID.PartsHeader),
 	}
 }
-
 
 func CanonicalizePartSetHeader(psh PartSetHeader) CanonicalPartSetHeader {
 	return CanonicalPartSetHeader{

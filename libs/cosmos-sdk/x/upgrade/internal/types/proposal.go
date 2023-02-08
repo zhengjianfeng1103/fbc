@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov"
 )
 
 const (

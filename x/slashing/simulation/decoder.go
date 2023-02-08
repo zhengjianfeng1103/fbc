@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	tmkv "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	tmkv "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/slashing/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/slashing/internal/types"
 )
 
 // DecodeStore unmarshals the KVPair's Value to the corresponding slashing type

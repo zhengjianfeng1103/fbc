@@ -1,12 +1,13 @@
 package ammswap
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	swapkeeper "github.com/FiboChain/fbc/x/ammswap/keeper"
-	"github.com/FiboChain/fbc/x/ammswap/types"
-	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	swapkeeper "github.com/zhengjianfeng1103/fbc/x/ammswap/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
 )
 
 func NewTestSwapTokenPairWithInitLiquidity(t *testing.T, ctx sdk.Context, k swapkeeper.Keeper,

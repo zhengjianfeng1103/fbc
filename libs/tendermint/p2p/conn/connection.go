@@ -19,11 +19,11 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	flow "github.com/FiboChain/fbc/libs/tendermint/libs/flowrate"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/timer"
+	flow "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/flowrate"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/timer"
 )
 
 const (
@@ -82,6 +82,7 @@ The byte id and the relative priorities of each `Channel` are configured upon
 initialization of the connection.
 
 There are two methods for sending messages:
+
 	func (m MConnection) Send(chID byte, msgBytes []byte) bool {}
 	func (m MConnection) TrySend(chID byte, msgBytes []byte}) bool {}
 

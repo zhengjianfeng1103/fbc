@@ -140,7 +140,7 @@ func TestABCIInfoStacktrace(t *testing.T) {
 		},
 	}
 
-	const thisTestSrc = "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors.TestABCIInfoStacktrace"
+	const thisTestSrc = "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors.TestABCIInfoStacktrace"
 
 	for testName, tc := range cases {
 		tc := tc

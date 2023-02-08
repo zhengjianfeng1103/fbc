@@ -1,9 +1,9 @@
 package capability
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

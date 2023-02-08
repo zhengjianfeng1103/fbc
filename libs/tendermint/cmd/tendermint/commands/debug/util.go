@@ -10,8 +10,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	rpchttp "github.com/FiboChain/fbc/libs/tendermint/rpc/client/http"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	rpchttp "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/http"
 )
 
 // dumpStatus gets node status state dump from the Tendermint RPC and writes it

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	apptypes "github.com/FiboChain/fbc/app/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	apptypes "github.com/zhengjianfeng1103/fbc/app/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 func initConfig() {

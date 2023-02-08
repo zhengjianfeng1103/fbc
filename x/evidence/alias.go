@@ -1,8 +1,8 @@
 package evidence
 
 import (
-	"github.com/FiboChain/fbc/x/evidence/internal/keeper"
-	"github.com/FiboChain/fbc/x/evidence/internal/types"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/internal/types"
 )
 
 // nolint

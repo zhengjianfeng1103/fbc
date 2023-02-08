@@ -12,21 +12,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/prefix"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
-	paramskeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
-	paramtypes "github.com/FiboChain/fbc/x/params"
 	fuzz "github.com/google/gofuzz"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/prefix"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authkeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/keeper"
+	paramskeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+	paramtypes "github.com/zhengjianfeng1103/fbc/x/params"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
-	wasmTypes "github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
+	wasmTypes "github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 const firstCodeID = 1

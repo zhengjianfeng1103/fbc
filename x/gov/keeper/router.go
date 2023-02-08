@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 var (

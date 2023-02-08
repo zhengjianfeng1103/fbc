@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/feesplit/types"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
 )
 
 func (suite *KeeperTestSuite) TestGetFees() {

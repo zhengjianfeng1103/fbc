@@ -3,12 +3,12 @@ package keeper
 import (
 	"encoding/json"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	comm "github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	comm "github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 func queryDelegationRewards(ctx sdk.Context, _ []string, req abci.RequestQuery, k Keeper) ([]byte, error) {

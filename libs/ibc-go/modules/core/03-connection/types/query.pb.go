@@ -6,9 +6,9 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	types1 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
+	types1 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
 
 	//types1 "github.com/cosmos/cosmos-sdk/codec/types"
 	//query "github.com/cosmos/cosmos-sdk/types/query"

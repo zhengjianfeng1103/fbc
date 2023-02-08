@@ -5,8 +5,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	lerr "github.com/FiboChain/fbc/libs/tendermint/lite/errors"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	lerr "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 var _ Verifier = (*BaseVerifier)(nil)

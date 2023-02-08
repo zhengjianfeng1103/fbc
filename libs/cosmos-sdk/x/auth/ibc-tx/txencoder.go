@@ -3,9 +3,9 @@ package ibc_tx
 import (
 	"fmt"
 
-	ibctx "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
 	"github.com/gogo/protobuf/proto"
+	ibctx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 func IbcTxEncoder() ibctx.IBCTxEncoder {

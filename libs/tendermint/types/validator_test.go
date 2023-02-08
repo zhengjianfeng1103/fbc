@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 )
 
 func TestValidatorProtoBuf(t *testing.T) {

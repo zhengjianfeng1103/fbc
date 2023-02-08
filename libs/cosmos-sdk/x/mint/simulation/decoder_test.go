@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	tmkv "github.com/FiboChain/fbc/libs/tendermint/libs/kv"
+	tmkv "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/kv"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
 )
 
 func makeTestCodec() (cdc *codec.Codec) {

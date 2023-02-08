@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/keeper"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/keeper"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 func TestImportExportQueues(t *testing.T) {

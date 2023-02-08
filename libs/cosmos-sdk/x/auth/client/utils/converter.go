@@ -1,9 +1,9 @@
 package utils
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	cm40types "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	cm40types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 func ConvCM39SimulateResultTCM40(cm39 *types.Result) *cm40types.Result {

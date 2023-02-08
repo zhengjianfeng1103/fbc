@@ -1,12 +1,12 @@
 package ammswap
 
 import (
-	"github.com/FiboChain/fbc/x/ammswap/keeper"
-	"github.com/FiboChain/fbc/x/ammswap/types"
-	"github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/common/perf"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common/perf"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // NewHandler creates an sdk.Handler for all the ammswap type messages

@@ -3,12 +3,12 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/x/distribution/types"
-	"github.com/FiboChain/fbc/x/staking/exported"
-	stakingexported "github.com/FiboChain/fbc/x/staking/exported"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/exported"
+	stakingexported "github.com/zhengjianfeng1103/fbc/x/staking/exported"
 )
 
 var (
@@ -17,8 +17,8 @@ var (
 )
 
 // AllocateTokens allocates fees from fee_collector
-//1. 25% rewards to validators, equally.
-//2. 75% rewards to validators and candidates, by shares' weight
+// 1. 25% rewards to validators, equally.
+// 2. 75% rewards to validators and candidates, by shares' weight
 func (k Keeper) AllocateTokens(ctx sdk.Context, totalPreviousPower int64,
 	previousProposer sdk.ConsAddress, previousVotes []abci.VoteInfo) {
 	logger := k.Logger(ctx)

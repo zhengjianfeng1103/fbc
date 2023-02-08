@@ -1,6 +1,6 @@
 package context
 
-import "github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+import "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 
 type TxRequest interface {
 	GetData() []byte

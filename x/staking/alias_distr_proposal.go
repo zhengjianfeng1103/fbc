@@ -1,9 +1,9 @@
 // nolint
-// ALIASGEN: github.com/FiboChain/fbc/x/staking/types
+// ALIASGEN: github.com/zhengjianfeng1103/fbc/x/staking/types
 package staking
 
 import (
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 var (

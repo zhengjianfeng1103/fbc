@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/mempool"
-	"github.com/FiboChain/fbc/libs/tendermint/rpc/client/mock"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/mempool"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/mock"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 )
 
 type MockClient struct {

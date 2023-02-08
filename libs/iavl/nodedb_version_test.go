@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/iavl/mock"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl/mock"
 )
 
 func TestIsFastStorageStrategy_True_GenesisVersion(t *testing.T) {

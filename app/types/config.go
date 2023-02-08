@@ -2,7 +2,7 @@ package types
 
 import (
 	ethaccounts "github.com/ethereum/go-ethereum/accounts"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 const (
@@ -23,7 +23,7 @@ const (
 	Bech32PrefixConsPub = EthBech32Prefix + sdk.PrefixValidator + sdk.PrefixConsensus + sdk.PrefixPublic
 
 	// Bip44CoinType satisfies EIP84. See https://github.com/ethereum/EIPs/issues/84 for more info.
-	Bip44CoinType        = 996
+	Bip44CoinType      = 996
 	BIP44HDPathFBchain = "m/44'/996'/0'/0/0"
 )
 

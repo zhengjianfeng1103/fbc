@@ -1,15 +1,15 @@
 package wasm
 
 import (
-	"github.com/FiboChain/fbc/app/rpc/simulator"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	types2 "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
-	"github.com/FiboChain/fbc/x/wasm/keeper"
-	"github.com/FiboChain/fbc/x/wasm/proxy"
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/app/rpc/simulator"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/baseapp"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/proxy"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 type Simulator struct {

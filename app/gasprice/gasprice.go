@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	appconfig "github.com/FiboChain/fbc/app/config"
-	"github.com/FiboChain/fbc/app/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/server"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	appconfig "github.com/zhengjianfeng1103/fbc/app/config"
+	"github.com/zhengjianfeng1103/fbc/app/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/server"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 var (

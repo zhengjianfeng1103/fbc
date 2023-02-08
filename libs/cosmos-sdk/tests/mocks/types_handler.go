@@ -8,7 +8,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // MockAnteDecorator is a mock of AnteDecorator interface

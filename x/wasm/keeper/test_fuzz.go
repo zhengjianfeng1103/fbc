@@ -3,11 +3,11 @@ package keeper
 import (
 	"encoding/json"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	tmBytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
 	fuzz "github.com/google/gofuzz"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	tmBytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 var ModelFuzzers = []interface{}{FuzzAddr, FuzzAddrString, FuzzAbsoluteTxPosition, FuzzContractInfo, FuzzStateModel, FuzzAccessType, FuzzAccessConfig, FuzzContractCodeHistory}

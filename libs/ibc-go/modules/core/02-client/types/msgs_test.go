@@ -4,16 +4,16 @@ import (
 	"testing"
 	"time"
 
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/23-commitment/types"
-	solomachinetypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/FiboChain/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/23-commitment/types"
+	solomachinetypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/06-solomachine/types"
+	ibctmtypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 type TypesTestSuite struct {

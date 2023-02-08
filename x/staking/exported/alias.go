@@ -1,7 +1,7 @@
 package exported
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/exported"
 )
 
 type (

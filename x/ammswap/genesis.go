@@ -3,9 +3,9 @@ package ammswap
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/ammswap/types"
-	tokentypes "github.com/FiboChain/fbc/x/token/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
+	tokentypes "github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 // GenesisState stores genesis data, all slashing state that must be provided at genesis

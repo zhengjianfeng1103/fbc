@@ -5,9 +5,9 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmpubsub "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub"
-	tmquery "github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmpubsub "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub"
+	tmquery "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
 )
 
 // Reserved event types (alphabetically sorted).

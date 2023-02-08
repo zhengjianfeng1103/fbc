@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/types"
 )
 
 type (

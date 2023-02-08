@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/pubsub/query"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
 	"github.com/google/orderedcode"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/pubsub/query"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func intInSlice(a int, list []int) bool {

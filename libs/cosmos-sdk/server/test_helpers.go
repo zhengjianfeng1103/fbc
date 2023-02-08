@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
 
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"

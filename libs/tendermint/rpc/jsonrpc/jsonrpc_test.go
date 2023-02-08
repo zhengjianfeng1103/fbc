@@ -18,13 +18,13 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
 
-	client "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/client"
-	server "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/server"
-	types "github.com/FiboChain/fbc/libs/tendermint/rpc/jsonrpc/types"
+	client "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/client"
+	server "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/server"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/jsonrpc/types"
 )
 
 // Client and Server should work over tcp or unix sockets

@@ -3,12 +3,12 @@ package mock
 import (
 	"testing"
 
-	appconfig "github.com/FiboChain/fbc/app/config"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	appconfig "github.com/zhengjianfeng1103/fbc/app/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 // TestInitApp makes sure we can initialize this thing without an error

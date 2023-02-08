@@ -6,7 +6,7 @@ package testdata
 import (
 	"fmt"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 
 	"github.com/gogo/protobuf/proto"
 )

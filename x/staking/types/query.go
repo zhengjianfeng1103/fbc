@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 // note: it should act like protobuf ,but for now ,we only need the `pure struct`

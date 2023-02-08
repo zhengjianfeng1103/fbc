@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	evmtypes "github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 type EvmKeeper interface {

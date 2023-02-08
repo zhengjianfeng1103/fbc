@@ -1,9 +1,9 @@
 package rootmulti
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/dbadapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
-	"github.com/FiboChain/fbc/libs/iavl"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/dbadapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
+	"github.com/zhengjianfeng1103/fbc/libs/iavl"
 )
 
 var commithash = []byte("FAKE_HASH")

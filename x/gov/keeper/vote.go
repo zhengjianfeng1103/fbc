@@ -2,8 +2,9 @@ package keeper
 
 import (
 	"fmt"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/gov/types"
+
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // AddVote adds a vote on a specific proposal

@@ -3,8 +3,8 @@
 package v0_36
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	v034distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	v034distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
 )
 
 // ----------------------------------------------------------------------------

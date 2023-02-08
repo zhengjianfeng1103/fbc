@@ -3,7 +3,7 @@ package keeper
 import (
 	"sync"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 var wasmParamsCache = NewCache()

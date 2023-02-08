@@ -3,8 +3,8 @@ package keeper
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/x/distribution/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/x/distribution/types"
 )
 
 func TestHooks(t *testing.T) {

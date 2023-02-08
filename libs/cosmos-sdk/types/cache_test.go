@@ -2,11 +2,12 @@ package types
 
 import (
 	"fmt"
-	ethcmn "github.com/ethereum/go-ethereum/common"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
+
+	ethcmn "github.com/ethereum/go-ethereum/common"
+	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 type mockAccount struct {

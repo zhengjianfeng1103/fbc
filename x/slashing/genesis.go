@@ -1,9 +1,9 @@
 package slashing
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/slashing/internal/types"
-	"github.com/FiboChain/fbc/x/staking/exported"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/slashing/internal/types"
+	"github.com/zhengjianfeng1103/fbc/x/staking/exported"
 )
 
 // InitGenesis initialize default parameters

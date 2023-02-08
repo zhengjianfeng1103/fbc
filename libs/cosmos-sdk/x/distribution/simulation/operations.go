@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/baseapp"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/helpers"
-	simappparams "github.com/FiboChain/fbc/libs/cosmos-sdk/simapp/params"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
-	stakingkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/baseapp"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp/helpers"
+	simappparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp/params"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
+	stakingkeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/keeper"
 )
 
 // Simulation operation weights constants

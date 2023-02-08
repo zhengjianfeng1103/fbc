@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/dex/types"
-	"github.com/FiboChain/fbc/x/gov"
-	govTypes "github.com/FiboChain/fbc/x/gov/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/dex/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov"
+	govTypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // GetMinDeposit returns min deposit

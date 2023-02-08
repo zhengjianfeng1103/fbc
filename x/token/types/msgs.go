@@ -2,8 +2,8 @@
 package types
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/common"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 )
 
 const (
@@ -14,7 +14,6 @@ const (
 	TotalSupplyUpperbound = int64(9 * 1e10)
 )
 
-//
 type MsgTokenIssue struct {
 	Description    string         `json:"description"`
 	Symbol         string         `json:"symbol"`

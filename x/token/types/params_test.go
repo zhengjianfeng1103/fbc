@@ -3,10 +3,10 @@ package types
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	"github.com/FiboChain/fbc/x/params"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/x/params"
 )
 
 func TestParams(t *testing.T) {

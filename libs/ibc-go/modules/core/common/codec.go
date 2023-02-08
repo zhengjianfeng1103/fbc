@@ -1,9 +1,9 @@
 package common
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	conntypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	conntypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
 )
 
 func MustMarshalChannel(cdc *codec.CodecProxy, c *types.Channel) []byte {

@@ -1,15 +1,16 @@
 package rootmulti
 
 import (
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
 	"testing"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
-	"github.com/stretchr/testify/require"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/iavl"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/types"
+	"github.com/stretchr/testify/require"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/iavl"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/types"
 )
 
 func TestVerifyIAVLStoreQueryProof(t *testing.T) {

@@ -3,8 +3,8 @@ package types
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
 
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

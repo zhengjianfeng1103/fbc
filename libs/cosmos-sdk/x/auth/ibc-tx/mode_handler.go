@@ -3,8 +3,8 @@ package ibc_tx
 import (
 	"fmt"
 
-	signing2 "github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
-	signing "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibcsigning"
+	signing2 "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
+	signing "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibcsigning"
 )
 
 // DefaultSignModes are the default sign modes enabled for protobuf transactions.

@@ -1,9 +1,9 @@
 package ante
 
 import (
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	evmtypes "github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 // AccountBlockedVerificationDecorator check whether signer is blocked.

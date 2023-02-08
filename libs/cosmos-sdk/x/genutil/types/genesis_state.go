@@ -5,12 +5,12 @@ import (
 	"errors"
 	"fmt"
 
-	tmos "github.com/FiboChain/fbc/libs/tendermint/libs/os"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	tmos "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/os"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 // GenesisState defines the raw genesis transaction in JSON

@@ -3,10 +3,10 @@ package v0_36
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	v034distr "github.com/FiboChain/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	v034distr "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/distribution/legacy/v0_34"
 
 	"github.com/stretchr/testify/require"
 )

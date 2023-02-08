@@ -8,12 +8,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	swap "github.com/FiboChain/fbc/x/ammswap/types"
-	"github.com/FiboChain/fbc/x/farm/keeper"
-	"github.com/FiboChain/fbc/x/farm/types"
+	swap "github.com/zhengjianfeng1103/fbc/x/ammswap/types"
+	"github.com/zhengjianfeng1103/fbc/x/farm/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/farm/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

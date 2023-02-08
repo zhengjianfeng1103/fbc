@@ -1,8 +1,8 @@
 package multisig
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/tx/signing"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/tx/signing"
 )
 
 // PubKey defines a type which supports multi-signature verification via MultiSignatureData

@@ -5,24 +5,24 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/FiboChain/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/common"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
 
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/client/utils"
-	"github.com/FiboChain/fbc/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/client/utils"
+	"github.com/zhengjianfeng1103/fbc/x/staking/types"
 )
 
 // GetTxCmd returns the transaction commands for this module
@@ -138,11 +138,11 @@ func GetCmdEditValidator(cdc *codec.Codec) *cobra.Command {
 //__________________________________________________________
 
 var (
-//defaultTokens                  = sdk.TokensFromConsensusPower(100)
-//defaultAmount                  = defaultTokens.String() + sdk.DefaultBondDenom
-//defaultCommissionRate          = "0.1"
-//defaultCommissionMaxRate       = "0.2"
-//defaultCommissionMaxChangeRate = "0.01"
+// defaultTokens                  = sdk.TokensFromConsensusPower(100)
+// defaultAmount                  = defaultTokens.String() + sdk.DefaultBondDenom
+// defaultCommissionRate          = "0.1"
+// defaultCommissionMaxRate       = "0.2"
+// defaultCommissionMaxChangeRate = "0.01"
 )
 
 // CreateValidatorMsgHelpers returns the flagset, particular flags, and a description of defaults

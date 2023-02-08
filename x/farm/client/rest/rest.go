@@ -2,9 +2,9 @@ package rest
 
 import (
 	"github.com/gorilla/mux"
-	govRest "github.com/FiboChain/fbc/x/gov/client/rest"
+	govRest "github.com/zhengjianfeng1103/fbc/x/gov/client/rest"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
 )
 
 // RegisterRoutes registers farm-related REST handlers to a router

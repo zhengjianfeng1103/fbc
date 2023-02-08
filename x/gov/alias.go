@@ -4,8 +4,8 @@
 package gov
 
 import (
-	"github.com/FiboChain/fbc/x/gov/keeper"
-	"github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 const (

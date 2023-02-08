@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	paramtypes "github.com/FiboChain/fbc/x/params"
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/pkg/errors"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	paramtypes "github.com/zhengjianfeng1103/fbc/x/params"
 	"gopkg.in/yaml.v2"
 )
 

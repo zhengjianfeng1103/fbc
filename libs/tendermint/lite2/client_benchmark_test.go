@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	lite "github.com/FiboChain/fbc/libs/tendermint/lite2"
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/provider"
-	mockp "github.com/FiboChain/fbc/libs/tendermint/lite2/provider/mock"
-	dbs "github.com/FiboChain/fbc/libs/tendermint/lite2/store/db"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	lite "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider"
+	mockp "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider/mock"
+	dbs "github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/store/db"
 )
 
 // NOTE: block is produced every minute. Make sure the verification time

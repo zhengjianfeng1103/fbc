@@ -1,13 +1,13 @@
 package keeper_test
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/supply/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/supply/internal/types"
 )
 
 var (

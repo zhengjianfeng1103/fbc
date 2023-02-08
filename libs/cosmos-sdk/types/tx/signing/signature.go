@@ -3,8 +3,8 @@ package signing
 import (
 	"fmt"
 
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
 )
 
 // SignatureV2 is a convenience type that is easier to use in application logic

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 	"github.com/gogo/protobuf/proto"
 	"google.golang.org/grpc"

@@ -1,6 +1,6 @@
 package ante
 
-import sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+import sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
 type ValidateMsgHandler func(ctx sdk.Context, msgs []sdk.Msg) error
 

@@ -7,12 +7,12 @@ import (
 	"path/filepath"
 	"sync"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
-	evmtypes "github.com/FiboChain/fbc/x/evm/types"
 	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
+	evmtypes "github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 const (

@@ -4,8 +4,8 @@ import (
 	"crypto/sha256"
 	"sync"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/clist"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/clist"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 type ITransactionQueue interface {

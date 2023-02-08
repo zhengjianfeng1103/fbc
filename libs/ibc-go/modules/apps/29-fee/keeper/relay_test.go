@@ -1,11 +1,11 @@
 package keeper_test
 
 import (
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/apps/29-fee/types"
-	clienttypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/FiboChain/fbc/libs/ibc-go/modules/core/04-channel/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
-	ibcmock "github.com/FiboChain/fbc/libs/ibc-go/testing/mock"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/29-fee/types"
+	clienttypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/04-channel/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
+	ibcmock "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/mock"
 )
 
 func (suite *KeeperTestSuite) TestWriteAcknowledgementAsync() {

@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	types2 "github.com/FiboChain/fbc/libs/tendermint/types"
+	types2 "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/03-connection/types"
-	ibctesting "github.com/FiboChain/fbc/libs/ibc-go/testing"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/03-connection/types"
+	ibctesting "github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing"
 )
 
 type KeeperTestSuite struct {

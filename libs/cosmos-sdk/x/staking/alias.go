@@ -3,9 +3,9 @@ package staking
 // nolint
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/exported"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 const (

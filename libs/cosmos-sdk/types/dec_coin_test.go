@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 
 	"github.com/stretchr/testify/require"
 )

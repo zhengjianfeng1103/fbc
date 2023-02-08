@@ -3,12 +3,13 @@ package types
 import (
 	"bytes"
 	"fmt"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/pkg/errors"
 	"sort"
+
+	"github.com/pkg/errors"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
-//Treasure is the struct which has address and proportion of mint reward.
+// Treasure is the struct which has address and proportion of mint reward.
 type Treasure struct {
 	//Treasure Address
 	Address sdk.AccAddress `json:"address" yaml:"address"`

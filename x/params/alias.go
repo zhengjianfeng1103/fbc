@@ -1,8 +1,8 @@
 package params
 
 import (
-	sdkparams "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	"github.com/FiboChain/fbc/x/params/types"
+	sdkparams "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	"github.com/zhengjianfeng1103/fbc/x/params/types"
 )
 
 // const

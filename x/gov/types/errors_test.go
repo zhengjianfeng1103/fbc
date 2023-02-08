@@ -1,8 +1,9 @@
 package types
 
 import (
-	sdkerror "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
 	"testing"
+
+	sdkerror "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 
 	"github.com/stretchr/testify/require"
 )

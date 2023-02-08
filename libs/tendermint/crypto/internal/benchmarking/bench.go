@@ -4,7 +4,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
 )
 
 // The code in this file is adapted from agl/ed25519.

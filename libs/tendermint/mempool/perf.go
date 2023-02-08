@@ -4,14 +4,15 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/spf13/viper"
 	"io/ioutil"
 	"os"
 	"time"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/spf13/viper"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
 )
 
 func (memR *Reactor) press() {
@@ -28,11 +29,11 @@ func (memR *Reactor) press() {
 	copy(privKey[:], b)
 	memR.nodeKeyWhitelist[string(p2p.PubKeyToID(privKey.PubKey()))] = struct{}{}
 	if s == "tx" {
-		for i:=0;i<4;i++ {
+		for i := 0; i < 4; i++ {
 			go memR.sendTxs(i)
 		}
 	} else {
-		for i:=0;i<4;i++ {
+		for i := 0; i < 4; i++ {
 			go memR.sendWtxs(i)
 		}
 	}
@@ -73,7 +74,7 @@ func (memR *Reactor) sendTxs(index int) {
 			continue
 		}
 		raw, _ := hex.DecodeString(string(tx))
-		for memR.mempool.Size() > memR.config.Size *9/10 {
+		for memR.mempool.Size() > memR.config.Size*9/10 {
 			time.Sleep(time.Second)
 		}
 		var msg TxMessage
@@ -134,7 +135,7 @@ func (memR *Reactor) sendWtxs(index int) {
 		}
 
 		if err = memR.mempool.CheckTx(msg.Wtx.Payload, nil, TxInfo{
-			wtx: msg.Wtx,
+			wtx:       msg.Wtx,
 			checkType: abci.CheckTxType_WrappedCheck,
 		}); err != nil {
 			fmt.Println("memR.mempool.CheckTx error", err)

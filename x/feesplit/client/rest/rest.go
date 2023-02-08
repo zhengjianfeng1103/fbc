@@ -8,13 +8,13 @@ import (
 	ethcmn "github.com/ethereum/go-ethereum/common"
 	"github.com/gorilla/mux"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/rest"
-	comm "github.com/FiboChain/fbc/x/common"
-	"github.com/FiboChain/fbc/x/feesplit/types"
-	govRest "github.com/FiboChain/fbc/x/gov/client/rest"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/rest"
+	comm "github.com/zhengjianfeng1103/fbc/x/common"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
+	govRest "github.com/zhengjianfeng1103/fbc/x/gov/client/rest"
 )
 
 func RegisterRoutes(cliCtx context.CLIContext, r *mux.Router) {

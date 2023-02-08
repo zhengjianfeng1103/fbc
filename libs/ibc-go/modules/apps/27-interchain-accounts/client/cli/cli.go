@@ -1,11 +1,11 @@
 package cli
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	controllercli "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/client/cli"
-	hostcli "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/client/cli"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	controllercli "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/controller/client/cli"
+	hostcli "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/27-interchain-accounts/host/client/cli"
 )
 
 // GetQueryCmd returns the query commands for the interchain-accounts submodule

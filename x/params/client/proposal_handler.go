@@ -1,9 +1,9 @@
 package client
 
 import (
-	govclient "github.com/FiboChain/fbc/x/gov/client"
-	"github.com/FiboChain/fbc/x/params/client/cli"
-	"github.com/FiboChain/fbc/x/params/client/rest"
+	govclient "github.com/zhengjianfeng1103/fbc/x/gov/client"
+	"github.com/zhengjianfeng1103/fbc/x/params/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/params/client/rest"
 )
 
 // ProposalHandler is the param change proposal handler in cmsdk

@@ -3,21 +3,21 @@ package erc20
 import (
 	"encoding/json"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/upgrade"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/base"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/upgrade"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/base"
 
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/erc20/client/cli"
-	"github.com/FiboChain/fbc/x/erc20/keeper"
-	"github.com/FiboChain/fbc/x/erc20/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/erc20/types"
 )
 
 var _ module.AppModuleBasic = AppModuleBasic{}

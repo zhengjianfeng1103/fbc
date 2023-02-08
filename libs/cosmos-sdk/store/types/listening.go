@@ -3,7 +3,7 @@ package types
 import (
 	"io"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
 )
 
 // WriteListener interface for streaming data out from a listenkv.Store

@@ -1,10 +1,10 @@
 package client
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/flags"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/query"
 	"github.com/spf13/pflag"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/flags"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/query"
 )
 
 // Paginate returns the correct starting and ending index for a paginated query,
@@ -35,8 +35,6 @@ func Paginate(numObjs, page, limit, defLimit int) (start, end int) {
 
 	return start, end
 }
-
-
 
 // ReadPageRequest reads and builds the necessary page request flags for pagination.
 func ReadPageRequest(flagSet *pflag.FlagSet) (*query.PageRequest, error) {

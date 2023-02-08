@@ -3,8 +3,8 @@ package mint
 // nolint
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/mint/internal/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/mint/internal/types"
 )
 
 const (

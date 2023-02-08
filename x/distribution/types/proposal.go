@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 const (

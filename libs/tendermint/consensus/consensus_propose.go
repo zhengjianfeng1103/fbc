@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	cfg "github.com/FiboChain/fbc/libs/tendermint/config"
-	cstypes "github.com/FiboChain/fbc/libs/tendermint/consensus/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/automation"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	cfg "github.com/zhengjianfeng1103/fbc/libs/tendermint/config"
+	cstypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/consensus/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/automation"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // SetProposal inputs a proposal.

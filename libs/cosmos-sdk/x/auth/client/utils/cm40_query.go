@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	types "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	ibc_tx "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	types "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	ibc_tx "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/ibc-tx"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
 )
 
 func Query40Tx(cliCtx context.CLIContext, hashHexStr string) (*types.TxResponse, error) {

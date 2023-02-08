@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"log"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/simapp"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/x/slashing"
-	"github.com/FiboChain/fbc/x/staking"
-	"github.com/FiboChain/fbc/x/staking/exported"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/simapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/x/slashing"
+	"github.com/zhengjianfeng1103/fbc/x/staking"
+	"github.com/zhengjianfeng1103/fbc/x/staking/exported"
 
-	ethcdc "github.com/FiboChain/fbc/app/codec"
+	ethcdc "github.com/zhengjianfeng1103/fbc/app/codec"
 )
 
 // NewDefaultGenesisState generates the default state for the application.

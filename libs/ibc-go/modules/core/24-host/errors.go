@@ -1,6 +1,6 @@
 package host
 
-import sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
+import sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
 
 // SubModuleName defines the ICS 24 host
 const SubModuleName = "host"

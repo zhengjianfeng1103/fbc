@@ -5,9 +5,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 type GenesisTestSuite struct {

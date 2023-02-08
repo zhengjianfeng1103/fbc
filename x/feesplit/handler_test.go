@@ -8,16 +8,16 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/FiboChain/fbc/app"
-	"github.com/FiboChain/fbc/app/crypto/ethsecp256k1"
-	ethermint "github.com/FiboChain/fbc/app/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/x/feesplit"
-	"github.com/FiboChain/fbc/x/feesplit/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/app"
+	"github.com/zhengjianfeng1103/fbc/app/crypto/ethsecp256k1"
+	ethermint "github.com/zhengjianfeng1103/fbc/app/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit"
+	"github.com/zhengjianfeng1103/fbc/x/feesplit/types"
 )
 
 type FeeSplitTestSuite struct {

@@ -3,10 +3,10 @@ package simulation
 import (
 	"math/rand"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	govtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/simulation"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/simulation"
 )
 
 // SimulateParamChangeProposalContent returns random parameter change content.

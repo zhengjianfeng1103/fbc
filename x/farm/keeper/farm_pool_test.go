@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	swaptypes "github.com/FiboChain/fbc/x/ammswap/types"
-	"github.com/FiboChain/fbc/x/farm/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	swaptypes "github.com/zhengjianfeng1103/fbc/x/ammswap/types"
+	"github.com/zhengjianfeng1103/fbc/x/farm/types"
 )
 
 type tokenPair struct {

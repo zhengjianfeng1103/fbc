@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	paramtypes "github.com/FiboChain/fbc/x/params"
+	paramtypes "github.com/zhengjianfeng1103/fbc/x/params"
 )
 
 const (

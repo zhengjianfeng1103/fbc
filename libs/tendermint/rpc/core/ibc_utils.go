@@ -1,9 +1,9 @@
 package core
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/proto/version"
-	coretypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/version"
+	coretypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 func ConvBlock2CM40Block(r *types.Block) *types.CM40Block {

@@ -7,11 +7,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	keep "github.com/FiboChain/fbc/libs/cosmos-sdk/x/gov/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	keep "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking"
 )
 
 func TestTickExpiredDepositPeriod(t *testing.T) {

@@ -1,8 +1,8 @@
 package kvstore
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmrand "github.com/FiboChain/fbc/libs/tendermint/libs/rand"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmrand "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
 )
 
 // RandVal creates one random validator, with a key derived

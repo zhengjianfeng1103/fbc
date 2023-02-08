@@ -1,8 +1,8 @@
 package lite
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // Provider provides information for the lite client to sync validators.

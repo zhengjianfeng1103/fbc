@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	tmmath "github.com/FiboChain/fbc/libs/tendermint/libs/math"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	tmmath "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/math"
 )
 
 var (

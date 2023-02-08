@@ -2,7 +2,8 @@ package types
 
 import (
 	"fmt"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // LockInfo is locked info of an address

@@ -9,14 +9,14 @@ import (
 	"github.com/spf13/viper"
 	yaml "gopkg.in/yaml.v2"
 
-	tcmd "github.com/FiboChain/fbc/libs/tendermint/cmd/tendermint/commands"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cli"
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
-	pvm "github.com/FiboChain/fbc/libs/tendermint/privval"
-	tversion "github.com/FiboChain/fbc/libs/tendermint/version"
+	tcmd "github.com/zhengjianfeng1103/fbc/libs/tendermint/cmd/tendermint/commands"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
+	pvm "github.com/zhengjianfeng1103/fbc/libs/tendermint/privval"
+	tversion "github.com/zhengjianfeng1103/fbc/libs/tendermint/version"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // ShowNodeIDCmd - ported from Tendermint, dump node ID to stdout

@@ -3,7 +3,7 @@ package types
 import (
 	"strings"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 // nolint
@@ -53,7 +53,7 @@ func NewMsgCancelOrder(sender sdk.AccAddress, orderID string) MsgCancelOrders {
 	return msgCancelOrder
 }
 
-//********************MsgNewOrders*************
+// ********************MsgNewOrders*************
 // nolint
 type MsgNewOrders struct {
 	Sender     sdk.AccAddress `json:"sender"` // order maker address

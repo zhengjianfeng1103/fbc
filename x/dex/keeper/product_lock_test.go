@@ -5,8 +5,8 @@ package keeper
 import (
 	"testing"
 
-	"github.com/FiboChain/fbc/x/order/types"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/x/order/types"
 )
 
 func TestGetLockedProductsCopy(t *testing.T) {

@@ -1,7 +1,7 @@
 package v0_11
 
 import (
-	"github.com/FiboChain/fbc/x/order/legacy/v0_10"
+	"github.com/zhengjianfeng1103/fbc/x/order/legacy/v0_10"
 )
 
 func Migrate(oldGenState v0_10.GenesisState) GenesisState {

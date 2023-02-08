@@ -7,9 +7,9 @@ import (
 	"sort"
 	"testing"
 
-	db "github.com/FiboChain/fbc/libs/tm-db"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 func TestBasic(t *testing.T) {

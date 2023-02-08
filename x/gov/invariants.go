@@ -3,10 +3,10 @@ package gov
 import (
 	"fmt"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	"github.com/FiboChain/fbc/x/gov/keeper"
-	"github.com/FiboChain/fbc/x/gov/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 // RegisterInvariants registers all governance invariants

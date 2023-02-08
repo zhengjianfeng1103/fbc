@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	ethcmn "github.com/ethereum/go-ethereum/common"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 const (

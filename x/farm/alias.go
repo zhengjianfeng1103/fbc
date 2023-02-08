@@ -1,8 +1,8 @@
 package farm
 
 import (
-	"github.com/FiboChain/fbc/x/farm/keeper"
-	"github.com/FiboChain/fbc/x/farm/types"
+	"github.com/zhengjianfeng1103/fbc/x/farm/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/farm/types"
 )
 
 const (

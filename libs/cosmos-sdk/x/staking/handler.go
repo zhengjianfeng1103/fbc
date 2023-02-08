@@ -3,13 +3,13 @@ package staking
 import (
 	"time"
 
-	tmstrings "github.com/FiboChain/fbc/libs/tendermint/libs/strings"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	tmstrings "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/strings"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

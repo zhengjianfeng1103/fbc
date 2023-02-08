@@ -1,14 +1,14 @@
 // nolint
 // aliases generated for the following subdirectories:
-// ALIASGEN: github.com/FiboChain/fbc/x/dex/keeper
-// ALIASGEN: github.com/FiboChain/fbc/x/dex/types
+// ALIASGEN: github.com/zhengjianfeng1103/fbc/x/dex/keeper
+// ALIASGEN: github.com/zhengjianfeng1103/fbc/x/dex/types
 package dex
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/x/common/version"
-	"github.com/FiboChain/fbc/x/dex/keeper"
-	"github.com/FiboChain/fbc/x/dex/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/x/common/version"
+	"github.com/zhengjianfeng1103/fbc/x/dex/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/dex/types"
 )
 
 const (

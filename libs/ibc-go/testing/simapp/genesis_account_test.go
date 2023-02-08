@@ -4,15 +4,15 @@ import (
 	"testing"
 	"time"
 
-	//"github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/keys/secp256k1"
+	//"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/keys/secp256k1"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/secp256k1"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/secp256k1"
 )
 
 func TestSimGenesisAccountValidate(t *testing.T) {

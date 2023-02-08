@@ -5,7 +5,7 @@
 package genutil
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
 )
 
 const (

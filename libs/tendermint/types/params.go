@@ -5,9 +5,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	tmstrings "github.com/FiboChain/fbc/libs/tendermint/libs/strings"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	tmstrings "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/strings"
 )
 
 const (

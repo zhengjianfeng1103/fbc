@@ -1,8 +1,8 @@
 package ammswap
 
 import (
-	"github.com/FiboChain/fbc/x/ammswap/keeper"
-	"github.com/FiboChain/fbc/x/ammswap/types"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/ammswap/types"
 )
 
 const (

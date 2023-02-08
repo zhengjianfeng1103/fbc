@@ -1,8 +1,8 @@
 package coretypes
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/types"
-	"github.com/FiboChain/fbc/libs/tendermint/version"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/version"
 )
 
 type CM40ResultBlock struct {

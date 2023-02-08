@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/tests"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/tests"
 
 	"github.com/stretchr/testify/require"
 )

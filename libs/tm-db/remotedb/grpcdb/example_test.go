@@ -5,8 +5,8 @@ import (
 	"context"
 	"log"
 
-	grpcdb "github.com/FiboChain/fbc/libs/tm-db/remotedb/grpcdb"
-	protodb "github.com/FiboChain/fbc/libs/tm-db/remotedb/proto"
+	grpcdb "github.com/zhengjianfeng1103/fbc/libs/tm-db/remotedb/grpcdb"
+	protodb "github.com/zhengjianfeng1103/fbc/libs/tm-db/remotedb/proto"
 )
 
 func Example() {

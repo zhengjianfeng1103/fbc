@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	govtypes "github.com/FiboChain/fbc/x/gov/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	govtypes "github.com/zhengjianfeng1103/fbc/x/gov/types"
 	"gopkg.in/yaml.v2"
 )
 

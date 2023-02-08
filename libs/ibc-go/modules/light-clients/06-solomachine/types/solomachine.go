@@ -1,9 +1,9 @@
 package types
 
 import (
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	cryptotypes "github.com/FiboChain/fbc/libs/cosmos-sdk/crypto/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/exported"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	cryptotypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/crypto/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/exported"
 )
 
 // Interface implementation checks.

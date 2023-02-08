@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	params "github.com/FiboChain/fbc/libs/cosmos-sdk/x/params/subspace"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	params "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/params/subspace"
 )
 
 // Default period for deposits & voting

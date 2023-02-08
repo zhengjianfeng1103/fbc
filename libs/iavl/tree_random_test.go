@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	db "github.com/FiboChain/fbc/libs/tm-db"
+	db "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 )
 
 func TestRandomOperations(t *testing.T) {

@@ -2,12 +2,13 @@ package params
 
 import (
 	"fmt"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
 
-	"github.com/FiboChain/fbc/x/params/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+
+	"github.com/zhengjianfeng1103/fbc/x/params/types"
 )
 
 // NewQuerier returns all query handlers

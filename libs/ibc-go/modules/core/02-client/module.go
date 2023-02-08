@@ -1,12 +1,12 @@
 package client
 
 import (
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/client/cli"
-	"github.com/FiboChain/fbc/libs/ibc-go/modules/core/02-client/types"
 	"github.com/gogo/protobuf/grpc"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/client/cli"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core/02-client/types"
 )
 
 // Name returns the IBC client name

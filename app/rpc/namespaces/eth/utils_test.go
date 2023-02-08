@@ -3,7 +3,7 @@ package eth
 import (
 	"testing"
 
-	evmtypes "github.com/FiboChain/fbc/x/evm/types"
+	evmtypes "github.com/zhengjianfeng1103/fbc/x/evm/types"
 
 	"github.com/stretchr/testify/require"
 )

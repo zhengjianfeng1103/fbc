@@ -3,7 +3,7 @@ package types
 import (
 	"math/big"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 //___________________std tx______________________

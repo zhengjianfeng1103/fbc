@@ -7,7 +7,7 @@ import (
 	"github.com/golang/protobuf/proto" // nolint: staticcheck // still used by gogoproto
 	"github.com/stretchr/testify/assert"
 
-	"github.com/FiboChain/fbc/libs/tendermint/types/proto3"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types/proto3"
 )
 
 func TestProto3Compatibility(t *testing.T) {

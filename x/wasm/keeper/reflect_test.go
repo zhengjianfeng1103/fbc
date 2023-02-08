@@ -6,25 +6,25 @@ import (
 	"strings"
 	"testing"
 
-	ibcadapter "github.com/FiboChain/fbc/libs/cosmos-sdk/types/ibc-adapter"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank"
-	"github.com/FiboChain/fbc/x/wasm/keeper/testdata"
+	ibcadapter "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/ibc-adapter"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/keeper/testdata"
 
 	"github.com/golang/protobuf/proto"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	codectypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	sdkerrors "github.com/FiboChain/fbc/libs/cosmos-sdk/types/errors"
-	authkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	codectypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	sdkerrors "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/errors"
+	authkeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/keeper"
 
-	//bankkeeper "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/keeper"
-	//banktypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/bank/types"
+	//bankkeeper "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/keeper"
+	//banktypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/bank/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FiboChain/fbc/x/wasm/types"
+	"github.com/zhengjianfeng1103/fbc/x/wasm/types"
 )
 
 func buildReflectQuery(t *testing.T, query *testdata.ReflectQueryMsg) []byte {

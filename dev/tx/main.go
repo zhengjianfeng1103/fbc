@@ -12,16 +12,16 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/ed25519"
-	"github.com/FiboChain/fbc/libs/tendermint/mempool"
 	"github.com/tendermint/go-amino"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/ed25519"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/mempool"
 )
 
 const (
 	abiFile = "../client/contracts/counter/counter.abi"
 	binFile = "../client/contracts/counter/counter.bin"
 
-	ChainId  int64  = 1230        //  fbc
+	ChainId  int64  = 1230      //  fbc
 	GasPrice int64  = 100000000 // 0.1 gwei
 	GasLimit uint64 = 3000000
 )

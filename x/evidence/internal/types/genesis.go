@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/x/evidence/exported"
+	"github.com/zhengjianfeng1103/fbc/x/evidence/exported"
 )
 
 // DONTCOVER

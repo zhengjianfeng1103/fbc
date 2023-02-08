@@ -108,8 +108,8 @@ GetArchitecture() {
 download() {
   rm -rf "$HOME"/.fbc/src
   mkdir -p "$HOME"/.fbc/src
-  tag=`wget -qO- -t1 -T2 --no-check-certificate "https://api.github.com/repos/FiboChain/fbc/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g'`
-  wget --no-check-certificate "https://github.com/FiboChain/fbc/archive/refs/tags/${tag}.tar.gz" -O "$HOME"/.fbc/src/fbc.tar.gz
+  tag=`wget -qO- -t1 -T2 --no-check-certificate "https://api.github.com/repos/zhengjianfeng1103/fbc/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g'`
+  wget --no-check-certificate "https://github.com/zhengjianfeng1103/fbc/archive/refs/tags/${tag}.tar.gz" -O "$HOME"/.fbc/src/fbc.tar.gz
   ver=$(echo $tag| sed 's/v//g')
   cd "$HOME"/.fbc/src && tar zxvf fbc.tar.gz &&  cd fbc-"$ver"
 }

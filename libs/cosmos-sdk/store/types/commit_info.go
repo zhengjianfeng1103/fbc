@@ -3,9 +3,9 @@ package types
 import (
 	fmt "fmt"
 
-	sdkmaps "github.com/FiboChain/fbc/libs/cosmos-sdk/store/internal/maps"
-	sdkproofs "github.com/FiboChain/fbc/libs/cosmos-sdk/store/internal/proofs"
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/merkle"
+	sdkmaps "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/internal/maps"
+	sdkproofs "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/internal/proofs"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/merkle"
 
 	ics23 "github.com/confio/ics23/go"
 )

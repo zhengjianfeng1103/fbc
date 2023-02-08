@@ -1,10 +1,10 @@
 package genutil
 
 import (
-	"github.com/FiboChain/fbc/x/genutil/types"
+	"github.com/zhengjianfeng1103/fbc/x/genutil/types"
 
-	sdkgenutil "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil"
-	sdkgenutiltypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/genutil/types"
+	sdkgenutil "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil"
+	sdkgenutiltypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/genutil/types"
 )
 
 // const

@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"testing"
 
-	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
+	fbexchaincodec "github.com/zhengjianfeng1103/fbc/app/codec"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/keeper"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/x/capability/types"
-	stakingtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/staking/types"
-	"github.com/FiboChain/fbc/libs/ibc-go/testing/simapp"
 	"github.com/stretchr/testify/suite"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/keeper"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/capability/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/staking/types"
+	"github.com/zhengjianfeng1103/fbc/libs/ibc-go/testing/simapp"
 )
 
 type KeeperTestSuite struct {

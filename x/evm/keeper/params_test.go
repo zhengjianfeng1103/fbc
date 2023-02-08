@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/FiboChain/fbc/x/evm/types"
+	"github.com/zhengjianfeng1103/fbc/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestParams() {

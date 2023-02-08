@@ -1,7 +1,7 @@
 package behaviour
 
 import (
-	"github.com/FiboChain/fbc/libs/tendermint/p2p"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p"
 )
 
 // PeerBehaviour is a struct describing a behaviour a peer performed.

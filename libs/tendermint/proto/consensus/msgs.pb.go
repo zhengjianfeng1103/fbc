@@ -7,8 +7,8 @@ import (
 	fmt "fmt"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	bits "github.com/FiboChain/fbc/libs/tendermint/proto/libs/bits"
-	types "github.com/FiboChain/fbc/libs/tendermint/proto/types"
+	bits "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/libs/bits"
+	types "github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/types"
 	math "math"
 )
 

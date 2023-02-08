@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 
 	"github.com/gorilla/mux"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
 	"github.com/spf13/cobra"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
 
-	"github.com/FiboChain/fbc/x/token/client/cli"
-	"github.com/FiboChain/fbc/x/token/client/rest"
-	tokenTypes "github.com/FiboChain/fbc/x/token/types"
+	"github.com/zhengjianfeng1103/fbc/x/token/client/cli"
+	"github.com/zhengjianfeng1103/fbc/x/token/client/rest"
+	tokenTypes "github.com/zhengjianfeng1103/fbc/x/token/types"
 )
 
 var (

@@ -7,11 +7,11 @@ import (
 
 	"github.com/go-kit/kit/metrics"
 
-	"github.com/FiboChain/fbc/libs/tendermint/libs/cmap"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/service"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/cmap"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/service"
 
-	tmconn "github.com/FiboChain/fbc/libs/tendermint/p2p/conn"
+	tmconn "github.com/zhengjianfeng1103/fbc/libs/tendermint/p2p/conn"
 )
 
 const metricsTickerDuration = 10 * time.Second

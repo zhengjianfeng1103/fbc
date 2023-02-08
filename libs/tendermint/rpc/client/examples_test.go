@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/FiboChain/fbc/libs/tendermint/abci/example/kvstore"
-	rpchttp "github.com/FiboChain/fbc/libs/tendermint/rpc/client/http"
-	ctypes "github.com/FiboChain/fbc/libs/tendermint/rpc/core/types"
-	rpctest "github.com/FiboChain/fbc/libs/tendermint/rpc/test"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/example/kvstore"
+	rpchttp "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/http"
+	ctypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/core/types"
+	rpctest "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/test"
 )
 
 func ExampleHTTP_simple() {

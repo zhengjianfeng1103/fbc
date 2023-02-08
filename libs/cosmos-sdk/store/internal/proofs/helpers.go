@@ -3,9 +3,9 @@ package proofs
 import (
 	"sort"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/store/internal/maps"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/rand"
-	"github.com/FiboChain/fbc/libs/tendermint/proto/crypto/merkle"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/store/internal/maps"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/rand"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/proto/crypto/merkle"
 )
 
 // SimpleResult contains a merkle.SimpleProof along with all data needed to build the confio/proof

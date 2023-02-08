@@ -3,12 +3,12 @@ package keeper
 import (
 	"testing"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 
-	//"github.com/FiboChain/fbc/x/common"
-	//dexTypes "github.com/FiboChain/fbc/x/dex/types"
-	"github.com/FiboChain/fbc/x/gov/types"
+	//"github.com/zhengjianfeng1103/fbc/x/common"
+	//dexTypes "github.com/zhengjianfeng1103/fbc/x/dex/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 //func TestKeeper_SubmitProposal(t *testing.T) {

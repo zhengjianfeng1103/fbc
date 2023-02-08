@@ -6,12 +6,12 @@ import (
 	"os"
 	"path/filepath"
 
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/libs/tendermint/libs/log"
-	tmtypes "github.com/FiboChain/fbc/libs/tendermint/types"
-	dbm "github.com/FiboChain/fbc/libs/tm-db"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/log"
+	tmtypes "github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
+	dbm "github.com/zhengjianfeng1103/fbc/libs/tm-db"
 
-	sdk "github.com/FiboChain/fbc/libs/cosmos-sdk/types"
+	sdk "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types"
 )
 
 type (

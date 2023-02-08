@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	stakingtypes "github.com/FiboChain/fbc/x/staking/types"
+	stakingtypes "github.com/zhengjianfeng1103/fbc/x/staking/types"
 
-	authtypes "github.com/FiboChain/fbc/libs/cosmos-sdk/x/auth/types"
+	authtypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/x/auth/types"
 )
 
 // GenesisState defines the raw genesis transaction in JSON

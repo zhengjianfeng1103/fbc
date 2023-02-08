@@ -1,7 +1,7 @@
 package types
 
 import (
-	tmbytes "github.com/FiboChain/fbc/libs/tendermint/libs/bytes"
+	tmbytes "github.com/zhengjianfeng1103/fbc/libs/tendermint/libs/bytes"
 )
 
 func (sh SignedHeader) ValidateBasicForIBC(chainID string) error {

@@ -3,22 +3,22 @@ package gov
 import (
 	"testing"
 
-	fbexchaincodec "github.com/FiboChain/fbc/app/codec"
-	interfacetypes "github.com/FiboChain/fbc/libs/cosmos-sdk/codec/types"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/types/module"
-	ibctransfer "github.com/FiboChain/fbc/libs/ibc-go/modules/apps/transfer"
-	ibc "github.com/FiboChain/fbc/libs/ibc-go/modules/core"
+	fbexchaincodec "github.com/zhengjianfeng1103/fbc/app/codec"
+	interfacetypes "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec/types"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/types/module"
+	ibctransfer "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/apps/transfer"
+	ibc "github.com/zhengjianfeng1103/fbc/libs/ibc-go/modules/core"
 
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/client/context"
-	cliLcd "github.com/FiboChain/fbc/libs/cosmos-sdk/client/lcd"
-	"github.com/FiboChain/fbc/libs/cosmos-sdk/codec"
-	abci "github.com/FiboChain/fbc/libs/tendermint/abci/types"
-	"github.com/FiboChain/fbc/x/gov/client"
-	"github.com/FiboChain/fbc/x/gov/client/rest"
-	"github.com/FiboChain/fbc/x/gov/keeper"
-	"github.com/FiboChain/fbc/x/gov/types"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/context"
+	cliLcd "github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/client/lcd"
+	"github.com/zhengjianfeng1103/fbc/libs/cosmos-sdk/codec"
+	abci "github.com/zhengjianfeng1103/fbc/libs/tendermint/abci/types"
+	"github.com/zhengjianfeng1103/fbc/x/gov/client"
+	"github.com/zhengjianfeng1103/fbc/x/gov/client/rest"
+	"github.com/zhengjianfeng1103/fbc/x/gov/keeper"
+	"github.com/zhengjianfeng1103/fbc/x/gov/types"
 )
 
 func TestAppModule_BeginBlock(t *testing.T) {

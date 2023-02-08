@@ -6,10 +6,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/FiboChain/fbc/libs/tendermint/lite2/provider"
-	rpcclient "github.com/FiboChain/fbc/libs/tendermint/rpc/client"
-	rpchttp "github.com/FiboChain/fbc/libs/tendermint/rpc/client/http"
-	"github.com/FiboChain/fbc/libs/tendermint/types"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/lite2/provider"
+	rpcclient "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client"
+	rpchttp "github.com/zhengjianfeng1103/fbc/libs/tendermint/rpc/client/http"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/types"
 )
 
 // This is very brittle, see: https://github.com/tendermint/tendermint/issues/4740

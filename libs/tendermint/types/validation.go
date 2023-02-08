@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FiboChain/fbc/libs/tendermint/crypto/tmhash"
-	tmtime "github.com/FiboChain/fbc/libs/tendermint/types/time"
+	"github.com/zhengjianfeng1103/fbc/libs/tendermint/crypto/tmhash"
+	tmtime "github.com/zhengjianfeng1103/fbc/libs/tendermint/types/time"
 )
 
 // ValidateTime does a basic time validation ensuring time does not drift too
